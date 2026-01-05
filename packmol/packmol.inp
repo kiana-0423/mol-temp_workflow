@@ -1,0 +1,13 @@
+tolerance 2.0
+filetype pdb
+output box_56_poly.pdb
+
+seed 12345
+nloop 2000
+
+structure poly_ob.pdb
+  number 56
+  center
+  inside box 0.0 0.0 0.0 100.0 100.0 40.0
+end structure
+

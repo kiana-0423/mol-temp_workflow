@@ -1,13 +1,21 @@
-tolerance 2.0
+tolerance 3.5
 filetype pdb
-output box_56_poly.pdb
+output bigbox_poly56_water.pdb
 
 seed 12345
-nloop 2000
+nloop 5000
+
 
 structure poly_ob.pdb
   number 56
   center
-  inside box 0.0 0.0 0.0 100.0 100.0 40.0
+  inside box 50.0 50.0 100.0 150.0 150.0 160.0
 end structure
 
+
+structure water.pdb
+  number 10000
+  center
+  inside box 0.0 0.0 0.0 200.0 200.0 300.0
+  outside box 50.0 50.0 80.0 150.0 150.0 120.0
+end structure

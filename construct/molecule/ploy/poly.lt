@@ -1,0 +1,1309 @@
+import "oplsaa2024.lt"
+
+Poly inherits OPLSAA {
+  write("Data Atoms") {
+    # atomID   molID   atomType   charge   x y z
+    $atom:a1     $mol:.  @atom:269    -0.251000   0 0 0
+    $atom:a2     $mol:.  @atom:268    -0.480600   0 0 0
+    $atom:a3     $mol:.  @atom:267     0.304700   0 0 0
+    $atom:a4     $mol:.  @atom:136     0.044800   0 0 0
+    $atom:a5     $mol:.  @atom:136    -0.043000   0 0 0
+    $atom:a6     $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a7     $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a8     $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a9     $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a10    $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a11    $mol:.  @atom:465     0.312900   0 0 0
+    $atom:a12    $mol:.  @atom:139     0.062200   0 0 0
+    $atom:a13    $mol:.  @atom:136    -0.037000   0 0 0
+    $atom:a14    $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a15    $mol:.  @atom:466    -0.250200   0 0 0
+    $atom:a16    $mol:.  @atom:467    -0.460500   0 0 0
+    $atom:a17    $mol:.  @atom:490     0.129000   0 0 0
+    $atom:a18    $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a19    $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a20    $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a21    $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a22    $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a23    $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a24    $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a25    $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a26    $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a27    $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a28    $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a29    $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a30    $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a31    $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a32    $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a33    $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a34    $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a35    $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a36    $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a37    $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a38    $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a39    $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a40    $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a41    $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a42    $mol:.  @atom:136    -0.031300   0 0 0
+    $atom:a43    $mol:.  @atom:210    -0.005600   0 0 0
+    $atom:a44    $mol:.  @atom:202    -0.164100   0 0 0
+    $atom:a45    $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a46    $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a47    $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a48    $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a49    $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a50    $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a51    $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a52    $mol:.  @atom:209    -0.018100   0 0 0
+    $atom:a53    $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a54    $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a55    $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a56    $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a57    $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a58    $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a59    $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a60    $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a61    $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a62    $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a63    $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a64    $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a65    $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a66    $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a67    $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a68    $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a69    $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a70    $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a71    $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a72    $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a73    $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a74    $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a75    $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a76    $mol:.  @atom:136    -0.055900   0 0 0
+    $atom:a77    $mol:.  @atom:136    -0.053300   0 0 0
+    $atom:a78    $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a79    $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a80    $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a81    $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a82    $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a83    $mol:.  @atom:136    -0.053000   0 0 0
+    $atom:a84    $mol:.  @atom:136    -0.050000   0 0 0
+    $atom:a85    $mol:.  @atom:136    -0.018500   0 0 0
+    $atom:a86    $mol:.  @atom:490     0.092500   0 0 0
+    $atom:a87    $mol:.  @atom:135    -0.065300   0 0 0
+    $atom:a88    $mol:.  @atom:137     0.053700   0 0 0
+    $atom:a89    $mol:.  @atom:465     0.309900   0 0 0
+    $atom:a90    $mol:.  @atom:467    -0.464400   0 0 0
+    $atom:a91    $mol:.  @atom:466    -0.250500   0 0 0
+    $atom:a92    $mol:.  @atom:135    -0.052300   0 0 0
+    $atom:a93    $mol:.  @atom:136    -0.039400   0 0 0
+    $atom:a94    $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a95    $mol:.  @atom:269    -0.251000   0 0 0
+    $atom:a96    $mol:.  @atom:268    -0.480600   0 0 0
+    $atom:a97    $mol:.  @atom:267     0.304700   0 0 0
+    $atom:a98    $mol:.  @atom:136     0.044800   0 0 0
+    $atom:a99    $mol:.  @atom:136    -0.043000   0 0 0
+    $atom:a100   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a101   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a102   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a103   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a104   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a105   $mol:.  @atom:465     0.312900   0 0 0
+    $atom:a106   $mol:.  @atom:139     0.062200   0 0 0
+    $atom:a107   $mol:.  @atom:136    -0.037000   0 0 0
+    $atom:a108   $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a109   $mol:.  @atom:466    -0.250200   0 0 0
+    $atom:a110   $mol:.  @atom:467    -0.460500   0 0 0
+    $atom:a111   $mol:.  @atom:490     0.129000   0 0 0
+    $atom:a112   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a113   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a114   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a115   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a116   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a117   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a118   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a119   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a120   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a121   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a122   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a123   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a124   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a125   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a126   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a127   $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a128   $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a129   $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a130   $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a131   $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a132   $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a133   $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a134   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a135   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a136   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a137   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a138   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a139   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a140   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a141   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a142   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a143   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a144   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a145   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a146   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a147   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a148   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a149   $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a150   $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a151   $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a152   $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a153   $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a154   $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a155   $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a156   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a157   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a158   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a159   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a160   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a161   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a162   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a163   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a164   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a165   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a166   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a167   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a168   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a169   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a170   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a171   $mol:.  @atom:136    -0.055900   0 0 0
+    $atom:a172   $mol:.  @atom:136    -0.053300   0 0 0
+    $atom:a173   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a174   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a175   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a176   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a177   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a178   $mol:.  @atom:136    -0.053000   0 0 0
+    $atom:a179   $mol:.  @atom:136    -0.050000   0 0 0
+    $atom:a180   $mol:.  @atom:136    -0.018500   0 0 0
+    $atom:a181   $mol:.  @atom:490     0.092500   0 0 0
+    $atom:a182   $mol:.  @atom:135    -0.065300   0 0 0
+    $atom:a183   $mol:.  @atom:137     0.053700   0 0 0
+    $atom:a184   $mol:.  @atom:465     0.309900   0 0 0
+    $atom:a185   $mol:.  @atom:467    -0.464400   0 0 0
+    $atom:a186   $mol:.  @atom:466    -0.250500   0 0 0
+    $atom:a187   $mol:.  @atom:135    -0.052300   0 0 0
+    $atom:a188   $mol:.  @atom:136    -0.039400   0 0 0
+    $atom:a189   $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a190   $mol:.  @atom:269    -0.251000   0 0 0
+    $atom:a191   $mol:.  @atom:268    -0.480600   0 0 0
+    $atom:a192   $mol:.  @atom:267     0.304700   0 0 0
+    $atom:a193   $mol:.  @atom:136     0.044800   0 0 0
+    $atom:a194   $mol:.  @atom:136    -0.043000   0 0 0
+    $atom:a195   $mol:.  @atom:136    -0.051600   0 0 0
+    $atom:a196   $mol:.  @atom:136    -0.041100   0 0 0
+    $atom:a197   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a198   $mol:.  @atom:214     0.004900   0 0 0
+    $atom:a199   $mol:.  @atom:136    -0.031300   0 0 0
+    $atom:a200   $mol:.  @atom:465     0.312900   0 0 0
+    $atom:a201   $mol:.  @atom:139     0.062200   0 0 0
+    $atom:a202   $mol:.  @atom:136    -0.037000   0 0 0
+    $atom:a203   $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a204   $mol:.  @atom:466    -0.250200   0 0 0
+    $atom:a205   $mol:.  @atom:467    -0.460500   0 0 0
+    $atom:a206   $mol:.  @atom:490     0.129000   0 0 0
+    $atom:a207   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a208   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a209   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a210   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a211   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a212   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a213   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a214   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a215   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a216   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a217   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a218   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a219   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a220   $mol:.  @atom:202    -0.160700   0 0 0
+    $atom:a221   $mol:.  @atom:211     0.005800   0 0 0
+    $atom:a222   $mol:.  @atom:209    -0.017800   0 0 0
+    $atom:a223   $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a224   $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a225   $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a226   $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a227   $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a228   $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a229   $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a230   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a231   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a232   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a233   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a234   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a235   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a236   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a237   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a238   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a239   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a240   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a241   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a242   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a243   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a244   $mol:.  @atom:465     0.334400   0 0 0
+    $atom:a245   $mol:.  @atom:141     0.026400   0 0 0
+    $atom:a246   $mol:.  @atom:143    -0.089000   0 0 0
+    $atom:a247   $mol:.  @atom:135    -0.033500   0 0 0
+    $atom:a248   $mol:.  @atom:466    -0.245300   0 0 0
+    $atom:a249   $mol:.  @atom:467    -0.457700   0 0 0
+    $atom:a250   $mol:.  @atom:490     0.129300   0 0 0
+    $atom:a251   $mol:.  @atom:183     0.134100   0 0 0
+    $atom:a252   $mol:.  @atom:135    -0.024400   0 0 0
+    $atom:a253   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a254   $mol:.  @atom:215     0.016200   0 0 0
+    $atom:a255   $mol:.  @atom:136    -0.030500   0 0 0
+    $atom:a256   $mol:.  @atom:214     0.005000   0 0 0
+    $atom:a257   $mol:.  @atom:203    -0.092800   0 0 0
+    $atom:a258   $mol:.  @atom:136    -0.040300   0 0 0
+    $atom:a259   $mol:.  @atom:136    -0.051500   0 0 0
+    $atom:a260   $mol:.  @atom:136    -0.042900   0 0 0
+    $atom:a261   $mol:.  @atom:136     0.045000   0 0 0
+    $atom:a262   $mol:.  @atom:465     0.307400   0 0 0
+    $atom:a263   $mol:.  @atom:467    -0.458200   0 0 0
+    $atom:a264   $mol:.  @atom:466    -0.250800   0 0 0
+    $atom:a265   $mol:.  @atom:203    -0.089700   0 0 0
+    $atom:a266   $mol:.  @atom:136    -0.055900   0 0 0
+    $atom:a267   $mol:.  @atom:136    -0.053300   0 0 0
+    $atom:a268   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a269   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a270   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a271   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a272   $mol:.  @atom:136    -0.053100   0 0 0
+    $atom:a273   $mol:.  @atom:136    -0.053000   0 0 0
+    $atom:a274   $mol:.  @atom:136    -0.050000   0 0 0
+    $atom:a275   $mol:.  @atom:136    -0.018500   0 0 0
+    $atom:a276   $mol:.  @atom:490     0.092500   0 0 0
+    $atom:a277   $mol:.  @atom:135    -0.065300   0 0 0
+    $atom:a278   $mol:.  @atom:137     0.053700   0 0 0
+    $atom:a279   $mol:.  @atom:465     0.309900   0 0 0
+    $atom:a280   $mol:.  @atom:467    -0.464400   0 0 0
+    $atom:a281   $mol:.  @atom:466    -0.250500   0 0 0
+    $atom:a282   $mol:.  @atom:135    -0.052300   0 0 0
+    $atom:a283   $mol:.  @atom:136    -0.039400   0 0 0
+    $atom:a284   $mol:.  @atom:135    -0.049700   0 0 0
+    $atom:a285   $mol:.  @atom:270     0.295100   0 0 0
+    $atom:a286   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a287   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a288   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a289   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a290   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a291   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a292   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a293   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a294   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a295   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a296   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a297   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a298   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a299   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a300   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a301   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a302   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a303   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a304   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a305   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a306   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a307   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a308   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a309   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a310   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a311   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a312   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a313   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a314   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a315   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a316   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a317   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a318   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a319   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a320   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a321   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a322   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a323   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a324   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a325   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a326   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a327   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a328   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a329   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a330   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a331   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a332   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a333   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a334   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a335   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a336   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a337   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a338   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a339   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a340   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a341   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a342   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a343   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a344   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a345   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a346   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a347   $mol:.  @atom:140     0.034000   0 0 0
+    $atom:a348   $mol:.  @atom:140     0.034000   0 0 0
+    $atom:a349   $mol:.  @atom:140     0.034000   0 0 0
+    $atom:a350   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a351   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a352   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a353   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a354   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a355   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a356   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a357   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a358   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a359   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a360   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a361   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a362   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a363   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a364   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a365   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a366   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a367   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a368   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a369   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a370   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a371   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a372   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a373   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a374   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a375   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a376   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a377   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a378   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a379   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a380   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a381   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a382   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a383   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a384   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a385   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a386   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a387   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a388   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a389   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a390   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a391   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a392   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a393   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a394   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a395   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a396   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a397   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a398   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a399   $mol:.  @atom:282     0.041100   0 0 0
+    $atom:a400   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a401   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a402   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a403   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a404   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a405   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a406   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a407   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a408   $mol:.  @atom:270     0.295100   0 0 0
+    $atom:a409   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a410   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a411   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a412   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a413   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a414   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a415   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a416   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a417   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a418   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a419   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a420   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a421   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a422   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a423   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a424   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a425   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a426   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a427   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a428   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a429   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a430   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a431   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a432   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a433   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a434   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a435   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a436   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a437   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a438   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a439   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a440   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a441   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a442   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a443   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a444   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a445   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a446   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a447   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a448   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a449   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a450   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a451   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a452   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a453   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a454   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a455   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a456   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a457   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a458   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a459   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a460   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a461   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a462   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a463   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a464   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a465   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a466   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a467   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a468   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a469   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a470   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a471   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a472   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a473   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a474   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a475   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a476   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a477   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a478   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a479   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a480   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a481   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a482   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a483   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a484   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a485   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a486   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a487   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a488   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a489   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a490   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a491   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a492   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a493   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a494   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a495   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a496   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a497   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a498   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a499   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a500   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a501   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a502   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a503   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a504   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a505   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a506   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a507   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a508   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a509   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a510   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a511   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a512   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a513   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a514   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a515   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a516   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a517   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a518   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a519   $mol:.  @atom:282     0.041100   0 0 0
+    $atom:a520   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a521   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a522   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a523   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a524   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a525   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a526   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a527   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a528   $mol:.  @atom:270     0.295100   0 0 0
+    $atom:a529   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a530   $mol:.  @atom:140     0.037700   0 0 0
+    $atom:a531   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a532   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a533   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a534   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a535   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a536   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a537   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a538   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a539   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a540   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a541   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a542   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a543   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a544   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a545   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a546   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a547   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a548   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a549   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a550   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a551   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a552   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a553   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a554   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a555   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a556   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a557   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a558   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a559   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a560   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a561   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a562   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a563   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a564   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a565   $mol:.  @atom:140     0.041200   0 0 0
+    $atom:a566   $mol:.  @atom:140     0.034100   0 0 0
+    $atom:a567   $mol:.  @atom:140     0.034100   0 0 0
+    $atom:a568   $mol:.  @atom:140     0.034100   0 0 0
+    $atom:a569   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a570   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a571   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a572   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a573   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a574   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a575   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a576   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a577   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a578   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a579   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a580   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a581   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a582   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a583   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a584   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a585   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a586   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a587   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a588   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a589   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a590   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a591   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a592   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a593   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a594   $mol:.  @atom:144     0.054000   0 0 0
+    $atom:a595   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a596   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a597   $mol:.  @atom:140     0.028000   0 0 0
+    $atom:a598   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a599   $mol:.  @atom:469     0.073500   0 0 0
+    $atom:a600   $mol:.  @atom:185     0.076500   0 0 0
+    $atom:a601   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a602   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a603   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a604   $mol:.  @atom:140     0.042100   0 0 0
+    $atom:a605   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a606   $mol:.  @atom:140     0.028400   0 0 0
+    $atom:a607   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a608   $mol:.  @atom:140     0.038500   0 0 0
+    $atom:a609   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a610   $mol:.  @atom:140     0.027600   0 0 0
+    $atom:a611   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a612   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a613   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a614   $mol:.  @atom:140     0.027000   0 0 0
+    $atom:a615   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a616   $mol:.  @atom:282     0.037700   0 0 0
+    $atom:a617   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a618   $mol:.  @atom:140     0.026300   0 0 0
+    $atom:a619   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a620   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a621   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a622   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a623   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a624   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a625   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a626   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a627   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a628   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a629   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a630   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a631   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a632   $mol:.  @atom:140     0.026500   0 0 0
+    $atom:a633   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a634   $mol:.  @atom:140     0.026600   0 0 0
+    $atom:a635   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a636   $mol:.  @atom:140     0.029800   0 0 0
+    $atom:a637   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a638   $mol:.  @atom:469     0.069700   0 0 0
+    $atom:a639   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a640   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a641   $mol:.  @atom:140     0.023000   0 0 0
+    $atom:a642   $mol:.  @atom:282     0.041100   0 0 0
+    $atom:a643   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a644   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a645   $mol:.  @atom:140     0.023800   0 0 0
+    $atom:a646   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a647   $mol:.  @atom:140     0.027300   0 0 0
+    $atom:a648   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a649   $mol:.  @atom:140     0.024000   0 0 0
+    $atom:a650   $mol:.  @atom:140     0.024000   0 0 0
+  }
+
+  write("Data Bond List") {
+    $bond:b1     $atom:a1  $atom:a3
+    $bond:b2     $atom:a2  $atom:a3
+    $bond:b3     $atom:a2  $atom:a285
+    $bond:b4     $atom:a3  $atom:a4
+    $bond:b5     $atom:a4  $atom:a5
+    $bond:b6     $atom:a4  $atom:a286
+    $bond:b7     $atom:a4  $atom:a287
+    $bond:b8     $atom:a5  $atom:a6
+    $bond:b9     $atom:a5  $atom:a288
+    $bond:b10    $atom:a5  $atom:a289
+    $bond:b11    $atom:a6  $atom:a7
+    $bond:b12    $atom:a6  $atom:a290
+    $bond:b13    $atom:a6  $atom:a291
+    $bond:b14    $atom:a7  $atom:a31
+    $bond:b15    $atom:a7  $atom:a292
+    $bond:b16    $atom:a7  $atom:a293
+    $bond:b17    $atom:a8  $atom:a9
+    $bond:b18    $atom:a8  $atom:a63
+    $bond:b19    $atom:a9  $atom:a10
+    $bond:b20    $atom:a9  $atom:a294
+    $bond:b21    $atom:a9  $atom:a295
+    $bond:b22    $atom:a10  $atom:a31
+    $bond:b23    $atom:a10  $atom:a296
+    $bond:b24    $atom:a10  $atom:a297
+    $bond:b25    $atom:a11  $atom:a12
+    $bond:b26    $atom:a11  $atom:a15
+    $bond:b27    $atom:a11  $atom:a16
+    $bond:b28    $atom:a12  $atom:a13
+    $bond:b29    $atom:a12  $atom:a14
+    $bond:b30    $atom:a12  $atom:a94
+    $bond:b31    $atom:a13  $atom:a93
+    $bond:b32    $atom:a13  $atom:a298
+    $bond:b33    $atom:a13  $atom:a299
+    $bond:b34    $atom:a14  $atom:a300
+    $bond:b35    $atom:a14  $atom:a301
+    $bond:b36    $atom:a14  $atom:a302
+    $bond:b37    $atom:a16  $atom:a17
+    $bond:b38    $atom:a17  $atom:a18
+    $bond:b39    $atom:a17  $atom:a303
+    $bond:b40    $atom:a17  $atom:a304
+    $bond:b41    $atom:a18  $atom:a19
+    $bond:b42    $atom:a18  $atom:a29
+    $bond:b43    $atom:a18  $atom:a305
+    $bond:b44    $atom:a19  $atom:a306
+    $bond:b45    $atom:a19  $atom:a307
+    $bond:b46    $atom:a19  $atom:a308
+    $bond:b47    $atom:a20  $atom:a21
+    $bond:b48    $atom:a20  $atom:a24
+    $bond:b49    $atom:a20  $atom:a75
+    $bond:b50    $atom:a20  $atom:a309
+    $bond:b51    $atom:a21  $atom:a22
+    $bond:b52    $atom:a21  $atom:a310
+    $bond:b53    $atom:a21  $atom:a311
+    $bond:b54    $atom:a22  $atom:a23
+    $bond:b55    $atom:a22  $atom:a312
+    $bond:b56    $atom:a22  $atom:a313
+    $bond:b57    $atom:a23  $atom:a53
+    $bond:b58    $atom:a24  $atom:a25
+    $bond:b59    $atom:a24  $atom:a314
+    $bond:b60    $atom:a24  $atom:a315
+    $bond:b61    $atom:a25  $atom:a26
+    $bond:b62    $atom:a25  $atom:a316
+    $bond:b63    $atom:a25  $atom:a317
+    $bond:b64    $atom:a26  $atom:a27
+    $bond:b65    $atom:a26  $atom:a318
+    $bond:b66    $atom:a26  $atom:a319
+    $bond:b67    $atom:a27  $atom:a28
+    $bond:b68    $atom:a27  $atom:a320
+    $bond:b69    $atom:a27  $atom:a321
+    $bond:b70    $atom:a28  $atom:a29
+    $bond:b71    $atom:a28  $atom:a30
+    $bond:b72    $atom:a31  $atom:a147
+    $bond:b73    $atom:a31  $atom:a322
+    $bond:b74    $atom:a32  $atom:a33
+    $bond:b75    $atom:a32  $atom:a36
+    $bond:b76    $atom:a32  $atom:a37
+    $bond:b77    $atom:a33  $atom:a34
+    $bond:b78    $atom:a33  $atom:a35
+    $bond:b79    $atom:a34  $atom:a323
+    $bond:b80    $atom:a34  $atom:a324
+    $bond:b81    $atom:a35  $atom:a325
+    $bond:b82    $atom:a35  $atom:a326
+    $bond:b83    $atom:a35  $atom:a327
+    $bond:b84    $atom:a37  $atom:a38
+    $bond:b85    $atom:a38  $atom:a39
+    $bond:b86    $atom:a38  $atom:a328
+    $bond:b87    $atom:a38  $atom:a329
+    $bond:b88    $atom:a39  $atom:a40
+    $bond:b89    $atom:a39  $atom:a50
+    $bond:b90    $atom:a39  $atom:a330
+    $bond:b91    $atom:a40  $atom:a331
+    $bond:b92    $atom:a40  $atom:a332
+    $bond:b93    $atom:a40  $atom:a333
+    $bond:b94    $atom:a41  $atom:a42
+    $bond:b95    $atom:a41  $atom:a45
+    $bond:b96    $atom:a41  $atom:a53
+    $bond:b97    $atom:a41  $atom:a334
+    $bond:b98    $atom:a42  $atom:a43
+    $bond:b99    $atom:a42  $atom:a335
+    $bond:b100   $atom:a42  $atom:a336
+    $bond:b101   $atom:a43  $atom:a44
+    $bond:b102   $atom:a43  $atom:a337
+    $bond:b103   $atom:a43  $atom:a338
+    $bond:b104   $atom:a44  $atom:a52
+    $bond:b105   $atom:a45  $atom:a46
+    $bond:b106   $atom:a45  $atom:a339
+    $bond:b107   $atom:a45  $atom:a340
+    $bond:b108   $atom:a46  $atom:a47
+    $bond:b109   $atom:a46  $atom:a341
+    $bond:b110   $atom:a46  $atom:a342
+    $bond:b111   $atom:a47  $atom:a48
+    $bond:b112   $atom:a47  $atom:a343
+    $bond:b113   $atom:a47  $atom:a344
+    $bond:b114   $atom:a48  $atom:a49
+    $bond:b115   $atom:a48  $atom:a345
+    $bond:b116   $atom:a48  $atom:a346
+    $bond:b117   $atom:a49  $atom:a50
+    $bond:b118   $atom:a49  $atom:a51
+    $bond:b119   $atom:a52  $atom:a347
+    $bond:b120   $atom:a52  $atom:a348
+    $bond:b121   $atom:a52  $atom:a349
+    $bond:b122   $atom:a54  $atom:a55
+    $bond:b123   $atom:a54  $atom:a58
+    $bond:b124   $atom:a54  $atom:a59
+    $bond:b125   $atom:a55  $atom:a56
+    $bond:b126   $atom:a55  $atom:a57
+    $bond:b127   $atom:a56  $atom:a350
+    $bond:b128   $atom:a56  $atom:a351
+    $bond:b129   $atom:a57  $atom:a352
+    $bond:b130   $atom:a57  $atom:a353
+    $bond:b131   $atom:a57  $atom:a354
+    $bond:b132   $atom:a59  $atom:a60
+    $bond:b133   $atom:a60  $atom:a61
+    $bond:b134   $atom:a60  $atom:a355
+    $bond:b135   $atom:a60  $atom:a356
+    $bond:b136   $atom:a61  $atom:a62
+    $bond:b137   $atom:a61  $atom:a73
+    $bond:b138   $atom:a61  $atom:a357
+    $bond:b139   $atom:a62  $atom:a358
+    $bond:b140   $atom:a62  $atom:a359
+    $bond:b141   $atom:a62  $atom:a360
+    $bond:b142   $atom:a63  $atom:a64
+    $bond:b143   $atom:a64  $atom:a65
+    $bond:b144   $atom:a64  $atom:a68
+    $bond:b145   $atom:a64  $atom:a361
+    $bond:b146   $atom:a65  $atom:a66
+    $bond:b147   $atom:a65  $atom:a362
+    $bond:b148   $atom:a65  $atom:a363
+    $bond:b149   $atom:a66  $atom:a67
+    $bond:b150   $atom:a66  $atom:a364
+    $bond:b151   $atom:a66  $atom:a365
+    $bond:b152   $atom:a67  $atom:a75
+    $bond:b153   $atom:a68  $atom:a69
+    $bond:b154   $atom:a68  $atom:a366
+    $bond:b155   $atom:a68  $atom:a367
+    $bond:b156   $atom:a69  $atom:a70
+    $bond:b157   $atom:a69  $atom:a368
+    $bond:b158   $atom:a69  $atom:a369
+    $bond:b159   $atom:a70  $atom:a71
+    $bond:b160   $atom:a70  $atom:a370
+    $bond:b161   $atom:a70  $atom:a371
+    $bond:b162   $atom:a71  $atom:a72
+    $bond:b163   $atom:a71  $atom:a372
+    $bond:b164   $atom:a71  $atom:a373
+    $bond:b165   $atom:a72  $atom:a73
+    $bond:b166   $atom:a72  $atom:a74
+    $bond:b167   $atom:a76  $atom:a77
+    $bond:b168   $atom:a76  $atom:a87
+    $bond:b169   $atom:a76  $atom:a374
+    $bond:b170   $atom:a76  $atom:a375
+    $bond:b171   $atom:a77  $atom:a78
+    $bond:b172   $atom:a77  $atom:a376
+    $bond:b173   $atom:a77  $atom:a377
+    $bond:b174   $atom:a78  $atom:a79
+    $bond:b175   $atom:a78  $atom:a378
+    $bond:b176   $atom:a78  $atom:a379
+    $bond:b177   $atom:a79  $atom:a80
+    $bond:b178   $atom:a79  $atom:a380
+    $bond:b179   $atom:a79  $atom:a381
+    $bond:b180   $atom:a80  $atom:a81
+    $bond:b181   $atom:a80  $atom:a382
+    $bond:b182   $atom:a80  $atom:a383
+    $bond:b183   $atom:a81  $atom:a82
+    $bond:b184   $atom:a81  $atom:a384
+    $bond:b185   $atom:a81  $atom:a385
+    $bond:b186   $atom:a82  $atom:a83
+    $bond:b187   $atom:a82  $atom:a386
+    $bond:b188   $atom:a82  $atom:a387
+    $bond:b189   $atom:a83  $atom:a84
+    $bond:b190   $atom:a83  $atom:a388
+    $bond:b191   $atom:a83  $atom:a389
+    $bond:b192   $atom:a84  $atom:a85
+    $bond:b193   $atom:a84  $atom:a390
+    $bond:b194   $atom:a84  $atom:a391
+    $bond:b195   $atom:a85  $atom:a86
+    $bond:b196   $atom:a85  $atom:a392
+    $bond:b197   $atom:a85  $atom:a393
+    $bond:b198   $atom:a86  $atom:a90
+    $bond:b199   $atom:a86  $atom:a394
+    $bond:b200   $atom:a86  $atom:a395
+    $bond:b201   $atom:a87  $atom:a396
+    $bond:b202   $atom:a87  $atom:a397
+    $bond:b203   $atom:a87  $atom:a398
+    $bond:b204   $atom:a88  $atom:a89
+    $bond:b205   $atom:a88  $atom:a92
+    $bond:b206   $atom:a88  $atom:a93
+    $bond:b207   $atom:a88  $atom:a399
+    $bond:b208   $atom:a89  $atom:a90
+    $bond:b209   $atom:a89  $atom:a91
+    $bond:b210   $atom:a92  $atom:a400
+    $bond:b211   $atom:a92  $atom:a401
+    $bond:b212   $atom:a92  $atom:a402
+    $bond:b213   $atom:a93  $atom:a403
+    $bond:b214   $atom:a93  $atom:a404
+    $bond:b215   $atom:a94  $atom:a405
+    $bond:b216   $atom:a94  $atom:a406
+    $bond:b217   $atom:a94  $atom:a407
+    $bond:b218   $atom:a95  $atom:a97
+    $bond:b219   $atom:a96  $atom:a97
+    $bond:b220   $atom:a96  $atom:a408
+    $bond:b221   $atom:a97  $atom:a98
+    $bond:b222   $atom:a98  $atom:a99
+    $bond:b223   $atom:a98  $atom:a409
+    $bond:b224   $atom:a98  $atom:a410
+    $bond:b225   $atom:a99  $atom:a100
+    $bond:b226   $atom:a99  $atom:a411
+    $bond:b227   $atom:a99  $atom:a412
+    $bond:b228   $atom:a100  $atom:a101
+    $bond:b229   $atom:a100  $atom:a413
+    $bond:b230   $atom:a100  $atom:a414
+    $bond:b231   $atom:a101  $atom:a126
+    $bond:b232   $atom:a101  $atom:a415
+    $bond:b233   $atom:a101  $atom:a416
+    $bond:b234   $atom:a102  $atom:a103
+    $bond:b235   $atom:a102  $atom:a158
+    $bond:b236   $atom:a103  $atom:a104
+    $bond:b237   $atom:a103  $atom:a417
+    $bond:b238   $atom:a103  $atom:a418
+    $bond:b239   $atom:a104  $atom:a126
+    $bond:b240   $atom:a104  $atom:a419
+    $bond:b241   $atom:a104  $atom:a420
+    $bond:b242   $atom:a105  $atom:a106
+    $bond:b243   $atom:a105  $atom:a109
+    $bond:b244   $atom:a105  $atom:a110
+    $bond:b245   $atom:a106  $atom:a107
+    $bond:b246   $atom:a106  $atom:a108
+    $bond:b247   $atom:a106  $atom:a189
+    $bond:b248   $atom:a107  $atom:a188
+    $bond:b249   $atom:a107  $atom:a421
+    $bond:b250   $atom:a107  $atom:a422
+    $bond:b251   $atom:a108  $atom:a423
+    $bond:b252   $atom:a108  $atom:a424
+    $bond:b253   $atom:a108  $atom:a425
+    $bond:b254   $atom:a110  $atom:a111
+    $bond:b255   $atom:a111  $atom:a112
+    $bond:b256   $atom:a111  $atom:a426
+    $bond:b257   $atom:a111  $atom:a427
+    $bond:b258   $atom:a112  $atom:a113
+    $bond:b259   $atom:a112  $atom:a123
+    $bond:b260   $atom:a112  $atom:a428
+    $bond:b261   $atom:a113  $atom:a429
+    $bond:b262   $atom:a113  $atom:a430
+    $bond:b263   $atom:a113  $atom:a431
+    $bond:b264   $atom:a114  $atom:a115
+    $bond:b265   $atom:a114  $atom:a118
+    $bond:b266   $atom:a114  $atom:a170
+    $bond:b267   $atom:a114  $atom:a432
+    $bond:b268   $atom:a115  $atom:a116
+    $bond:b269   $atom:a115  $atom:a433
+    $bond:b270   $atom:a115  $atom:a434
+    $bond:b271   $atom:a116  $atom:a117
+    $bond:b272   $atom:a116  $atom:a435
+    $bond:b273   $atom:a116  $atom:a436
+    $bond:b274   $atom:a117  $atom:a148
+    $bond:b275   $atom:a118  $atom:a119
+    $bond:b276   $atom:a118  $atom:a437
+    $bond:b277   $atom:a118  $atom:a438
+    $bond:b278   $atom:a119  $atom:a120
+    $bond:b279   $atom:a119  $atom:a439
+    $bond:b280   $atom:a119  $atom:a440
+    $bond:b281   $atom:a120  $atom:a121
+    $bond:b282   $atom:a120  $atom:a441
+    $bond:b283   $atom:a120  $atom:a442
+    $bond:b284   $atom:a121  $atom:a122
+    $bond:b285   $atom:a121  $atom:a443
+    $bond:b286   $atom:a121  $atom:a444
+    $bond:b287   $atom:a122  $atom:a123
+    $bond:b288   $atom:a122  $atom:a124
+    $bond:b289   $atom:a125  $atom:a126
+    $bond:b290   $atom:a125  $atom:a235
+    $bond:b291   $atom:a126  $atom:a445
+    $bond:b292   $atom:a127  $atom:a128
+    $bond:b293   $atom:a127  $atom:a131
+    $bond:b294   $atom:a127  $atom:a132
+    $bond:b295   $atom:a128  $atom:a129
+    $bond:b296   $atom:a128  $atom:a130
+    $bond:b297   $atom:a129  $atom:a446
+    $bond:b298   $atom:a129  $atom:a447
+    $bond:b299   $atom:a130  $atom:a448
+    $bond:b300   $atom:a130  $atom:a449
+    $bond:b301   $atom:a130  $atom:a450
+    $bond:b302   $atom:a132  $atom:a133
+    $bond:b303   $atom:a133  $atom:a134
+    $bond:b304   $atom:a133  $atom:a451
+    $bond:b305   $atom:a133  $atom:a452
+    $bond:b306   $atom:a134  $atom:a135
+    $bond:b307   $atom:a134  $atom:a145
+    $bond:b308   $atom:a134  $atom:a453
+    $bond:b309   $atom:a135  $atom:a454
+    $bond:b310   $atom:a135  $atom:a455
+    $bond:b311   $atom:a135  $atom:a456
+    $bond:b312   $atom:a136  $atom:a137
+    $bond:b313   $atom:a136  $atom:a140
+    $bond:b314   $atom:a136  $atom:a148
+    $bond:b315   $atom:a136  $atom:a457
+    $bond:b316   $atom:a137  $atom:a138
+    $bond:b317   $atom:a137  $atom:a458
+    $bond:b318   $atom:a137  $atom:a459
+    $bond:b319   $atom:a138  $atom:a139
+    $bond:b320   $atom:a138  $atom:a460
+    $bond:b321   $atom:a138  $atom:a461
+    $bond:b322   $atom:a139  $atom:a147
+    $bond:b323   $atom:a140  $atom:a141
+    $bond:b324   $atom:a140  $atom:a462
+    $bond:b325   $atom:a140  $atom:a463
+    $bond:b326   $atom:a141  $atom:a142
+    $bond:b327   $atom:a141  $atom:a464
+    $bond:b328   $atom:a141  $atom:a465
+    $bond:b329   $atom:a142  $atom:a143
+    $bond:b330   $atom:a142  $atom:a466
+    $bond:b331   $atom:a142  $atom:a467
+    $bond:b332   $atom:a143  $atom:a144
+    $bond:b333   $atom:a143  $atom:a468
+    $bond:b334   $atom:a143  $atom:a469
+    $bond:b335   $atom:a144  $atom:a145
+    $bond:b336   $atom:a144  $atom:a146
+    $bond:b337   $atom:a149  $atom:a150
+    $bond:b338   $atom:a149  $atom:a153
+    $bond:b339   $atom:a149  $atom:a154
+    $bond:b340   $atom:a150  $atom:a151
+    $bond:b341   $atom:a150  $atom:a152
+    $bond:b342   $atom:a151  $atom:a470
+    $bond:b343   $atom:a151  $atom:a471
+    $bond:b344   $atom:a152  $atom:a472
+    $bond:b345   $atom:a152  $atom:a473
+    $bond:b346   $atom:a152  $atom:a474
+    $bond:b347   $atom:a154  $atom:a155
+    $bond:b348   $atom:a155  $atom:a156
+    $bond:b349   $atom:a155  $atom:a475
+    $bond:b350   $atom:a155  $atom:a476
+    $bond:b351   $atom:a156  $atom:a157
+    $bond:b352   $atom:a156  $atom:a168
+    $bond:b353   $atom:a156  $atom:a477
+    $bond:b354   $atom:a157  $atom:a478
+    $bond:b355   $atom:a157  $atom:a479
+    $bond:b356   $atom:a157  $atom:a480
+    $bond:b357   $atom:a158  $atom:a159
+    $bond:b358   $atom:a159  $atom:a160
+    $bond:b359   $atom:a159  $atom:a163
+    $bond:b360   $atom:a159  $atom:a481
+    $bond:b361   $atom:a160  $atom:a161
+    $bond:b362   $atom:a160  $atom:a482
+    $bond:b363   $atom:a160  $atom:a483
+    $bond:b364   $atom:a161  $atom:a162
+    $bond:b365   $atom:a161  $atom:a484
+    $bond:b366   $atom:a161  $atom:a485
+    $bond:b367   $atom:a162  $atom:a170
+    $bond:b368   $atom:a163  $atom:a164
+    $bond:b369   $atom:a163  $atom:a486
+    $bond:b370   $atom:a163  $atom:a487
+    $bond:b371   $atom:a164  $atom:a165
+    $bond:b372   $atom:a164  $atom:a488
+    $bond:b373   $atom:a164  $atom:a489
+    $bond:b374   $atom:a165  $atom:a166
+    $bond:b375   $atom:a165  $atom:a490
+    $bond:b376   $atom:a165  $atom:a491
+    $bond:b377   $atom:a166  $atom:a167
+    $bond:b378   $atom:a166  $atom:a492
+    $bond:b379   $atom:a166  $atom:a493
+    $bond:b380   $atom:a167  $atom:a168
+    $bond:b381   $atom:a167  $atom:a169
+    $bond:b382   $atom:a171  $atom:a172
+    $bond:b383   $atom:a171  $atom:a182
+    $bond:b384   $atom:a171  $atom:a494
+    $bond:b385   $atom:a171  $atom:a495
+    $bond:b386   $atom:a172  $atom:a173
+    $bond:b387   $atom:a172  $atom:a496
+    $bond:b388   $atom:a172  $atom:a497
+    $bond:b389   $atom:a173  $atom:a174
+    $bond:b390   $atom:a173  $atom:a498
+    $bond:b391   $atom:a173  $atom:a499
+    $bond:b392   $atom:a174  $atom:a175
+    $bond:b393   $atom:a174  $atom:a500
+    $bond:b394   $atom:a174  $atom:a501
+    $bond:b395   $atom:a175  $atom:a176
+    $bond:b396   $atom:a175  $atom:a502
+    $bond:b397   $atom:a175  $atom:a503
+    $bond:b398   $atom:a176  $atom:a177
+    $bond:b399   $atom:a176  $atom:a504
+    $bond:b400   $atom:a176  $atom:a505
+    $bond:b401   $atom:a177  $atom:a178
+    $bond:b402   $atom:a177  $atom:a506
+    $bond:b403   $atom:a177  $atom:a507
+    $bond:b404   $atom:a178  $atom:a179
+    $bond:b405   $atom:a178  $atom:a508
+    $bond:b406   $atom:a178  $atom:a509
+    $bond:b407   $atom:a179  $atom:a180
+    $bond:b408   $atom:a179  $atom:a510
+    $bond:b409   $atom:a179  $atom:a511
+    $bond:b410   $atom:a180  $atom:a181
+    $bond:b411   $atom:a180  $atom:a512
+    $bond:b412   $atom:a180  $atom:a513
+    $bond:b413   $atom:a181  $atom:a185
+    $bond:b414   $atom:a181  $atom:a514
+    $bond:b415   $atom:a181  $atom:a515
+    $bond:b416   $atom:a182  $atom:a516
+    $bond:b417   $atom:a182  $atom:a517
+    $bond:b418   $atom:a182  $atom:a518
+    $bond:b419   $atom:a183  $atom:a184
+    $bond:b420   $atom:a183  $atom:a187
+    $bond:b421   $atom:a183  $atom:a188
+    $bond:b422   $atom:a183  $atom:a519
+    $bond:b423   $atom:a184  $atom:a185
+    $bond:b424   $atom:a184  $atom:a186
+    $bond:b425   $atom:a187  $atom:a520
+    $bond:b426   $atom:a187  $atom:a521
+    $bond:b427   $atom:a187  $atom:a522
+    $bond:b428   $atom:a188  $atom:a523
+    $bond:b429   $atom:a188  $atom:a524
+    $bond:b430   $atom:a189  $atom:a525
+    $bond:b431   $atom:a189  $atom:a526
+    $bond:b432   $atom:a189  $atom:a527
+    $bond:b433   $atom:a190  $atom:a192
+    $bond:b434   $atom:a191  $atom:a192
+    $bond:b435   $atom:a191  $atom:a528
+    $bond:b436   $atom:a192  $atom:a193
+    $bond:b437   $atom:a193  $atom:a194
+    $bond:b438   $atom:a193  $atom:a529
+    $bond:b439   $atom:a193  $atom:a530
+    $bond:b440   $atom:a194  $atom:a195
+    $bond:b441   $atom:a194  $atom:a531
+    $bond:b442   $atom:a194  $atom:a532
+    $bond:b443   $atom:a195  $atom:a196
+    $bond:b444   $atom:a195  $atom:a533
+    $bond:b445   $atom:a195  $atom:a534
+    $bond:b446   $atom:a196  $atom:a221
+    $bond:b447   $atom:a196  $atom:a535
+    $bond:b448   $atom:a196  $atom:a536
+    $bond:b449   $atom:a197  $atom:a198
+    $bond:b450   $atom:a197  $atom:a253
+    $bond:b451   $atom:a198  $atom:a199
+    $bond:b452   $atom:a198  $atom:a537
+    $bond:b453   $atom:a198  $atom:a538
+    $bond:b454   $atom:a199  $atom:a221
+    $bond:b455   $atom:a199  $atom:a539
+    $bond:b456   $atom:a199  $atom:a540
+    $bond:b457   $atom:a200  $atom:a201
+    $bond:b458   $atom:a200  $atom:a204
+    $bond:b459   $atom:a200  $atom:a205
+    $bond:b460   $atom:a201  $atom:a202
+    $bond:b461   $atom:a201  $atom:a203
+    $bond:b462   $atom:a201  $atom:a284
+    $bond:b463   $atom:a202  $atom:a283
+    $bond:b464   $atom:a202  $atom:a541
+    $bond:b465   $atom:a202  $atom:a542
+    $bond:b466   $atom:a203  $atom:a543
+    $bond:b467   $atom:a203  $atom:a544
+    $bond:b468   $atom:a203  $atom:a545
+    $bond:b469   $atom:a205  $atom:a206
+    $bond:b470   $atom:a206  $atom:a207
+    $bond:b471   $atom:a206  $atom:a546
+    $bond:b472   $atom:a206  $atom:a547
+    $bond:b473   $atom:a207  $atom:a208
+    $bond:b474   $atom:a207  $atom:a218
+    $bond:b475   $atom:a207  $atom:a548
+    $bond:b476   $atom:a208  $atom:a549
+    $bond:b477   $atom:a208  $atom:a550
+    $bond:b478   $atom:a208  $atom:a551
+    $bond:b479   $atom:a209  $atom:a210
+    $bond:b480   $atom:a209  $atom:a213
+    $bond:b481   $atom:a209  $atom:a265
+    $bond:b482   $atom:a209  $atom:a552
+    $bond:b483   $atom:a210  $atom:a211
+    $bond:b484   $atom:a210  $atom:a553
+    $bond:b485   $atom:a210  $atom:a554
+    $bond:b486   $atom:a211  $atom:a212
+    $bond:b487   $atom:a211  $atom:a555
+    $bond:b488   $atom:a211  $atom:a556
+    $bond:b489   $atom:a212  $atom:a243
+    $bond:b490   $atom:a213  $atom:a214
+    $bond:b491   $atom:a213  $atom:a557
+    $bond:b492   $atom:a213  $atom:a558
+    $bond:b493   $atom:a214  $atom:a215
+    $bond:b494   $atom:a214  $atom:a559
+    $bond:b495   $atom:a214  $atom:a560
+    $bond:b496   $atom:a215  $atom:a216
+    $bond:b497   $atom:a215  $atom:a561
+    $bond:b498   $atom:a215  $atom:a562
+    $bond:b499   $atom:a216  $atom:a217
+    $bond:b500   $atom:a216  $atom:a563
+    $bond:b501   $atom:a216  $atom:a564
+    $bond:b502   $atom:a217  $atom:a218
+    $bond:b503   $atom:a217  $atom:a219
+    $bond:b504   $atom:a220  $atom:a221
+    $bond:b505   $atom:a220  $atom:a222
+    $bond:b506   $atom:a221  $atom:a565
+    $bond:b507   $atom:a222  $atom:a566
+    $bond:b508   $atom:a222  $atom:a567
+    $bond:b509   $atom:a222  $atom:a568
+    $bond:b510   $atom:a223  $atom:a224
+    $bond:b511   $atom:a223  $atom:a227
+    $bond:b512   $atom:a223  $atom:a228
+    $bond:b513   $atom:a224  $atom:a225
+    $bond:b514   $atom:a224  $atom:a226
+    $bond:b515   $atom:a225  $atom:a569
+    $bond:b516   $atom:a225  $atom:a570
+    $bond:b517   $atom:a226  $atom:a571
+    $bond:b518   $atom:a226  $atom:a572
+    $bond:b519   $atom:a226  $atom:a573
+    $bond:b520   $atom:a228  $atom:a229
+    $bond:b521   $atom:a229  $atom:a230
+    $bond:b522   $atom:a229  $atom:a574
+    $bond:b523   $atom:a229  $atom:a575
+    $bond:b524   $atom:a230  $atom:a231
+    $bond:b525   $atom:a230  $atom:a241
+    $bond:b526   $atom:a230  $atom:a576
+    $bond:b527   $atom:a231  $atom:a577
+    $bond:b528   $atom:a231  $atom:a578
+    $bond:b529   $atom:a231  $atom:a579
+    $bond:b530   $atom:a232  $atom:a233
+    $bond:b531   $atom:a232  $atom:a236
+    $bond:b532   $atom:a232  $atom:a243
+    $bond:b533   $atom:a232  $atom:a580
+    $bond:b534   $atom:a233  $atom:a234
+    $bond:b535   $atom:a233  $atom:a581
+    $bond:b536   $atom:a233  $atom:a582
+    $bond:b537   $atom:a234  $atom:a235
+    $bond:b538   $atom:a234  $atom:a583
+    $bond:b539   $atom:a234  $atom:a584
+    $bond:b540   $atom:a236  $atom:a237
+    $bond:b541   $atom:a236  $atom:a585
+    $bond:b542   $atom:a236  $atom:a586
+    $bond:b543   $atom:a237  $atom:a238
+    $bond:b544   $atom:a237  $atom:a587
+    $bond:b545   $atom:a237  $atom:a588
+    $bond:b546   $atom:a238  $atom:a239
+    $bond:b547   $atom:a238  $atom:a589
+    $bond:b548   $atom:a238  $atom:a590
+    $bond:b549   $atom:a239  $atom:a240
+    $bond:b550   $atom:a239  $atom:a591
+    $bond:b551   $atom:a239  $atom:a592
+    $bond:b552   $atom:a240  $atom:a241
+    $bond:b553   $atom:a240  $atom:a242
+    $bond:b554   $atom:a244  $atom:a245
+    $bond:b555   $atom:a244  $atom:a248
+    $bond:b556   $atom:a244  $atom:a249
+    $bond:b557   $atom:a245  $atom:a246
+    $bond:b558   $atom:a245  $atom:a247
+    $bond:b559   $atom:a246  $atom:a593
+    $bond:b560   $atom:a246  $atom:a594
+    $bond:b561   $atom:a247  $atom:a595
+    $bond:b562   $atom:a247  $atom:a596
+    $bond:b563   $atom:a247  $atom:a597
+    $bond:b564   $atom:a249  $atom:a250
+    $bond:b565   $atom:a250  $atom:a251
+    $bond:b566   $atom:a250  $atom:a598
+    $bond:b567   $atom:a250  $atom:a599
+    $bond:b568   $atom:a251  $atom:a252
+    $bond:b569   $atom:a251  $atom:a263
+    $bond:b570   $atom:a251  $atom:a600
+    $bond:b571   $atom:a252  $atom:a601
+    $bond:b572   $atom:a252  $atom:a602
+    $bond:b573   $atom:a252  $atom:a603
+    $bond:b574   $atom:a253  $atom:a254
+    $bond:b575   $atom:a254  $atom:a255
+    $bond:b576   $atom:a254  $atom:a258
+    $bond:b577   $atom:a254  $atom:a604
+    $bond:b578   $atom:a255  $atom:a256
+    $bond:b579   $atom:a255  $atom:a605
+    $bond:b580   $atom:a255  $atom:a606
+    $bond:b581   $atom:a256  $atom:a257
+    $bond:b582   $atom:a256  $atom:a607
+    $bond:b583   $atom:a256  $atom:a608
+    $bond:b584   $atom:a257  $atom:a265
+    $bond:b585   $atom:a258  $atom:a259
+    $bond:b586   $atom:a258  $atom:a609
+    $bond:b587   $atom:a258  $atom:a610
+    $bond:b588   $atom:a259  $atom:a260
+    $bond:b589   $atom:a259  $atom:a611
+    $bond:b590   $atom:a259  $atom:a612
+    $bond:b591   $atom:a260  $atom:a261
+    $bond:b592   $atom:a260  $atom:a613
+    $bond:b593   $atom:a260  $atom:a614
+    $bond:b594   $atom:a261  $atom:a262
+    $bond:b595   $atom:a261  $atom:a615
+    $bond:b596   $atom:a261  $atom:a616
+    $bond:b597   $atom:a262  $atom:a263
+    $bond:b598   $atom:a262  $atom:a264
+    $bond:b599   $atom:a266  $atom:a267
+    $bond:b600   $atom:a266  $atom:a277
+    $bond:b601   $atom:a266  $atom:a617
+    $bond:b602   $atom:a266  $atom:a618
+    $bond:b603   $atom:a267  $atom:a268
+    $bond:b604   $atom:a267  $atom:a619
+    $bond:b605   $atom:a267  $atom:a620
+    $bond:b606   $atom:a268  $atom:a269
+    $bond:b607   $atom:a268  $atom:a621
+    $bond:b608   $atom:a268  $atom:a622
+    $bond:b609   $atom:a269  $atom:a270
+    $bond:b610   $atom:a269  $atom:a623
+    $bond:b611   $atom:a269  $atom:a624
+    $bond:b612   $atom:a270  $atom:a271
+    $bond:b613   $atom:a270  $atom:a625
+    $bond:b614   $atom:a270  $atom:a626
+    $bond:b615   $atom:a271  $atom:a272
+    $bond:b616   $atom:a271  $atom:a627
+    $bond:b617   $atom:a271  $atom:a628
+    $bond:b618   $atom:a272  $atom:a273
+    $bond:b619   $atom:a272  $atom:a629
+    $bond:b620   $atom:a272  $atom:a630
+    $bond:b621   $atom:a273  $atom:a274
+    $bond:b622   $atom:a273  $atom:a631
+    $bond:b623   $atom:a273  $atom:a632
+    $bond:b624   $atom:a274  $atom:a275
+    $bond:b625   $atom:a274  $atom:a633
+    $bond:b626   $atom:a274  $atom:a634
+    $bond:b627   $atom:a275  $atom:a276
+    $bond:b628   $atom:a275  $atom:a635
+    $bond:b629   $atom:a275  $atom:a636
+    $bond:b630   $atom:a276  $atom:a280
+    $bond:b631   $atom:a276  $atom:a637
+    $bond:b632   $atom:a276  $atom:a638
+    $bond:b633   $atom:a277  $atom:a639
+    $bond:b634   $atom:a277  $atom:a640
+    $bond:b635   $atom:a277  $atom:a641
+    $bond:b636   $atom:a278  $atom:a279
+    $bond:b637   $atom:a278  $atom:a282
+    $bond:b638   $atom:a278  $atom:a283
+    $bond:b639   $atom:a278  $atom:a642
+    $bond:b640   $atom:a279  $atom:a280
+    $bond:b641   $atom:a279  $atom:a281
+    $bond:b642   $atom:a282  $atom:a643
+    $bond:b643   $atom:a282  $atom:a644
+    $bond:b644   $atom:a282  $atom:a645
+    $bond:b645   $atom:a283  $atom:a646
+    $bond:b646   $atom:a283  $atom:a647
+    $bond:b647   $atom:a284  $atom:a648
+    $bond:b648   $atom:a284  $atom:a649
+    $bond:b649   $atom:a284  $atom:a650
+  }
+}

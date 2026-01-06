@@ -27,6 +27,8 @@ pair_coeff 26 26 0.026 2.480
 pair_coeff 27 27 0.066 3.500
 pair_coeff 28 28 0.102 3.188
 pair_coeff 29 29 0.026 2.480
+pair_coeff 30 30 0.054 3.470
+pair_coeff 31 31 0.093 4.150
 
 bond_coeff 1 549. 1.340
 bond_coeff 2 317. 1.51
@@ -139,6 +141,8 @@ set type 26 charge 0.030
 set type 27 charge 0.19
 set type 28 charge -0.834
 set type 29 charge +0.417
+set type 30 charge +1.1
+set type 31 charge -0.55
 
 group tip3p type 28:29
 fix fShakeTIP3P tip3p shake 0.0001 10 100 b 15 a 26

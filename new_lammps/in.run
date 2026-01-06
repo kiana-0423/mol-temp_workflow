@@ -1,0 +1,64 @@
+# Press Using LAMMPS
+# ----------------- Init Section -----------------
+include "system.in.init"
+# ----------------- Atom Definition Section -----------------
+read_data "stacked.data"
+# ----------------- Settings Section -----------------
+include "system.in.settings"
+# ----------------- Charges Section -----------------
+include "system.in.charges"
+
+timestep       1.0  
+thermo         1000
+thermo_style   custom step temp press pzz density etotal
+
+#Setting Gelatin and Basement
+
+group gel molecule 1:20
+region rBase block INF INF INF INF 0.0 10.0 units box
+
+group  base region rBase
+group mobile subtract all base
+
+#Fixing Basement
+velocity base set 0.0 0.0 0.0
+fix freeze base setforce 0.0 0.0 0.0
+
+
+#Energy Minimization
+
+minimize 1.0e-6 1.0e-8 2000 20000
+
+# ---------- NVT 弛豫 ----------
+variable T     equal 300.0
+variable Tdamp equal 100.0 
+velocity mobile create ${T} 12345 mom yes rot yes dist gaussian
+fix nvt1 mobile nvt temp ${T} ${T} ${Tdamp}
+
+run 200000
+
+unfix nvt1
+
+# ----------z 方向 NPT 调密度（只变 Lz，不动 Lx/Ly） ----------
+
+variable Pz    equal 1.0
+variable Pdamp equal 1000.0 
+fix nptz mobile npt temp ${T} ${T} ${Tdamp} z ${Pz} ${Pz} ${Pdamp} couple none dilate mobile
+
+run 300000      # 300 ps（看密度/体积收敛情况）
+
+unfix nptz
+
+
+# ---------- 按压排水----------
+variable Fpress equal 2000.0
+fix press gel aveforce 0.0 0.0 -${Fpress}
+fix nvt2 mobile nvt temp ${T} ${T} ${Tdamp}
+
+run 5000000
+
+unfix press
+unfix nvt2
+
+# ---------- 输出 ----------
+write_data final_pressed.data

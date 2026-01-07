@@ -1,0 +1,142 @@
+pair_coeff 1 1 0.066 3.500
+pair_coeff 2 2 0.066 3.500
+pair_coeff 3 3 0.066 3.500
+pair_coeff 4 4 0.066 3.500
+pair_coeff 5 5 0.030 2.500
+pair_coeff 6 6 0.076 3.550
+pair_coeff 7 7 0.076 3.550
+pair_coeff 8 8 0.030 2.420
+pair_coeff 9 9 0.066 3.500
+pair_coeff 10 10 0.026 2.480
+pair_coeff 11 11 0.355 3.600
+pair_coeff 12 12 0.355 3.600
+pair_coeff 13 13 0.066 3.500
+pair_coeff 14 14 0.066 3.500
+pair_coeff 15 15 0.066 3.500
+pair_coeff 16 16 0.066 3.500
+pair_coeff 17 17 0.066 3.500
+pair_coeff 18 18 0.105 3.750
+pair_coeff 19 19 0.170 3.000
+pair_coeff 20 20 0.210 2.960
+pair_coeff 21 21 0.015 2.420
+pair_coeff 22 22 0.015 2.420
+pair_coeff 23 23 0.105 3.750
+pair_coeff 24 24 0.140 2.960
+pair_coeff 25 25 0.120 3.000
+pair_coeff 26 26 0.026 2.480
+pair_coeff 27 27 0.066 3.500
+pair_coeff 28 28 0.102 3.188
+pair_coeff 29 29 0.026 2.480
+
+
+bond_coeff 1 549. 1.340
+bond_coeff 2 317. 1.51
+bond_coeff 3 340. 1.08
+bond_coeff 4 268. 1.529
+bond_coeff 5 340. 1.09
+bond_coeff 6 320. 1.41
+bond_coeff 7 222. 1.81
+bond_coeff 8 410. 1.444
+bond_coeff 9 317. 1.522
+bond_coeff 10 450. 1.364
+bond_coeff 11 214. 1.327
+bond_coeff 12 570. 1.229
+bond_coeff 13 553. 0.945
+bond_coeff 14 166. 2.038
+bond_coeff 15 450.00 0.9572
+
+angle_coeff 1 70. 124.0
+angle_coeff 2 35. 120.0
+angle_coeff 3 35. 109.5
+angle_coeff 4 80. 125.3
+angle_coeff 5 58.35 112.7
+angle_coeff 6 37.5 110.7
+angle_coeff 7 50. 109.5
+angle_coeff 8 50. 114.7
+angle_coeff 9 70. 108.
+angle_coeff 10 80. 120.4
+angle_coeff 11 62. 98.9
+angle_coeff 12 68. 103.7
+angle_coeff 13 85. 120.7
+angle_coeff 14 70. 119.7
+angle_coeff 15 63.0 111.1
+angle_coeff 16 35. 109.5
+angle_coeff 17 35. 113.0
+angle_coeff 18 83. 116.9
+angle_coeff 19 35. 117.0
+angle_coeff 20 33. 107.8
+angle_coeff 21 35.0 109.5
+angle_coeff 22 35. 109.5
+angle_coeff 23 81. 111.4
+angle_coeff 24 80. 121.0
+angle_coeff 25 83. 123.4
+angle_coeff 26 55.00 104.52
+
+dihedral_coeff 1 0.000 0.000 0.000 0.0
+dihedral_coeff 2 0.900 0.230 -0.505 0.0
+dihedral_coeff 3 2.5 6.0 0.0 0.0
+dihedral_coeff 4 0.0 14.0 0.0 0.0
+dihedral_coeff 5 0.850 -0.200 0.200 0.0
+dihedral_coeff 6 1.3 -0.50 0.0 0.0
+dihedral_coeff 7 -1.565 -0.009 -0.450 0.0
+dihedral_coeff 8 1.000 0.546 0.450 0.0
+dihedral_coeff 9 0.000 0.000 -0.5530 0.0
+dihedral_coeff 10 0.000 0.000 0.000 0.0
+dihedral_coeff 11 -1.220 -0.126 0.4220 0.0
+dihedral_coeff 12 0.925 -0.576 0.677 0.0
+dihedral_coeff 13 1.941 -0.836 0.935 0.0
+dihedral_coeff 14 1.500 5.500 0.00 0.0
+dihedral_coeff 15 4.669 5.124 0.0000 0.0
+dihedral_coeff 16 0.000 -7.414 1.705 0.0
+dihedral_coeff 17 0.0 14.0 0.0 0.0
+dihedral_coeff 18 -2.060 -0.313 0.315 0.0
+dihedral_coeff 19 0.000 0.000 0.1980 0.0
+dihedral_coeff 20 0.0 0.0 -0.372 0.0
+dihedral_coeff 21 0.000 0.000 0.300 0.0
+dihedral_coeff 22 0.000 0.000 -0.100 0.0
+dihedral_coeff 23 0.000 0.000 0.300 0.0
+dihedral_coeff 24 0.0 0.0 0.300 0.0
+dihedral_coeff 25 0.000 0.000 0.452 0.0
+dihedral_coeff 26 0.0 0.0 0.0 0.0
+dihedral_coeff 27 0.000 0.000 0.1320 0.0
+dihedral_coeff 28 0.000 0.000 0.000 0.0
+dihedral_coeff 29 0.000 0.000 0.647 0.0
+dihedral_coeff 30 0.000 0.000 0.558 0.0
+dihedral_coeff 31 -0.550 0.0 0.0 0.0
+dihedral_coeff 32 0.000 5.500 0.00 0.0
+dihedral_coeff 33 0.000 5.124 0.0000 0.0
+improper_coeff 1 15.0000 -1 2
+improper_coeff 2 10.5000 -1 2
+
+set type 1 charge -0.18
+set type 2 charge -0.12
+set type 3 charge -0.06
+set type 4 charge 0.00
+set type 5 charge 0.06
+set type 6 charge 0.000
+set type 7 charge -0.230
+set type 8 charge 0.115
+set type 9 charge 0.170
+set type 10 charge 0.030
+set type 11 charge -0.335
+set type 12 charge -0.2175
+set type 13 charge -0.0125
+set type 14 charge 0.0475
+set type 15 charge 0.1175
+set type 16 charge 0.0975
+set type 17 charge 0.1575
+set type 18 charge 0.520
+set type 19 charge -0.530
+set type 20 charge -0.440
+set type 21 charge 0.450
+set type 22 charge 0.060
+set type 23 charge 0.490
+set type 24 charge -0.410
+set type 25 charge -0.330
+set type 26 charge 0.030
+set type 27 charge 0.19
+set type 28 charge -0.834
+set type 29 charge +0.417
+
+group tip3p type 28:29
+fix fShakeTIP3P tip3p shake 0.0001 10 100 b 15 a 26

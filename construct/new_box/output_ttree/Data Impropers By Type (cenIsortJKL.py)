@@ -1,0 +1,8 @@
+    1 @/atom:OPLSAA/*_b*_a*_d*_iCA* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??*
+    2 @/atom:OPLSAA/*_b*_a*_d*_iCM* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??*
+    3 @/atom:OPLSAA/*_b*_a*_d*_iN~* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??*
+    4 @/atom:OPLSAA/*_b*_a*_d*_iC~* @/atom:OPLSAA/*_b*_a*_d*_iO~* @/atom:OPLSAA/*_b*_a*_d*_i??* @/atom:OPLSAA/*_b*_a*_d*_i??*
+    # UNTRUSTED: @improper:CT_CM_CM_CT @atom:*_b*_a*_d*_iCT* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCT*
+    # UNTRUSTED: @improper:CT_CM_CM_HC @atom:*_b*_a*_d*_iCT* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iHC*
+    # UNTRUSTED: @improper:HC_CM_CM_CT @atom:*_b*_a*_d*_iHC* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCT*
+    # UNTRUSTED: @improper:HC_CM_CM_HC @atom:*_b*_a*_d*_iHC* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iCM* @atom:*_b*_a*_d*_iHC*

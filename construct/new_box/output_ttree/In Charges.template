@@ -1,0 +1,1027 @@
+    set type @/atom:OPLSAA/1_bH~_aH~_dH~_iH~    charge      0.000 # H  - H~   | Types 1-18, 35, 53 give generic L-J
+    set type @/atom:OPLSAA/2_bHe_aHe_dHe_iHe    charge      0.000 # He - He   | parameters for QM/MM calculations.
+    set type @/atom:OPLSAA/3_bLi_aLi_dLi_iLi    charge      0.000 # Li - Li   | LJ params for H on heteroatom are set
+    set type @/atom:OPLSAA/4_bBe_aBe_dBe_iBe    charge      0.000 # Be - Be   | to zero by BOSS.
+    set type @/atom:OPLSAA/5_bB~_aB~_dB~_iB~    charge      0.000 # B  - B~   | 
+    set type @/atom:OPLSAA/6_bC~_aC~_dC~_iC~    charge      0.000 # C  - C~   | 
+    set type @/atom:OPLSAA/7_bN~_aN~_dN~_iN~    charge      0.000 # N  - N~   | 
+    set type @/atom:OPLSAA/8_bO~_aO~_dO~_iO~    charge      0.000 # O  - O~   | 
+    set type @/atom:OPLSAA/9_bF~_aF~_dF~_iF~    charge      0.000 # F  - F~   | 
+    set type @/atom:OPLSAA/10_bNe_aNe_dNe_iNe   charge      0.000 # Ne - Ne   | 
+    set type @/atom:OPLSAA/11_bNa_aNa_dNa_iNa   charge      0.000 # Na - Na   | 
+    set type @/atom:OPLSAA/12_bMg_aMg_dMg_iMg   charge      0.000 # Mg - Mg   | 
+    set type @/atom:OPLSAA/13_bAl_aAl_dAl_iAl   charge      0.000 # Al - Al   | 
+    set type @/atom:OPLSAA/14_bSi_aSi_dSi_iSi   charge      0.000 # Si - Si   | 
+    set type @/atom:OPLSAA/15_bP~_aP~_dP~_iP~   charge      0.000 # P  - P~   | 
+    set type @/atom:OPLSAA/16_bS~_aS~_dS~_iS~   charge      0.000 # S  - S~   | 
+    set type @/atom:OPLSAA/17_bCl_aCl_dCl_iCl   charge      0.000 # Cl - Cl   | 
+    set type @/atom:OPLSAA/18_bAr_aAr_dAr_iAr   charge      0.000 # Ar - Ar   | 
+    set type @/atom:OPLSAA/20_bNe_aNe_dNe_iNe   charge      0.000 # Ne - Ne   | 2-A probe
+    set type @/atom:OPLSAA/35_bBr_aBr_dBr_iBr   charge      0.000 # Br - Br   | 
+    set type @/atom:OPLSAA/53_bI~_aI~_dI~_iI~   charge      0.000 # I  - I~   | 
+    #                                                                                                   
+    #   This file contains the non-bonded and torsional parameters that have been                       
+    #   published for the OPLS-AA force field and other unpublished parameters.                         
+    #        W. L. Jorgensen, D. S. Maxwell, and J. Tirado-Rives,                                       
+    #        J. Am. Chem. Soc. 118, 11225-11236 (1996).                                                 
+    #                                                                                                   
+    #        New Alkane Parameters - OPLS/2020  - also see 711-716                                        
+    #        Ghahremanpour, M.; Tirado-Rives, J.; Jorgensen, W. L. 
+    #        J. Phys. Chem. B 2022, 126, 5896-5907.
+    set type @/atom:OPLSAA/54_bCT_aCT_dCT_iCT   charge     -0.180 # C  - CT   | n-CH3 all-atom C: alkanes
+    set type @/atom:OPLSAA/55_bCT_aCT_dCT_iCT   charge     -0.180 # C  - CT   | iso-CH3 all-atom C: alkanes
+    set type @/atom:OPLSAA/56_bCT_aCT_dCT_iCT   charge     -0.180 # C  - CT   | neo-CH3 all-atom C: alkanes
+    set type @/atom:OPLSAA/57_bCT_aCT_dCT_iCT   charge     -0.120 # C  - CT   | CH2 all-atom C: alkanes
+    set type @/atom:OPLSAA/58_bCT_aCT_dCT_iCT   charge     -0.060 # C  - CT   | CH all-atom C: alkanes
+    set type @/atom:OPLSAA/59_bCT_aCT_dCT_iCT   charge       0.00 # C  - CT   | C all-atom C: alkanes
+    set type @/atom:OPLSAA/60_bHC_aHC_dHC_iHC   charge      0.060 # H  - HC   | H all-atom H: alkanes
+    set type @/atom:OPLSAA/61_bCT_aCT_dCT_iCT   charge     -0.065 # C  - CT   | all-atom C: CH3, toluene
+    set type @/atom:OPLSAA/62_bCT_aCT_dCT_iCT   charge     -0.005 # C  - CT   | all-atom C: CH2, ethyl benzene
+    set type @/atom:OPLSAA/63_bCT_aCT_dCT_iCT   charge      0.055 # C  - CT   | all-atom C: CH, i-propyl benzene
+    set type @/atom:OPLSAA/64_bCT_aCT_dCT_iCT   charge      0.115 # C  - CT   | all-atom C: C, t-butyl benzene
+    #                                          Types 66-134 include UA parameters for                      
+    #                                          stored solvent models for BOSS and
+    #                                          should not be removed.                                              
+    set type @/atom:OPLSAA/66_bC4_aC4_dC4_iC4   charge        0.0 # C  - C4   | CH4 66-77: JACS,106,6638 (1984)
+    set type @/atom:OPLSAA/67_bC3_aC3_dC3_iC3   charge        0.0 # C  - C3   | CH3 (C1) ETHANE
+    set type @/atom:OPLSAA/68_bC3_aC3_dC3_iC3   charge        0.0 # C  - C3   | CH3 (C2) N-ALKANES
+    set type @/atom:OPLSAA/69_bC3_aC3_dC3_iC3   charge        0.0 # C  - C3   | CH3 (C3) ISOBUTANE
+    set type @/atom:OPLSAA/70_bC3_aC3_dC3_iC3   charge        0.0 # C  - C3   | CH3 (C4) NEOPENTANE
+    set type @/atom:OPLSAA/71_bC2_aC2_dC2_iC2   charge        0.0 # C  - C2   | CH2 (SP3) ALKANES
+    set type @/atom:OPLSAA/72_bC9_aC9_dC9_iC9   charge        0.0 # C  - C9   | CH2 (SP2) 1-ALKENES
+    set type @/atom:OPLSAA/73_bCH_aCH_dCH_iCH   charge        0.0 # C  - CH   | CH (SP3) ISOBUTANE
+    set type @/atom:OPLSAA/74_bC8_aC8_dC8_iC8   charge        0.0 # C  - C8   | CH (SP2) 2-ALKENES
+    set type @/atom:OPLSAA/75_bCD_aCD_dCD_iCD   charge        0.0 # C  - CD   | CH (AROM) BENZENOID united atom
+    set type @/atom:OPLSAA/76_bCT_aCT_dCT_iCT   charge        0.0 # C  - CT   | C (SP3) NEOPENTANE
+    set type @/atom:OPLSAA/77_bC7_aC7_dC7_iC7   charge        0.0 # C  - C7   | C (SP2) ISOBUTENE
+    set type @/atom:OPLSAA/78_bOH_aOH_dOH_iOH   charge     -0.700 # O  - OH   | O ALCOHOLS JPC,90,1276 (1986)
+    set type @/atom:OPLSAA/79_bHO_aHO_dHO_iHO   charge      0.435 # H  - HO   | H(O) ALCOHOLS "
+    set type @/atom:OPLSAA/80_bC3_aC3_dC3_iC3   charge      0.265 # C  - C3   | CH3 IN METHANOL "
+    set type @/atom:OPLSAA/81_bC2_aC2_dC2_iC2   charge      0.265 # C  - C2   | CH2 IN ETHANOL "
+    set type @/atom:OPLSAA/82_bSH_aSH_dSH_iSH   charge     -0.470 # S  - SH   | S IN H2S JPC,90,6379 (1986)
+    set type @/atom:OPLSAA/83_bSH_aSH_dSH_iSH   charge     -0.450 # S  - SH   | S IN RSH "
+    set type @/atom:OPLSAA/84_bS~_aS~_dS~_iS~   charge     -0.470 # S  - S~   | S IN RSR "
+    set type @/atom:OPLSAA/85_bS~_aS~_dS~_iS~   charge     -0.300 # S  - S~   | S IN RSSR "
+    set type @/atom:OPLSAA/86_bHS_aHS_dHS_iHS   charge      0.235 # H  - HS   | H IN H2S "
+    set type @/atom:OPLSAA/87_bHS_aHS_dHS_iHS   charge      0.270 # H  - HS   | H(S) IN RSH "
+    set type @/atom:OPLSAA/88_bC3_aC3_dC3_iC3   charge      0.180 # C  - C3   | CH3 IN CH3SH "
+    set type @/atom:OPLSAA/89_bC2_aC2_dC2_iC2   charge      0.180 # C  - C2   | CH2 IN CH3CH2SH "
+    set type @/atom:OPLSAA/90_bC3_aC3_dC3_iC3   charge      0.235 # C  - C3   | CH3 IN CH3SR "
+    set type @/atom:OPLSAA/91_bC2_aC2_dC2_iC2   charge      0.235 # C  - C2   | CH2 IN RCH2SR "
+    set type @/atom:OPLSAA/92_bC3_aC3_dC3_iC3   charge      0.300 # C  - C3   | CH3 IN CH3SSR "
+    set type @/atom:OPLSAA/93_bC2_aC2_dC2_iC2   charge      0.300 # C  - C2   | CH2 IN RCH2SSR "
+    set type @/atom:OPLSAA/94_bNZ_aNZ_dNZ_iNZ   charge     -0.430 # N  - NZ   | N IN CH3CN Mol.Phys.,63,547 (1988)
+    set type @/atom:OPLSAA/95_bCZ_aCZ_dCZ_iCZ   charge      0.280 # C  - CZ   | C IN CH3CN "
+    set type @/atom:OPLSAA/96_bC3_aC3_dC3_iC3   charge      0.150 # C  - C3   | CH3 IN CH3CN united atom "
+    set type @/atom:OPLSAA/100_bDM_aDM_dDM_iDM  charge        0.0 # DM - DM   | DUMMY ATOM
+    set type @/atom:OPLSAA/101_bHe_aHe_dHe_iHe  charge      0.000 # He - He   | Helium - " "
+    set type @/atom:OPLSAA/102_bNe_aNe_dNe_iNe  charge        0.0 # Ne - Ne   | Neon - Hirschfelder (Wiley,1954)
+    set type @/atom:OPLSAA/103_bAr_aAr_dAr_iAr  charge      0.000 # Ar - Ar   | Ar - Verlet & Weis,
+    set type @/atom:OPLSAA/104_bKr_aKr_dKr_iKr  charge      0.000 # Kr - Kr   | Kr - Mol.Phys.,24,1013 (1972)
+    set type @/atom:OPLSAA/105_bXe_aXe_dXe_iXe  charge      0.000 # Xe - Xe   | Xe - "
+    set type @/atom:OPLSAA/106_bCH_aCH_dCH_iCH  charge      0.265 # C  - CH   | CH (SP3) ISOPROPANOL
+    set type @/atom:OPLSAA/107_bCT_aCT_dCT_iCT  charge      0.265 # C  - CT   | C (SP3) T-BUTANOL
+    set type @/atom:OPLSAA/108_bOS_aOS_dOS_iOS  charge      -0.50 # O  - OS   | ETHER O JCC,11,958 (1990) UA
+    set type @/atom:OPLSAA/109_bC3_aC3_dC3_iC3  charge       0.25 # C  - C3   | ETHER CH3 (-O) "
+    set type @/atom:OPLSAA/110_bC2_aC2_dC2_iC2  charge       0.25 # C  - C2   | ETHER CH2 (-O) "
+    set type @/atom:OPLSAA/118_bC2_aC2_dC2_iC2  charge      0.500 # C  - C2   | CH2 Methylenechloride C-Cl=1.772
+    set type @/atom:OPLSAA/119_bCl_aCl_dCl_iCl  charge     -0.250 # Cl - Cl   | Cl Methylenechloride ClCCl = 111.8
+    set type @/atom:OPLSAA/120_bCH_aCH_dCH_iCH  charge      0.420 # C  - CH   | CH Chloroform JPC,94,1683 (1990)
+    set type @/atom:OPLSAA/121_bCl_aCl_dCl_iCl  charge     -0.140 # Cl - Cl   | Cl Chloroform C-Cl=1.758 ClCCl = 111.3
+    set type @/atom:OPLSAA/122_bCT_aCT_dCT_iCT  charge      0.248 # C  - CT   | C CCl4
+    set type @/atom:OPLSAA/123_bCl_aCl_dCl_iCl  charge     -0.062 # Cl - Cl   | Cl CCl4
+    set type @/atom:OPLSAA/124_bSZ_aSZ_dSZ_iSZ  charge      0.139 # S  - SZ   | DMSO UA unpublished
+    set type @/atom:OPLSAA/125_bOY_aOY_dOY_iOY  charge     -0.459 # O  - OY   | DMSO
+    set type @/atom:OPLSAA/126_bC3_aC3_dC3_iC3  charge      0.160 # C  - C3   | DMSO
+    set type @/atom:OPLSAA/127_bNT_aNT_dNT_iNT  charge     -1.020 # N  - NT   | Ammonia - OPLS-AA
+    set type @/atom:OPLSAA/128_bH~_aH~_dH~_iH~  charge      0.340 # H  - H~   | Ammonia
+    set type @/atom:OPLSAA/129_bO~_aO~_dO~_iO~  charge     -0.500 # O  - O~   | O in DMF - united atom
+    set type @/atom:OPLSAA/130_bN~_aN~_dN~_iN~  charge     -0.570 # N  - N~   | N in DMF - united atom
+    set type @/atom:OPLSAA/131_bC~_aC~_dC~_iC~  charge      0.500 # C  - C~   | C in C=O for UA formamide, DMF.
+    set type @/atom:OPLSAA/132_bC3_aC3_dC3_iC3  charge      0.285 # C  - C3   | CH3 in HCON(CH3)2 DMF
+    #             ALL-ATOM PARAMETERS below here         
+    #             135 - 140 are old OPLS-AA alkane parameters
+    set type @/atom:OPLSAA/135_bCT_aCT_dCT_iCT  charge      -0.18 # C  - CT   | CH3 all-atom C: alkanes
+    set type @/atom:OPLSAA/136_bCT_aCT_dCT_iCT  charge      -0.12 # C  - CT   | CH2 all-atom C: alkanes
+    set type @/atom:OPLSAA/137_bCT_aCT_dCT_iCT  charge      -0.06 # C  - CT   | CH all-atom C: alkanes
+    set type @/atom:OPLSAA/138_bCT_aCT_dCT_iCT  charge      -0.24 # C  - CT   | CH4 all-atom C: methane mod 1/2020
+    set type @/atom:OPLSAA/139_bCT_aCT_dCT_iCT  charge       0.00 # C  - CT   | C all-atom C: alkanes
+    set type @/atom:OPLSAA/140_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | H all-atom H: alkanes
+    set type @/atom:OPLSAA/141_bCM_aCM_dCM_iCM  charge      0.000 # C  - CM   | alkene C (R2-C=) all atom
+    set type @/atom:OPLSAA/142_bCM_aCM_dCM_iCM  charge     -0.115 # C  - CM   | alkene C (RH-C=) all atom
+    set type @/atom:OPLSAA/143_bCM_aCM_dCM_iCM  charge     -0.230 # C  - CM   | alkene C (H2-C=) all atom
+    set type @/atom:OPLSAA/144_bHC_aHC_dHC_iHC  charge      0.115 # H  - HC   | alkene H (H-C=) all atom
+    #  145 06 CA   -0.115     3.550     0.070     Benzene C - 12 site JACS,112,4768-90                  
+    set type @/atom:OPLSAA/145_bCA_aCA_dCA_iCA  charge     -0.115 # C  - CA   | Benzene C - 12 site OPLS/2020
+    set type @/atom:OPLSAA/146_bHA_aHA_dHA_iHA  charge      0.115 # H  - HA   | Benzene H - 12 site "
+    set type @/atom:OPLSAA/147_bCB_aCB_dCB_iCB  charge      0.000 # C  - CB   | Naphthalene fusion C (C9)
+    set type @/atom:OPLSAA/148_bCT_aCT_dCT_iCT  charge     -0.065 # C  - CT   | all-atom C: CH3, toluene
+    set type @/atom:OPLSAA/149_bCT_aCT_dCT_iCT  charge     -0.005 # C  - CT   | all-atom C: CH2, ethyl benzene
+    set type @/atom:OPLSAA/150_bC=_aC=_dC=_iC=  charge     -0.115 # C  - C=   | diene =CH-CH=; see 178 also
+    set type @/atom:OPLSAA/151_bCl_aCl_dCl_iCl  charge     -0.200 # Cl - Cl   | Cl in alkyl chlorides JPCB 16264 (2004)
+    set type @/atom:OPLSAA/152_bCT_aCT_dCT_iCT  charge     -0.006 # C  - CT   | RCH2Cl " "
+    set type @/atom:OPLSAA/153_bHC_aHC_dHC_iHC  charge      0.103 # H  - HC   | H in RCH2Cl
+    set type @/atom:OPLSAA/154_bOH_aOH_dOH_iOH  charge     -0.683 # O  - OH   | all-atom O: mono alcohols
+    set type @/atom:OPLSAA/155_bHO_aHO_dHO_iHO  charge      0.418 # H  - HO   | all-atom H(O): mono alcohols
+    set type @/atom:OPLSAA/156_bHC_aHC_dHC_iHC  charge      0.040 # H  - HC   | all-atom H(C): methanol
+    set type @/atom:OPLSAA/157_bCT_aCT_dCT_iCT  charge      0.145 # C  - CT   | all-atom C: CH3 & CH2, prim. alcohols
+    set type @/atom:OPLSAA/158_bCT_aCT_dCT_iCT  charge      0.205 # C  - CT   | all-atom C: CH, sec. alcohols
+    set type @/atom:OPLSAA/159_bCT_aCT_dCT_iCT  charge      0.232 # C  - CT   | all-atom C: C, tert. alcohols OPLS/2020
+    set type @/atom:OPLSAA/160_bOH_aOH_dOH_iOH  charge     -0.650 # O  - OH   | all-atom O: mono tert. alcohols OPLS/2020
+    set type @/atom:OPLSAA/165_bCA_aCA_dCA_iCA  charge      0.000 # C  - CA   | Cipso in styrene
+    set type @/atom:OPLSAA/166_bCA_aCA_dCA_iCA  charge      0.100 # C  - CA   | C(OH) phenol Use with all
+    set type @/atom:OPLSAA/167_bOH_aOH_dOH_iOH  charge     -0.530 # O  - OH   | O phenol atom C, H
+    set type @/atom:OPLSAA/168_bHO_aHO_dHO_iHO  charge      0.430 # H  - HO   | H phenol 145 & 146
+    set type @/atom:OPLSAA/169_bOH_aOH_dOH_iOH  charge     -0.700 # O  - OH   | O: diols
+    set type @/atom:OPLSAA/170_bHO_aHO_dHO_iHO  charge      0.435 # H  - HO   | H(O): diols
+    set type @/atom:OPLSAA/171_bOH_aOH_dOH_iOH  charge     -0.730 # O  - OH   | O: triols
+    set type @/atom:OPLSAA/172_bHO_aHO_dHO_iHO  charge      0.465 # H  - HO   | H(O): triols
+    set type @/atom:OPLSAA/173_bCT_aCT_dCT_iCT  charge      0.145 # C  - CT   | C(H2OH): diols, triols
+    set type @/atom:OPLSAA/174_bCT_aCT_dCT_iCT  charge      0.205 # C  - CT   | C(HROH): "
+    set type @/atom:OPLSAA/175_bCT_aCT_dCT_iCT  charge      0.265 # C  - CT   | C(R2OH): "
+    set type @/atom:OPLSAA/176_bHC_aHC_dHC_iHC  charge      0.060 # H  - HC   | H(CXOH): " OPLS/2020
+    set type @/atom:OPLSAA/177_bOS_aOS_dOS_iOS  charge     -0.170 # O  - OS   | diphenyl ether OPLS/2020
+    set type @/atom:OPLSAA/178_bC=_aC=_dC=_iC=  charge      0.000 # C  - C=   | diene =CR-RC=; see 150 also
+    set type @/atom:OPLSAA/179_bOS_aOS_dOS_iOS  charge     -0.285 # O  - OS   | O: anisole OPLS/2020
+    set type @/atom:OPLSAA/180_bOS_aOS_dOS_iOS  charge     -0.400 # O  - OS   | O: dialkyl ether OPLS/2020
+    set type @/atom:OPLSAA/181_bCT_aCT_dCT_iCT  charge      0.110 # C  - CT   | C(H3OR): methyl ether
+    set type @/atom:OPLSAA/182_bCT_aCT_dCT_iCT  charge      0.140 # C  - CT   | C(H2OR): ethyl ether
+    set type @/atom:OPLSAA/183_bCT_aCT_dCT_iCT  charge      0.170 # C  - CT   | C(HOR): i-Pr ether
+    set type @/atom:OPLSAA/184_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | C(OR): t-Bu ether
+    set type @/atom:OPLSAA/185_bHC_aHC_dHC_iHC  charge      0.030 # H  - HC   | H(COR): alpha H ether OPLS/2020 see 794
+    set type @/atom:OPLSAA/186_bOS_aOS_dOS_iOS  charge     -0.330 # O  - OS   | O: acetal/hemiacetal ether O OPLS/2020
+    set type @/atom:OPLSAA/187_bOH_aOH_dOH_iOH  charge     -0.700 # O  - OH   | O(H): hemiacetal
+    set type @/atom:OPLSAA/188_bHO_aHO_dHO_iHO  charge      0.435 # H  - HO   | H(O): hemiacetal
+    set type @/atom:OPLSAA/189_bCO_aCO_dCO_iCO  charge      0.060 # C  - CO   | C(H2O2): acetal OCH2O
+    set type @/atom:OPLSAA/190_bHC_aHC_dHC_iHC  charge      0.100 # H  - HC   | H(CHO2): acetal OCH2O
+    set type @/atom:OPLSAA/191_bCO_aCO_dCO_iCO  charge      0.195 # C  - CO   | C(H2O2): hemiacetal OCH2OH
+    set type @/atom:OPLSAA/192_bHC_aHC_dHC_iHC  charge      0.100 # H  - HC   | H(CHO2): hemiacetal OCH2OH
+    set type @/atom:OPLSAA/193_bCO_aCO_dCO_iCO  charge      0.160 # C  - CO   | C(HCO2): acetal OCHRO
+    set type @/atom:OPLSAA/194_bHC_aHC_dHC_iHC  charge      0.100 # H  - HC   | H(CHO2): acetal OCHRO
+    set type @/atom:OPLSAA/195_bCO_aCO_dCO_iCO  charge      0.295 # C  - CO   | C(HCO2): hemiacetal OCHROH
+    set type @/atom:OPLSAA/196_bHC_aHC_dHC_iHC  charge      0.100 # H  - HC   | H(C2O2): hemiacetal OCHROH
+    set type @/atom:OPLSAA/197_bCO_aCO_dCO_iCO  charge      0.260 # C  - CO   | C(C2O2): acetal OCRRO
+    set type @/atom:OPLSAA/198_bCO_aCO_dCO_iCO  charge      0.395 # C  - CO   | C(C2O2): hemiacetal OCRROH
+    set type @/atom:OPLSAA/199_bCA_aCA_dCA_iCA  charge      0.085 # C  - CA   | C(OMe) anisole OPLS/2020
+    set type @/atom:OPLSAA/200_bSH_aSH_dSH_iSH  charge     -0.335 # S  - SH   | all-atom S: OPLS-AA/L (JPC B 2001, 105, 6474)
+    set type @/atom:OPLSAA/201_bSH_aSH_dSH_iSH  charge     -0.470 # S  - SH   | S IN H2S JPC,90,6379 (1986)
+    set type @/atom:OPLSAA/202_bS~_aS~_dS~_iS~  charge     -0.335 # S  - S~   | all-atom S: sulfides OPLS-AA/L
+    set type @/atom:OPLSAA/203_bS~_aS~_dS~_iS~  charge    -0.2175 # S  - S~   | all-atom S: disulfides OPLS-AA/L
+    set type @/atom:OPLSAA/204_bHS_aHS_dHS_iHS  charge      0.155 # H  - HS   | all-atom H(S): thiols (mod 11/99)
+    set type @/atom:OPLSAA/205_bHS_aHS_dHS_iHS  charge      0.235 # H  - HS   | H IN H2S JPC,90,6379 (1986)
+    set type @/atom:OPLSAA/206_bCT_aCT_dCT_iCT  charge      0.060 # C  - CT   | all-atom C: CH2, thiols
+    set type @/atom:OPLSAA/207_bCT_aCT_dCT_iCT  charge      0.120 # C  - CT   | all-atom C: CH, thiols
+    set type @/atom:OPLSAA/208_bCT_aCT_dCT_iCT  charge      0.180 # C  - CT   | all-atom C: C, thiols
+    set type @/atom:OPLSAA/209_bCT_aCT_dCT_iCT  charge    -0.0125 # C  - CT   | all-atom C: CH3, sulfides OPLS-AA/L
+    set type @/atom:OPLSAA/210_bCT_aCT_dCT_iCT  charge     0.0475 # C  - CT   | all-atom C: CH2, sulfides OPLS-AA/L
+    set type @/atom:OPLSAA/211_bCT_aCT_dCT_iCT  charge     0.1175 # C  - CT   | all-atom C: CH, sulfides OPLS-AA/L
+    set type @/atom:OPLSAA/212_bCT_aCT_dCT_iCT  charge     0.1675 # C  - CT   | all-atom C: C, sulfides OPLS-AA/L
+    set type @/atom:OPLSAA/213_bCT_aCT_dCT_iCT  charge     0.0375 # C  - CT   | all-atom C: CH3, disulfides
+    set type @/atom:OPLSAA/214_bCT_aCT_dCT_iCT  charge     0.0975 # C  - CT   | all-atom C: CH2, disulfides
+    set type @/atom:OPLSAA/215_bCT_aCT_dCT_iCT  charge     0.1575 # C  - CT   | all-atom C: CH, disulfides
+    set type @/atom:OPLSAA/216_bCT_aCT_dCT_iCT  charge     0.2175 # C  - CT   | all-atom C: C, disulfides
+    set type @/atom:OPLSAA/217_bCT_aCT_dCT_iCT  charge      0.000 # C  - CT   | all-atom C: CH3, methanethiol
+    set type @/atom:OPLSAA/218_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | C in CH2OH - benzyl alcohols
+    set type @/atom:OPLSAA/219_bCT_aCT_dCT_iCT  charge      0.260 # C  - CT   | C in CHROH - benzyl alcohols
+    set type @/atom:OPLSAA/220_bCT_aCT_dCT_iCT  charge      0.320 # C  - CT   | C in CR2OH - benzyl alcohols
+    set type @/atom:OPLSAA/221_bCA_aCA_dCA_iCA  charge     -0.055 # C  - CA   | C(CH2OH) - benzyl alcohols, nitriles
+    set type @/atom:OPLSAA/222_bS~_aS~_dS~_iS~  charge     -0.320 # S  - S~   | S in thioanisoles OPLS-AA/L
+    set type @/atom:OPLSAA/223_bCT_aCT_dCT_iCT  charge      0.080 # C  - CT   | C in RCH2NH2 and Gly CA (See 900 for amines)
+    set type @/atom:OPLSAA/224_bCT_aCT_dCT_iCT  charge      0.140 # C  - CT   | C in R2CHNH2 and Ala CA
+    set type @/atom:OPLSAA/225_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | C in R3CNH2 and Aib CA
+    set type @/atom:OPLSAA/226_bCl_aCl_dCl_iCl  charge     -0.120 # Cl - Cl   | chloroalkene Cl (ClH-C=) - see also 398
+    set type @/atom:OPLSAA/227_bCM_aCM_dCM_iCM  charge      0.005 # C  - CM   | chloroalkene C (ClH-C=)
+    set type @/atom:OPLSAA/228_bCA_aCA_dCA_iCA  charge     0.1025 # C  - CA   | C(SMe) thioanisole
+    set type @/atom:OPLSAA/229_bCT_aCT_dCT_iCT  charge      0.140 # C  - CT   | C on N: secondary N-CHR2 amide
+    set type @/atom:OPLSAA/230_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | C on N: secondary N-CR3 amide
+    set type @/atom:OPLSAA/231_bC~_aC~_dC~_iC~  charge      0.700 # C  - C~   | C: C=O in benzophenone
+    set type @/atom:OPLSAA/232_bC~_aC~_dC~_iC~  charge      0.565 # C  - C~   | C: C=O in benzaldehyde
+    set type @/atom:OPLSAA/233_bC~_aC~_dC~_iC~  charge      0.585 # C  - C~   | C: C=O in acetophenone
+    set type @/atom:OPLSAA/234_bC~_aC~_dC~_iC~  charge      0.615 # C  - C~   | C: C=O in benzamide
+    set type @/atom:OPLSAA/235_bC~_aC~_dC~_iC~  charge      0.500 # C  - C~   | C: C=O in amide. Acyl R in amides
+    set type @/atom:OPLSAA/236_bO~_aO~_dO~_iO~  charge     -0.500 # O  - O~   | O: C=O in amide. is neutral - use
+    set type @/atom:OPLSAA/237_bN~_aN~_dN~_iN~  charge     -0.760 # N  - N~   | N: primary amide. alkane parameters.
+    set type @/atom:OPLSAA/238_bN~_aN~_dN~_iN~  charge     -0.500 # N  - N~   | N: secondary amide 279 for formyl H.
+    set type @/atom:OPLSAA/239_bN~_aN~_dN~_iN~  charge     -0.140 # N  - N~   | N: tertiary amide NEW TERT AMIDE PARAMETERS:
+    set type @/atom:OPLSAA/240_bH~_aH~_dH~_iH~  charge      0.380 # H  - H~   | H on N: primary amide see 1035-1045
+    set type @/atom:OPLSAA/241_bH~_aH~_dH~_iH~  charge      0.300 # H  - H~   | H on N: secondary amide
+    set type @/atom:OPLSAA/242_bCT_aCT_dCT_iCT  charge      0.020 # C  - CT   | C on N: secondary N-Me amide
+    set type @/atom:OPLSAA/243_bCT_aCT_dCT_iCT  charge     -0.110 # C  - CT   | C on N: tertiary N-Me amide
+    set type @/atom:OPLSAA/244_bCT_aCT_dCT_iCT  charge      0.080 # C  - CT   | C on N: secondary N-CH2R amide
+    set type @/atom:OPLSAA/245_bCT_aCT_dCT_iCT  charge     -0.050 # C  - CT   | C on N: tertiary N-CH2R amide (Pro Cdelta)
+    set type @/atom:OPLSAA/246_bCT_aCT_dCT_iCT  charge      0.010 # C  - CT   | C on N: tertiary N-CHR2 amide (Pro Calpha)
+    set type @/atom:OPLSAA/247_bC~_aC~_dC~_iC~  charge      0.142 # C  - C~   | C in O=C(NH2)2 Urea
+    set type @/atom:OPLSAA/248_bO~_aO~_dO~_iO~  charge     -0.390 # O  - O~   | O in O=C(NH2)2 Urea Isr. J. Chem
+    set type @/atom:OPLSAA/249_bN~_aN~_dN~_iN~  charge     -0.542 # N  - N~   | N in O=C(NH2)2 Urea 33, 323 (93)
+    set type @/atom:OPLSAA/250_bH~_aH~_dH~_iH~  charge      0.333 # H  - H~   | H in O=C(NH2)2 Urea
+    set type @/atom:OPLSAA/251_bN~_aN~_dN~_iN~  charge     -0.490 # N  - N~   | N in imide
+    set type @/atom:OPLSAA/252_bC~_aC~_dC~_iC~  charge      0.420 # C  - C~   | C(=O) in imide
+    set type @/atom:OPLSAA/253_bO~_aO~_dO~_iO~  charge     -0.420 # O  - O~   | O in imide
+    set type @/atom:OPLSAA/254_bH~_aH~_dH~_iH~  charge      0.370 # H  - H~   | H(N) in imide
+    set type @/atom:OPLSAA/255_bHC_aHC_dHC_iHC  charge      0.060 # H  - HC   | H(C) in formimide
+    set type @/atom:OPLSAA/256_bCT_aCT_dCT_iCT  charge     -0.120 # C  - CT   | C in CH3 imide
+    set type @/atom:OPLSAA/257_bCT_aCT_dCT_iCT  charge     -0.060 # C  - CT   | C in RCH2 imide
+    set type @/atom:OPLSAA/258_bCT_aCT_dCT_iCT  charge      0.000 # C  - CT   | C in R2CH imide
+    set type @/atom:OPLSAA/259_bCT_aCT_dCT_iCT  charge      0.060 # C  - CT   | C in R3C imide
+    set type @/atom:OPLSAA/260_bCA_aCA_dCA_iCA  charge      0.035 # C  - CA   | C(CN) benzonitrile cyano
+    set type @/atom:OPLSAA/261_bCZ_aCZ_dCZ_iCZ  charge      0.395 # C  - CZ   | C(N) benzonitrile
+    set type @/atom:OPLSAA/262_bNZ_aNZ_dNZ_iNZ  charge     -0.430 # N  - NZ   | N benzonitrile
+    set type @/atom:OPLSAA/263_bCA_aCA_dCA_iCA  charge      0.180 # C  - CA   | C(Cl) chlorobenzene
+    set type @/atom:OPLSAA/264_bCl_aCl_dCl_iCl  charge     -0.180 # Cl - Cl   | Cl chlorobenzene
+    set type @/atom:OPLSAA/265_bN~_aN~_dN~_iN~  charge     -0.385 # N  - N~   | N: N-phenylacetamide
+    set type @/atom:OPLSAA/266_bCA_aCA_dCA_iCA  charge      0.085 # C  - CA   | ipso C in N-phenylacetamide
+    set type @/atom:OPLSAA/267_bC~_aC~_dC~_iC~  charge      0.520 # C  - C~   | Co in CCOOH carboxylic acid
+    set type @/atom:OPLSAA/268_bOH_aOH_dOH_iOH  charge     -0.530 # O  - OH   | Oh in CCOOH R in RCOOH is
+    set type @/atom:OPLSAA/269_bO~_aO~_dO~_iO~  charge     -0.440 # O  - O~   | Oc in CCOOH neutral; use 135-140
+    set type @/atom:OPLSAA/270_bHO_aHO_dHO_iHO  charge      0.450 # H  - HO   | H in CCOOH
+    set type @/atom:OPLSAA/271_bC~_aC~_dC~_iC~  charge      0.700 # C  - C~   | C in COO- carboxylate
+    set type @/atom:OPLSAA/272_bO2_aO2_dO2_iO2  charge     -0.800 # O  - O2   | O: O in COO- carboxylate
+    set type @/atom:OPLSAA/273_bCT_aCT_dCT_iCT  charge     -0.280 # C  - CT   | C: CH3, carboxylate ion
+    set type @/atom:OPLSAA/274_bCT_aCT_dCT_iCT  charge     -0.220 # C  - CT   | C: CH2, carboxylate ion
+    set type @/atom:OPLSAA/275_bCT_aCT_dCT_iCT  charge     -0.160 # C  - CT   | C: CH, carboxylate ion
+    set type @/atom:OPLSAA/276_bCT_aCT_dCT_iCT  charge     -0.100 # C  - CT   | C: C, carboxylate ion
+    set type @/atom:OPLSAA/277_bC~_aC~_dC~_iC~  charge      0.450 # C  - C~   | AA C: aldehyde & acyl halide - for C-alpha use
+    set type @/atom:OPLSAA/278_bO~_aO~_dO~_iO~  charge     -0.450 # O  - O~   | AA O: aldehyde & acyl halide - 135-139
+    set type @/atom:OPLSAA/279_bHC_aHC_dHC_iHC  charge      0.000 # H  - HC   | AA H-alpha in aldehyde & formamide
+    set type @/atom:OPLSAA/280_bC~_aC~_dC~_iC~  charge      0.470 # C  - C~   | AA C: ketone - for C-alpha use
+    set type @/atom:OPLSAA/281_bO~_aO~_dO~_iO~  charge     -0.470 # O  - O~   | AA O: ketone - 135-139
+    set type @/atom:OPLSAA/282_bHC_aHC_dHC_iHC  charge      0.060 # H  - HC   | AA H on C-alpha in ketone & aldehyde & acyl halide
+    set type @/atom:OPLSAA/283_bCT_aCT_dCT_iCT  charge      0.040 # C  - CT   | AA C-alpha on C-terminal ALA
+    set type @/atom:OPLSAA/284_bCT_aCT_dCT_iCT  charge     -0.020 # C  - CT   | AA C-alpha on C-terminal GLY
+    set type @/atom:OPLSAA/285_bCT_aCT_dCT_iCT  charge     -0.090 # C  - CT   | AA C-alpha on C-terminal PRO
+    set type @/atom:OPLSAA/286_bN3_aN3_dN3_iN3  charge      -0.40 # N  - N3   | N (NH4+) JPC,90,2174 (1986) N3 sigma and eps changed 5/
+    set type @/atom:OPLSAA/287_bN3_aN3_dN3_iN3  charge      -0.30 # N  - N3   | N (RNH3+) "
+    set type @/atom:OPLSAA/288_bN3_aN3_dN3_iN3  charge       0.00 # N  - N3   | N (R4N+) " Ammonium Ions
+    set type @/atom:OPLSAA/289_bH3_aH3_dH3_iH3  charge       0.35 # H  - H3   | H (NH4+) " see also 940-945,
+    set type @/atom:OPLSAA/290_bH3_aH3_dH3_iH3  charge       0.33 # H  - H3   | H (RNH3+) " 1120-1130, 309-310
+    set type @/atom:OPLSAA/291_bCT_aCT_dCT_iCT  charge      0.130 # C  - CT   | C in CH3NH3+
+    set type @/atom:OPLSAA/292_bCT_aCT_dCT_iCT  charge      0.190 # C  - CT   | C in RCH2NH3+ & CA in N-term Gly
+    set type @/atom:OPLSAA/293_bCT_aCT_dCT_iCT  charge      0.250 # C  - CT   | C in R2CHNH3+ & CA in N-term Ala, etc.
+    set type @/atom:OPLSAA/294_bCT_aCT_dCT_iCT  charge      0.310 # C  - CT   | C in R3CNH3+
+    set type @/atom:OPLSAA/295_bCT_aCT_dCT_iCT  charge      0.230 # C  - CT   | AA:C-alpha in N-term PRO
+    set type @/atom:OPLSAA/296_bCT_aCT_dCT_iCT  charge      0.170 # C  - CT   | AA:C-delta in N-term PRO
+    set type @/atom:OPLSAA/297_bCT_aCT_dCT_iCT  charge      0.110 # C  - CT   | CT in CH3NH2+R
+    set type @/atom:OPLSAA/298_bCT_aCT_dCT_iCT  charge      0.090 # C  - CT   | AA C-alpha in Gly zwitterion
+    set type @/atom:OPLSAA/299_bCT_aCT_dCT_iCT  charge      0.150 # C  - CT   | AA C-alpha in Ala zwitterion
+    set type @/atom:OPLSAA/300_bN2_aN2_dN2_iN2  charge     -0.800 # N  - N2   | N: guanidinium NH2
+    set type @/atom:OPLSAA/301_bH3_aH3_dH3_iH3  charge      0.460 # H  - H3   | H: guanidinium NH2
+    set type @/atom:OPLSAA/302_bCA_aCA_dCA_iCA  charge      0.640 # C  - CA   | C: guanidinium C+
+    set type @/atom:OPLSAA/303_bN2_aN2_dN2_iN2  charge     -0.700 # N  - N2   | N: guanidinium NHR
+    set type @/atom:OPLSAA/304_bH3_aH3_dH3_iH3  charge      0.440 # H  - H3   | H: guanidinium NHR
+    set type @/atom:OPLSAA/305_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | C: CH3, methylguanidinium
+    set type @/atom:OPLSAA/306_bCT_aCT_dCT_iCT  charge     -0.110 # C  - CT   | C: CH3, ethylguanidinium
+    set type @/atom:OPLSAA/307_bCT_aCT_dCT_iCT  charge      0.190 # C  - CT   | C: CH2(D), ARG, ethylguanidinium
+    set type @/atom:OPLSAA/308_bCT_aCT_dCT_iCT  charge     -0.050 # C  - CT   | C: CH2(G), ARG
+    set type @/atom:OPLSAA/309_bN3_aN3_dN3_iN3  charge      -0.20 # N  - N3   | N (R2NH2+)
+    set type @/atom:OPLSAA/310_bH3_aH3_dH3_iH3  charge       0.31 # H  - H3   | H (R2NH2+)
+    set type @/atom:OPLSAA/311_bNC_aNC_dNC_iNC  charge      -0.46 # N  - NC   | DAP N1 Diamino-
+    set type @/atom:OPLSAA/312_bCA_aCA_dCA_iCA  charge       0.36 # C  - CA   | DAP C2 pyridine
+    set type @/atom:OPLSAA/313_bN2_aN2_dN2_iN2  charge      -0.85 # N  - N2   | DAP N-amine
+    set type @/atom:OPLSAA/314_bH~_aH~_dH~_iH~  charge       0.37 # H  - H~   | DAP H-amine
+    set type @/atom:OPLSAA/315_bCA_aCA_dCA_iCA  charge      -0.15 # C  - CA   | DAP C3
+    set type @/atom:OPLSAA/316_bHA_aHA_dHA_iHA  charge       0.10 # H  - HA   | DAP H3
+    set type @/atom:OPLSAA/317_bCA_aCA_dCA_iCA  charge      -0.04 # C  - CA   | DAP C4
+    set type @/atom:OPLSAA/318_bHA_aHA_dHA_iHA  charge       0.10 # H  - HA   | DAP H4
+    set type @/atom:OPLSAA/319_bNA_aNA_dNA_iNA  charge      -0.60 # N  - NA   | Uracil N1 -use 938 for nucleoside
+    set type @/atom:OPLSAA/320_bC~_aC~_dC~_iC~  charge       0.50 # C  - C~   | Uracil C2
+    set type @/atom:OPLSAA/321_bNA_aNA_dNA_iNA  charge      -0.51 # N  - NA   | Uracil N3
+    set type @/atom:OPLSAA/322_bC~_aC~_dC~_iC~  charge       0.45 # C  - C~   | Uracil C4
+    set type @/atom:OPLSAA/323_bCM_aCM_dCM_iCM  charge      -0.07 # C  - CM   | Uracil C5
+    set type @/atom:OPLSAA/324_bCM_aCM_dCM_iCM  charge       0.08 # C  - CM   | Uracil C6
+    set type @/atom:OPLSAA/325_bH~_aH~_dH~_iH~  charge       0.41 # H  - H~   | Uracil H-N1
+    set type @/atom:OPLSAA/326_bO~_aO~_dO~_iO~  charge      -0.40 # O  - O~   | Uracil O-C2
+    set type @/atom:OPLSAA/327_bH~_aH~_dH~_iH~  charge       0.36 # H  - H~   | Uracil H-N3
+    set type @/atom:OPLSAA/328_bO~_aO~_dO~_iO~  charge      -0.42 # O  - O~   | Uracil O-C4
+    set type @/atom:OPLSAA/329_bHC_aHC_dHC_iHC  charge       0.10 # H  - HC   | Uracil H-C5
+    set type @/atom:OPLSAA/330_bHC_aHC_dHC_iHC  charge       0.10 # H  - HC   | Uracil H-C6 Thymine
+    set type @/atom:OPLSAA/331_bCT_aCT_dCT_iCT  charge      -0.14 # C  - CT   | Thymine C-C5
+    set type @/atom:OPLSAA/332_bHC_aHC_dHC_iHC  charge       0.08 # H  - HC   | Thymine H-CC5
+    set type @/atom:OPLSAA/333_bNA_aNA_dNA_iNA  charge      -0.56 # N  - NA   | Cytosine N1 -use 937 for nucleoside
+    set type @/atom:OPLSAA/334_bC~_aC~_dC~_iC~  charge       0.55 # C  - C~   | Cytosine C2
+    set type @/atom:OPLSAA/335_bNC_aNC_dNC_iNC  charge      -0.54 # N  - NC   | Cytosine N3
+    set type @/atom:OPLSAA/336_bCA_aCA_dCA_iCA  charge       0.46 # C  - CA   | Cytosine C4 Nucleotide base
+    set type @/atom:OPLSAA/337_bCM_aCM_dCM_iCM  charge      -0.06 # C  - CM   | Cytosine C5 parameters:
+    set type @/atom:OPLSAA/338_bCM_aCM_dCM_iCM  charge       0.10 # C  - CM   | Cytosine C6 JACS,113,2810(1991)
+    set type @/atom:OPLSAA/339_bH~_aH~_dH~_iH~  charge       0.38 # H  - H~   | Cytosine H-N1
+    set type @/atom:OPLSAA/340_bO~_aO~_dO~_iO~  charge      -0.48 # O  - O~   | Cytosine O-C2
+    set type @/atom:OPLSAA/341_bN2_aN2_dN2_iN2  charge      -0.79 # N  - N2   | Cytosine N-C4
+    set type @/atom:OPLSAA/342_bH~_aH~_dH~_iH~  charge      0.385 # H  - H~   | Cytosine H-NC4/N3
+    set type @/atom:OPLSAA/343_bH~_aH~_dH~_iH~  charge      0.355 # H  - H~   | Cytosine H-NC4/C5
+    set type @/atom:OPLSAA/344_bHC_aHC_dHC_iHC  charge       0.10 # H  - HC   | Cytosine H-C5
+    set type @/atom:OPLSAA/345_bHA_aHA_dHA_iHA  charge       0.10 # H  - HA   | Cytosine H-C6
+    set type @/atom:OPLSAA/346_bNC_aNC_dNC_iNC  charge      -0.53 # N  - NC   | Adenine N1
+    set type @/atom:OPLSAA/347_bCQ_aCQ_dCQ_iCQ  charge       0.22 # C  - CQ   | Adenine C2
+    set type @/atom:OPLSAA/348_bNC_aNC_dNC_iNC  charge      -0.55 # N  - NC   | Adenine N3
+    set type @/atom:OPLSAA/349_bCB_aCB_dCB_iCB  charge       0.38 # C  - CB   | Adenine C4
+    set type @/atom:OPLSAA/350_bCB_aCB_dCB_iCB  charge       0.15 # C  - CB   | Adenine C5
+    set type @/atom:OPLSAA/351_bCA_aCA_dCA_iCA  charge       0.44 # C  - CA   | Adenine C6
+    set type @/atom:OPLSAA/352_bNB_aNB_dNB_iNB  charge      -0.49 # N  - NB   | Adenine N7 Guanine
+    set type @/atom:OPLSAA/353_bCR_aCR_dCR_iCR  charge       0.20 # C  - CR   | Adenine C8 Guanine
+    set type @/atom:OPLSAA/354_bNA_aNA_dNA_iNA  charge      -0.50 # N  - NA   | Adenine N9 Guanine -use 936 for
+    set type @/atom:OPLSAA/355_bHA_aHA_dHA_iHA  charge       0.20 # H  - HA   | Adenine H-C2 nucleoside
+    set type @/atom:OPLSAA/356_bN2_aN2_dN2_iN2  charge      -0.81 # N  - N2   | Adenine N-C6
+    set type @/atom:OPLSAA/357_bH~_aH~_dH~_iH~  charge      0.385 # H  - H~   | Adenine H-NC6/N1
+    set type @/atom:OPLSAA/358_bH~_aH~_dH~_iH~  charge      0.355 # H  - H~   | Adenine H-NC6/C5
+    set type @/atom:OPLSAA/359_bHA_aHA_dHA_iHA  charge       0.20 # H  - HA   | Adenine H-C8 Guanine
+    set type @/atom:OPLSAA/360_bH~_aH~_dH~_iH~  charge       0.35 # H  - H~   | Adenine H-N9 Guanine
+    set type @/atom:OPLSAA/361_bNA_aNA_dNA_iNA  charge      -0.56 # N  - NA   | Guanine N1
+    set type @/atom:OPLSAA/362_bCA_aCA_dCA_iCA  charge       0.46 # C  - CA   | Guanine C2
+    set type @/atom:OPLSAA/363_bNC_aNC_dNC_iNC  charge      -0.51 # N  - NC   | Guanine N3
+    set type @/atom:OPLSAA/364_bCB_aCB_dCB_iCB  charge       0.34 # C  - CB   | Guanine C4
+    set type @/atom:OPLSAA/365_bCB_aCB_dCB_iCB  charge       0.12 # C  - CB   | Guanine C5
+    set type @/atom:OPLSAA/366_bC~_aC~_dC~_iC~  charge       0.52 # C  - C~   | Guanine C6
+    set type @/atom:OPLSAA/367_bH~_aH~_dH~_iH~  charge       0.38 # H  - H~   | Guanine H-N1
+    set type @/atom:OPLSAA/368_bN2_aN2_dN2_iN2  charge      -0.80 # N  - N2   | Guanine N-C2
+    set type @/atom:OPLSAA/369_bH~_aH~_dH~_iH~  charge       0.40 # H  - H~   | Guanine H-NC2
+    set type @/atom:OPLSAA/370_bO~_aO~_dO~_iO~  charge      -0.51 # O  - O~   | Guanine O-C6
+    set type @/atom:OPLSAA/371_bCT_aCT_dCT_iCT  charge      -0.01 # C  - CT   | 9-Me A or G C-N9
+    set type @/atom:OPLSAA/372_bHC_aHC_dHC_iHC  charge       0.12 # H  - HC   | 9-Me A or G H-CN9
+    set type @/atom:OPLSAA/373_bCT_aCT_dCT_iCT  charge      -0.01 # C  - CT   | 1-Me U or T C-N1
+    set type @/atom:OPLSAA/374_bHC_aHC_dHC_iHC  charge       0.14 # H  - HC   | 1-Me U or T H-CN1
+    set type @/atom:OPLSAA/375_bCT_aCT_dCT_iCT  charge      -0.01 # C  - CT   | 1-Me Cytosine C-N1
+    set type @/atom:OPLSAA/376_bHC_aHC_dHC_iHC  charge       0.13 # H  - HC   | 1-Me Cytosine H-CN1
+    set type @/atom:OPLSAA/377_bNA_aNA_dNA_iNA  charge      -0.64 # N  - NA   | CytH+ N1 Use AT = N* for nucleoside.
+    set type @/atom:OPLSAA/378_bC~_aC~_dC~_iC~  charge       0.65 # C  - C~   | CytH+ C2
+    set type @/atom:OPLSAA/379_bNA_aNA_dNA_iNA  charge      -0.74 # N  - NA   | CytH+ N3 Protonated cytosine.
+    set type @/atom:OPLSAA/380_bCA_aCA_dCA_iCA  charge       0.66 # C  - CA   | CytH+ C4
+    set type @/atom:OPLSAA/381_bCM_aCM_dCM_iCM  charge      -0.06 # C  - CM   | CytH+ C5
+    set type @/atom:OPLSAA/382_bCM_aCM_dCM_iCM  charge       0.10 # C  - CM   | CytH+ C6
+    set type @/atom:OPLSAA/383_bH~_aH~_dH~_iH~  charge       0.49 # H  - H~   | CytH+ H-N1
+    set type @/atom:OPLSAA/384_bO~_aO~_dO~_iO~  charge      -0.30 # O  - O~   | CytH+ O-C2
+    set type @/atom:OPLSAA/385_bH~_aH~_dH~_iH~  charge       0.48 # H  - H~   | CytH+ H-N3
+    set type @/atom:OPLSAA/386_bN2_aN2_dN2_iN2  charge      -0.81 # N  - N2   | CytH+ N-C4
+    set type @/atom:OPLSAA/387_bH~_aH~_dH~_iH~  charge       0.46 # H  - H~   | CytH+ H-NC4/N3
+    set type @/atom:OPLSAA/388_bH~_aH~_dH~_iH~  charge       0.43 # H  - H~   | CytH+ H-NC4/C5
+    set type @/atom:OPLSAA/389_bHA_aHA_dHA_iHA  charge       0.14 # H  - HA   | CytH+ H-C5
+    set type @/atom:OPLSAA/390_bHA_aHA_dHA_iHA  charge       0.14 # H  - HA   | CytH+ H-C6
+    set type @/atom:OPLSAA/391_bCT_aCT_dCT_iCT  charge       0.01 # C  - CT   | 1-Me CytH+ C-N1
+    set type @/atom:OPLSAA/392_bHC_aHC_dHC_iHC  charge       0.16 # H  - HC   | 1-Me CytH+ H-CN1
+    set type @/atom:OPLSAA/393_bP~_aP~_dP~_iP~  charge      0.780 # P  - P~   | P dimethylphosphate anion
+    set type @/atom:OPLSAA/394_bO2_aO2_dO2_iO2  charge     -0.660 # O  - O2   | O(=) " OPLS UA
+    set type @/atom:OPLSAA/395_bOS_aOS_dOS_iOS  charge     -0.430 # O  - OS   | O " see 440
+    set type @/atom:OPLSAA/396_bCT_aCT_dCT_iCT  charge      0.020 # C  - CT   | C in CH3 " for AA
+    set type @/atom:OPLSAA/397_bCM_aCM_dCM_iCM  charge       0.18 # C  - CM   | F3C-C5 thymine; trifluorothymine
+    set type @/atom:OPLSAA/398_bCl_aCl_dCl_iCl  charge     -0.060 # Cl - Cl   | chloroalkene Cl (Cl2-C=) - tentative
+    set type @/atom:OPLSAA/399_bCM_aCM_dCM_iCM  charge      0.120 # C  - CM   | chloroalkene C (Cl2-C=) - tentaive
+    #                                                                                                   
+    set type @/atom:OPLSAA/400_bF~_aF~_dF~_iF~  charge       -1.0 # F  - F~   | F-
+    set type @/atom:OPLSAA/401_bCl_aCl_dCl_iCl  charge       -1.0 # Cl - Cl   | Cl-
+    set type @/atom:OPLSAA/402_bBr_aBr_dBr_iBr  charge       -1.0 # Br - Br   | Br-
+    set type @/atom:OPLSAA/403_bI~_aI~_dI~_iI~  charge       -1.0 # I  - I~   | I- 400-410 new OPLS:
+    set type @/atom:OPLSAA/405_bN3_aN3_dN3_iN3  charge        1.0 # N  - N3   | NH4+ K Jensen
+    set type @/atom:OPLSAA/406_bLi_aLi_dLi_iLi  charge        1.0 # Li - Li   | Li+ JCTC 2, 1499 (2006)
+    set type @/atom:OPLSAA/407_bNa_aNa_dNa_iNa  charge        1.0 # Na - Na   | Na+
+    set type @/atom:OPLSAA/408_bK~_aK~_dK~_iK~  charge        1.0 # K  - K~   | K+
+    set type @/atom:OPLSAA/409_bRb_aRb_dRb_iRb  charge        1.0 # Rb - Rb   | Rb+
+    set type @/atom:OPLSAA/410_bCs_aCs_dCs_iCs  charge        1.0 # Cs - Cs   | Cs+
+    #                                                Old ion parameters:                                
+    # 400 09 F    -1.0       2.73295   0.72000   F-  JACS 106, 903 (1984)                               
+    # 401 17 Cl   -1.0       4.41724   0.11779   Cl- JACS 106, 903 (1984)                               
+    # 402 35 Br   -1.0       4.62376   0.09000   Br- JACS 107, 7793(1985)                               
+    # 403 53 I    -1.0       5.40000   0.07000   I-  JACS 120, 5104(1998)                               
+    # 404 03 Li    1.0       1.25992   6.25000   Li+ JACS 106, 903 (1984)                               
+    # 405 11 Na    1.0       1.89744   1.60714   Na+ JACS 106, 903 (1984)                               
+    # 406 03 Li    1.00     2.126452  0.018279   Li+                                                    
+    # 407 11 Na    1.00     3.330445  0.002772   Na+    Aqvist's cation                                 
+    # 408 19 K     1.00     4.934628  0.000328   K+     parameters:                                     
+    # 409 37 Rb    1.00     5.621773  0.000171   Rb+    JPC,94, 8021 (90)                               
+    # 410 55 Cs    1.00     6.715999  0.000081   Cs+                                                    
+    set type @/atom:OPLSAA/411_bMg_aMg_dMg_iMg  charge       2.00 # Mg - Mg   | Mg++
+    set type @/atom:OPLSAA/412_bCa_aCa_dCa_iCa  charge       2.00 # Ca - Ca   | Ca++
+    set type @/atom:OPLSAA/413_bSr_aSr_dSr_iSr  charge       2.00 # Sr - Sr   | Sr++
+    set type @/atom:OPLSAA/414_bBa_aBa_dBa_iBa  charge       2.00 # Ba - Ba   | Ba++
+    #                                                                                                   
+    set type @/atom:OPLSAA/415_bC3_aC3_dC3_iC3  charge      -0.40 # C  - C3   | C in CH3S- thiolate
+    set type @/atom:OPLSAA/416_bHC_aHC_dHC_iHC  charge       0.10 # H  - HC   | H in CH3S-
+    set type @/atom:OPLSAA/417_bSH_aSH_dSH_iSH  charge      -0.90 # S  - SH   | S in CH3S-
+    set type @/atom:OPLSAA/418_bC3_aC3_dC3_iC3  charge      -0.20 # C  - C3   | C in CH3O- alkoxide
+    set type @/atom:OPLSAA/419_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | H in CH3O-
+    set type @/atom:OPLSAA/420_bOH_aOH_dOH_iOH  charge      -0.98 # O  - OH   | O in CH3O-
+    set type @/atom:OPLSAA/421_bCT_aCT_dCT_iCT  charge      -1.07 # C  - CT   | C1 in CH2CN- RCN-
+    set type @/atom:OPLSAA/422_bHC_aHC_dHC_iHC  charge       0.19 # H  - HC   | H in CH2CN-
+    set type @/atom:OPLSAA/423_bCZ_aCZ_dCZ_iCZ  charge       0.51 # C  - CZ   | C2 in CH2CN- JACS 111,
+    set type @/atom:OPLSAA/424_bNZ_aNZ_dNZ_iNZ  charge      -0.82 # N  - NZ   | N in CH2CN- 4190 (89)
+    set type @/atom:OPLSAA/425_bC3_aC3_dC3_iC3  charge      -0.30 # C  - C3   | C in CH3NH-
+    set type @/atom:OPLSAA/426_bHC_aHC_dHC_iHC  charge       0.07 # H  - HC   | HC in CH3NH- RNH-
+    set type @/atom:OPLSAA/427_bNC_aNC_dNC_iNC  charge      -1.31 # N  - NC   | N in CH3NH-
+    set type @/atom:OPLSAA/428_bH~_aH~_dH~_iH~  charge       0.40 # H  - H~   | HN in CH3NH-
+    set type @/atom:OPLSAA/429_bC3_aC3_dC3_iC3  charge      -0.40 # C  - C3   | C2 in CH3CH2- RCH2-
+    set type @/atom:OPLSAA/430_bHC_aHC_dHC_iHC  charge       0.08 # H  - HC   | H in CH3CH2-
+    set type @/atom:OPLSAA/431_bCT_aCT_dCT_iCT  charge       0.00 # C  - CT   | C1 in CH3CH2-
+    set type @/atom:OPLSAA/432_bHC_aHC_dHC_iHC  charge       0.07 # H  - HC   | H1 in CH3CH2-
+    set type @/atom:OPLSAA/433_bLP_aLP_dLP_iLP  charge      -0.98 # He - LP   | LP in CH3CH2-
+    set type @/atom:OPLSAA/434_bOH_aOH_dOH_iOH  charge     -1.300 # O  - OH   | O in OH- Hyroxide O-H = 0.953 A
+    set type @/atom:OPLSAA/435_bHO_aHO_dHO_iHO  charge      0.300 # H  - HO   | H in OH- JACS 108, 2517 (86)
+    set type @/atom:OPLSAA/436_bU~_aU~_dU~_iU~  charge      2.500 # U  - U~   | U in UO2+ J Mol Struct 366, 55 (96)
+    set type @/atom:OPLSAA/437_bOU_aOU_dOU_iOU  charge     -0.250 # O  - OU   | O in UO2+ r(U-O) = 1.80 A
+    set type @/atom:OPLSAA/438_bCT_aCT_dCT_iCT  charge       0.27 # C  - CT   | C in dimetyl phosphate
+    set type @/atom:OPLSAA/439_bOS_aOS_dOS_iOS  charge     -0.865 # O  - OS   | O-(POn)2 in GTP (JT-R 4/4/05)
+    set type @/atom:OPLSAA/440_bP~_aP~_dP~_iP~  charge       1.62 # P  - P~   | P in Me2PO4-
+    set type @/atom:OPLSAA/441_bO2_aO2_dO2_iO2  charge      -0.92 # O  - O2   | O= in "
+    set type @/atom:OPLSAA/442_bOS_aOS_dOS_iOS  charge      -0.60 # O  - OS   | O in " dimethyl
+    set type @/atom:OPLSAA/443_bCT_aCT_dCT_iCT  charge       0.30 # C  - CT   | C in " phosphate
+    set type @/atom:OPLSAA/444_bHC_aHC_dHC_iHC  charge      -0.03 # H  - HC   | H in " 6-31+G* CHELPG
+    set type @/atom:OPLSAA/445_bP~_aP~_dP~_iP~  charge       1.92 # P  - P~   | P in MeOPO3--
+    set type @/atom:OPLSAA/446_bO2_aO2_dO2_iO2  charge      -1.12 # O  - O2   | O= in "
+    set type @/atom:OPLSAA/447_bOS_aOS_dOS_iOS  charge      -0.70 # O  - OS   | O in " methyl phosphate
+    set type @/atom:OPLSAA/448_bCT_aCT_dCT_iCT  charge       0.44 # C  - CT   | C in " 6-31+G* CHELPG
+    set type @/atom:OPLSAA/449_bHC_aHC_dHC_iHC  charge      -0.10 # H  - HC   | H in "
+    set type @/atom:OPLSAA/450_bP~_aP~_dP~_iP~  charge       1.62 # P  - P~   | P in MePO3Me-
+    set type @/atom:OPLSAA/451_bO2_aO2_dO2_iO2  charge      -0.97 # O  - O2   | O= in "
+    set type @/atom:OPLSAA/452_bOS_aOS_dOS_iOS  charge      -0.63 # O  - OS   | O in " methyl
+    set type @/atom:OPLSAA/453_bCT_aCT_dCT_iCT  charge       0.28 # C  - CT   | C(O) " methylphosphonate
+    set type @/atom:OPLSAA/454_bHC_aHC_dHC_iHC  charge      -0.02 # H  - HC   | H(CO) " 6-31+G* CHELPG
+    set type @/atom:OPLSAA/455_bCT_aCT_dCT_iCT  charge      -0.51 # C  - CT   | C(P) "
+    set type @/atom:OPLSAA/456_bHC_aHC_dHC_iHC  charge       0.08 # H  - HC   | H(CP) "
+    set type @/atom:OPLSAA/457_bCA_aCA_dCA_iCA  charge      -0.14 # C  - CA   | Cipso benzyl methylphosphonate
+    set type @/atom:OPLSAA/458_bCT_aCT_dCT_iCT  charge       0.32 # C  - CT   | C(O) " "
+    set type @/atom:OPLSAA/459_bHC_aHC_dHC_iHC  charge       0.02 # H  - HC   | H(CO) " "
+    set type @/atom:OPLSAA/460_bCA_aCA_dCA_iCA  charge      -0.04 # C  - CA   | Cipso methyl benzylphosphonate
+    set type @/atom:OPLSAA/461_bCT_aCT_dCT_iCT  charge      -0.47 # C  - CT   | C(P) " "
+    set type @/atom:OPLSAA/462_bHC_aHC_dHC_iHC  charge       0.12 # H  - HC   | H(CP) " "
+    set type @/atom:OPLSAA/463_bCA_aCA_dCA_iCA  charge       0.14 # C  - CA   | Cipso C6H5OPO3(2-) use with 445-7
+    set type @/atom:OPLSAA/464_bCT_aCT_dCT_iCT  charge       0.24 # C  - CT   | C6(R2) of barbiturate
+    set type @/atom:OPLSAA/465_bC~_aC~_dC~_iC~  charge      0.490 # C  - C~   | AA C: esters - for R on C=O, use
+    set type @/atom:OPLSAA/466_bO~_aO~_dO~_iO~  charge     -0.410 # O  - O~   | AA =O: esters ketone params (see 280-282)
+    set type @/atom:OPLSAA/467_bOS_aOS_dOS_iOS  charge     -0.330 # O  - OS   | AA -OR: ester -
+    set type @/atom:OPLSAA/468_bCT_aCT_dCT_iCT  charge      0.160 # C  - CT   | methoxy C in esters - see also 490-492 OPLS/2020
+    set type @/atom:OPLSAA/469_bHC_aHC_dHC_iHC  charge      0.030 # H  - HC   | alkoxy H's in esters
+    set type @/atom:OPLSAA/470_bC~_aC~_dC~_iC~  charge      0.635 # C  - C~   | Co in benzoic acid
+    set type @/atom:OPLSAA/471_bC~_aC~_dC~_iC~  charge      0.605 # C  - C~   | Co in methyl benzoate, aryl ester
+    set type @/atom:OPLSAA/472_bCA_aCA_dCA_iCA  charge      0.135 # C  - CA   | Cipso phenyl ester
+    set type @/atom:OPLSAA/473_bOS_aOS_dOS_iOS  charge     -0.215 # O  - OS   | AA -OR phenyl ester
+    set type @/atom:OPLSAA/474_bSY_aSY_dSY_iSY  charge       1.48 # S  - SY   | S in sulfonamide
+    set type @/atom:OPLSAA/475_bOY_aOY_dOY_iOY  charge      -0.68 # O  - OY   | O in sulfonamide
+    set type @/atom:OPLSAA/476_bCT_aCT_dCT_iCT  charge      -0.54 # C  - CT   | CH3 attached to S of sulfonamide
+    set type @/atom:OPLSAA/477_bHC_aHC_dHC_iHC  charge       0.18 # H  - HC   | H of Me attached to S of sulfonamide
+    set type @/atom:OPLSAA/478_bN~_aN~_dN~_iN~  charge      -1.00 # N  - N~   | N: primary amide of sulfonamide
+    set type @/atom:OPLSAA/479_bH~_aH~_dH~_iH~  charge       0.44 # H  - H~   | H on N: primary sulfonamide
+    set type @/atom:OPLSAA/480_bN~_aN~_dN~_iN~  charge      -0.80 # N  - N~   | N secondary amide of sulfonamide
+    set type @/atom:OPLSAA/481_bH~_aH~_dH~_iH~  charge       0.41 # H  - H~   | H on N: secondary sulfonamide
+    set type @/atom:OPLSAA/482_bCT_aCT_dCT_iCT  charge       0.18 # C  - CT   | alpha CH3-N of sulfonamide
+    set type @/atom:OPLSAA/483_bHC_aHC_dHC_iHC  charge       0.03 # H  - HC   | H of alpha CH3-N of sulfonamide
+    set type @/atom:OPLSAA/484_bCT_aCT_dCT_iCT  charge       0.39 # C  - CT   | alpha CH2-N of sulfonamide
+    set type @/atom:OPLSAA/485_bHC_aHC_dHC_iHC  charge      -0.06 # H  - HC   | H of alpha CH2-N of sulfonamide
+    set type @/atom:OPLSAA/486_bCT_aCT_dCT_iCT  charge      -0.18 # C  - CT   | beta CH3 of N-ethyl sulfonamide
+    set type @/atom:OPLSAA/487_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | H of beta CH3 of N-ethyl sulfonamide
+    set type @/atom:OPLSAA/488_bCA_aCA_dCA_iCA  charge       0.00 # C  - CA   | benzene C attached to S of sulfonamide
+    set type @/atom:OPLSAA/489_bCA_aCA_dCA_iCA  charge       0.03 # C  - CA   | benzene C attached to S of alkyl aryl sulfoxide
+    set type @/atom:OPLSAA/490_bCT_aCT_dCT_iCT  charge       0.19 # C  - CT   | C(H2OS) ethyl ester
+    set type @/atom:OPLSAA/491_bCT_aCT_dCT_iCT  charge       0.22 # C  - CT   | C(HOS) i-pr ester
+    set type @/atom:OPLSAA/492_bCT_aCT_dCT_iCT  charge       0.25 # C  - CT   | C(OS) t-bu ester
+    set type @/atom:OPLSAA/493_bSY_aSY_dSY_iSY  charge      1.374 # S  - SY   | S in sulfone
+    set type @/atom:OPLSAA/494_bOY_aOY_dOY_iOY  charge     -0.687 # O  - OY   | O in sulfone
+    set type @/atom:OPLSAA/495_bSZ_aSZ_dSZ_iSZ  charge      0.245 # S  - SZ   | alkyl aryl sulfoxide - all atom
+    set type @/atom:OPLSAA/496_bSZ_aSZ_dSZ_iSZ  charge      0.130 # S  - SZ   | sulfoxide - all atom
+    set type @/atom:OPLSAA/497_bOY_aOY_dOY_iOY  charge     -0.420 # O  - OY   | sulfoxide - all atom
+    set type @/atom:OPLSAA/498_bCT_aCT_dCT_iCT  charge     -0.035 # C  - CT   | CH3 all-atom C: sulfoxide
+    set type @/atom:OPLSAA/499_bCT_aCT_dCT_iCT  charge      0.025 # C  - CT   | CH2 all-atom C: sulfoxide
+    set type @/atom:OPLSAA/500_bCS_aCS_dCS_iCS  charge      0.075 # C  - CS   | CG in TRP
+    set type @/atom:OPLSAA/501_bCB_aCB_dCB_iCB  charge     -0.055 # C  - CB   | CD C in TRP
+    set type @/atom:OPLSAA/502_bCN_aCN_dCN_iCN  charge      0.130 # C  - CN   | CE C in TRP
+    set type @/atom:OPLSAA/503_bNA_aNA_dNA_iNA  charge     -0.570 # N  - NA   | NE in TRP
+    set type @/atom:OPLSAA/504_bH~_aH~_dH~_iH~  charge      0.420 # H  - H~   | H on NE in TRP
+    set type @/atom:OPLSAA/505_bCT_aCT_dCT_iCT  charge     -0.005 # C  - CT   | CB in HIS
+    set type @/atom:OPLSAA/506_bCR_aCR_dCR_iCR  charge      0.295 # C  - CR   | CE1 in HID, HIE
+    set type @/atom:OPLSAA/507_bCV_aCV_dCV_iCV  charge     -0.015 # C  - CV   | CD2 in HID, CG in HIE
+    set type @/atom:OPLSAA/508_bCW_aCW_dCW_iCW  charge      0.015 # C  - CW   | CG in HID, CD2 in HIE
+    set type @/atom:OPLSAA/509_bCR_aCR_dCR_iCR  charge      0.385 # C  - CR   | CE1 in HIP
+    set type @/atom:OPLSAA/510_bCX_aCX_dCX_iCX  charge      0.215 # C  - CX   | CG, CD2 in HIP
+    set type @/atom:OPLSAA/511_bNB_aNB_dNB_iNB  charge     -0.490 # N  - NB   | NE in HID, ND in HIE
+    set type @/atom:OPLSAA/512_bNA_aNA_dNA_iNA  charge     -0.540 # N  - NA   | N in HIP
+    set type @/atom:OPLSAA/513_bH~_aH~_dH~_iH~  charge      0.460 # H  - H~   | H on N in HIP
+    set type @/atom:OPLSAA/514_bCW_aCW_dCW_iCW  charge     -0.115 # C  - CW   | CD1 in TRP
+    set type @/atom:OPLSAA/515_bCT_aCT_dCT_iCT  charge      0.055 # C  - CT   | all-atom C: CH, isopropyl benzene
+    set type @/atom:OPLSAA/516_bCT_aCT_dCT_iCT  charge      0.115 # C  - CT   | all-atom C: C, t-butyl benzene
+    set type @/atom:OPLSAA/517_bCM_aCM_dCM_iCM  charge     -0.030 # C  - CM   | vinyl ether HCOR
+    set type @/atom:OPLSAA/518_bCM_aCM_dCM_iCM  charge      0.085 # C  - CM   | vinyl ether RCOR
+    set type @/atom:OPLSAA/519_bC!_aC!_dC!_iC!  charge      0.000 # C  - C!   | biphenyl C1
+    set type @/atom:OPLSAA/520_bNC_aNC_dNC_iNC  charge     -0.678 # N  - NC   | N in pyridine 6-31G*
+    set type @/atom:OPLSAA/521_bCA_aCA_dCA_iCA  charge      0.473 # C  - CA   | C1 in pyridine CHELPG
+    set type @/atom:OPLSAA/522_bCA_aCA_dCA_iCA  charge     -0.447 # C  - CA   | C2 in pyridine charges
+    set type @/atom:OPLSAA/523_bCA_aCA_dCA_iCA  charge      0.227 # C  - CA   | C3 in pyridine for
+    set type @/atom:OPLSAA/524_bHA_aHA_dHA_iHA  charge      0.012 # H  - HA   | H1 in pyridine 520-656
+    set type @/atom:OPLSAA/525_bHA_aHA_dHA_iHA  charge      0.155 # H  - HA   | H2 in pyridine
+    set type @/atom:OPLSAA/526_bHA_aHA_dHA_iHA  charge      0.065 # H  - HA   | H3 in pyridine
+    set type @/atom:OPLSAA/527_bNC_aNC_dNC_iNC  charge     -0.468 # N  - NC   | N in pyrazine
+    set type @/atom:OPLSAA/528_bCA_aCA_dCA_iCA  charge      0.192 # C  - CA   | C in pyrazine
+    set type @/atom:OPLSAA/529_bHA_aHA_dHA_iHA  charge      0.042 # H  - HA   | H in pyrazine
+    set type @/atom:OPLSAA/530_bNC_aNC_dNC_iNC  charge     -0.839 # N  - NC   | N in pyrimidine
+    set type @/atom:OPLSAA/531_bCQ_aCQ_dCQ_iCQ  charge      0.874 # C  - CQ   | C2 in pyrimidine
+    set type @/atom:OPLSAA/532_bCA_aCA_dCA_iCA  charge      0.653 # C  - CA   | C4 in pyrimidine
+    set type @/atom:OPLSAA/533_bCA_aCA_dCA_iCA  charge     -0.689 # C  - CA   | C5 in pyrimidine
+    set type @/atom:OPLSAA/534_bHA_aHA_dHA_iHA  charge     -0.032 # H  - HA   | H2 in pyrimidine
+    set type @/atom:OPLSAA/535_bHA_aHA_dHA_iHA  charge      0.011 # H  - HA   | H4 in pyrimidine
+    set type @/atom:OPLSAA/536_bHA_aHA_dHA_iHA  charge      0.197 # H  - HA   | H5 in pyrimidine
+    set type @/atom:OPLSAA/537_bNC_aNC_dNC_iNC  charge     -0.331 # N  - NC   | N in pyridazine
+    set type @/atom:OPLSAA/538_bCA_aCA_dCA_iCA  charge      0.378 # C  - CA   | C3 in pyridazine
+    set type @/atom:OPLSAA/539_bCA_aCA_dCA_iCA  charge     -0.160 # C  - CA   | C4 in pyridazine
+    set type @/atom:OPLSAA/540_bHA_aHA_dHA_iHA  charge     -0.009 # H  - HA   | H3 in pyridazine
+    set type @/atom:OPLSAA/541_bHA_aHA_dHA_iHA  charge      0.122 # H  - HA   | H4 in pyridazine
+    set type @/atom:OPLSAA/542_bNA_aNA_dNA_iNA  charge     -0.239 # N  - NA   | N in pyrrole
+    set type @/atom:OPLSAA/543_bCW_aCW_dCW_iCW  charge     -0.163 # C  - CW   | C2 in pyrrole
+    set type @/atom:OPLSAA/544_bCS_aCS_dCS_iCS  charge     -0.149 # C  - CS   | C3 in pyrrole
+    set type @/atom:OPLSAA/545_bH~_aH~_dH~_iH~  charge      0.317 # H  - H~   | H1 in pyrrole
+    set type @/atom:OPLSAA/546_bHA_aHA_dHA_iHA  charge      0.155 # H  - HA   | H2 in pyrrole
+    set type @/atom:OPLSAA/547_bHA_aHA_dHA_iHA  charge      0.118 # H  - HA   | H3 in pyrrole
+    set type @/atom:OPLSAA/548_bNA_aNA_dNA_iNA  charge     -0.059 # N  - NA   | N1 in pyrazole
+    set type @/atom:OPLSAA/549_bNB_aNB_dNB_iNB  charge     -0.491 # N  - NB   | N2 in pyrazole
+    set type @/atom:OPLSAA/550_bCU_aCU_dCU_iCU  charge      0.246 # C  - CU   | C3 in pyrazole
+    set type @/atom:OPLSAA/551_bCS_aCS_dCS_iCS  charge     -0.320 # C  - CS   | C4 in pyrazole
+    set type @/atom:OPLSAA/552_bCW_aCW_dCW_iCW  charge     -0.034 # C  - CW   | C5 in pyrazole
+    set type @/atom:OPLSAA/553_bH~_aH~_dH~_iH~  charge      0.301 # H  - H~   | H1 in pyrazole
+    set type @/atom:OPLSAA/554_bHA_aHA_dHA_iHA  charge      0.072 # H  - HA   | H3 in pyrazole
+    set type @/atom:OPLSAA/555_bHA_aHA_dHA_iHA  charge      0.150 # H  - HA   | H4 in pyrazole
+    set type @/atom:OPLSAA/556_bHA_aHA_dHA_iHA  charge      0.135 # H  - HA   | H5 in pyrazole
+    set type @/atom:OPLSAA/557_bNA_aNA_dNA_iNA  charge     -0.257 # N  - NA   | N1 in imidazole
+    set type @/atom:OPLSAA/558_bCR_aCR_dCR_iCR  charge      0.275 # C  - CR   | C2 in imidazole
+    set type @/atom:OPLSAA/559_bNB_aNB_dNB_iNB  charge     -0.563 # N  - NB   | N3 in imidazole
+    set type @/atom:OPLSAA/560_bCV_aCV_dCV_iCV  charge      0.185 # C  - CV   | C4 in imidazole
+    set type @/atom:OPLSAA/561_bCW_aCW_dCW_iCW  charge     -0.286 # C  - CW   | C5 in imidazole
+    set type @/atom:OPLSAA/562_bH~_aH~_dH~_iH~  charge      0.306 # H  - H~   | H1 in imidazole
+    set type @/atom:OPLSAA/563_bHA_aHA_dHA_iHA  charge      0.078 # H  - HA   | H2 in imidazole
+    set type @/atom:OPLSAA/564_bHA_aHA_dHA_iHA  charge      0.075 # H  - HA   | H4 in imidazole
+    set type @/atom:OPLSAA/565_bHA_aHA_dHA_iHA  charge      0.187 # H  - HA   | H5 in imidazole
+    set type @/atom:OPLSAA/566_bOA_aOA_dOA_iOA  charge     -0.190 # O  - OA   | O in furan
+    set type @/atom:OPLSAA/567_bCW_aCW_dCW_iCW  charge     -0.019 # C  - CW   | C2 in furan
+    set type @/atom:OPLSAA/568_bCS_aCS_dCS_iCS  charge     -0.154 # C  - CS   | C3 in furan
+    set type @/atom:OPLSAA/569_bHA_aHA_dHA_iHA  charge      0.142 # H  - HA   | H2 in furan
+    set type @/atom:OPLSAA/570_bHA_aHA_dHA_iHA  charge      0.126 # H  - HA   | H3 in furan
+    set type @/atom:OPLSAA/571_bOS_aOS_dOS_iOS  charge     -0.257 # O  - OS   | O in oxazole
+    set type @/atom:OPLSAA/572_bCR_aCR_dCR_iCR  charge      0.511 # C  - CR   | C2 in oxazole
+    set type @/atom:OPLSAA/573_bNB_aNB_dNB_iNB  charge     -0.590 # N  - NB   | N in oxazole
+    set type @/atom:OPLSAA/574_bCV_aCV_dCV_iCV  charge      0.169 # C  - CV   | C4 in oxazole
+    set type @/atom:OPLSAA/575_bCW_aCW_dCW_iCW  charge     -0.148 # C  - CW   | C5 in oxazole
+    set type @/atom:OPLSAA/576_bHA_aHA_dHA_iHA  charge      0.043 # H  - HA   | H2 in oxazole
+    set type @/atom:OPLSAA/577_bHA_aHA_dHA_iHA  charge      0.091 # H  - HA   | H4 in oxazole
+    set type @/atom:OPLSAA/578_bHA_aHA_dHA_iHA  charge      0.181 # H  - HA   | H5 in oxazole
+    set type @/atom:OPLSAA/579_bOS_aOS_dOS_iOS  charge     -0.122 # O  - OS   | O in isoxazole
+    set type @/atom:OPLSAA/580_bNB_aNB_dNB_iNB  charge     -0.413 # N  - NB   | N in isoxazole
+    set type @/atom:OPLSAA/581_bCU_aCU_dCU_iCU  charge      0.405 # C  - CU   | C3 in isoxazole
+    set type @/atom:OPLSAA/582_bCS_aCS_dCS_iCS  charge     -0.455 # C  - CS   | C4 in isoxazole
+    set type @/atom:OPLSAA/583_bCW_aCW_dCW_iCW  charge      0.250 # C  - CW   | C5 in isoxazole
+    set type @/atom:OPLSAA/584_bHA_aHA_dHA_iHA  charge      0.053 # H  - HA   | H3 in isoxazole
+    set type @/atom:OPLSAA/585_bHA_aHA_dHA_iHA  charge      0.184 # H  - HA   | H4 in isoxazole
+    set type @/atom:OPLSAA/586_bHA_aHA_dHA_iHA  charge      0.098 # H  - HA   | H5 in isoxazole
+    set type @/atom:OPLSAA/587_bNA_aNA_dNA_iNA  charge     -0.500 # N  - NA   | N1 in indole
+    set type @/atom:OPLSAA/588_bCW_aCW_dCW_iCW  charge      0.001 # C  - CW   | C2 in indole
+    set type @/atom:OPLSAA/589_bCS_aCS_dCS_iCS  charge     -0.390 # C  - CS   | C3 in indole
+    set type @/atom:OPLSAA/590_bCA_aCA_dCA_iCA  charge     -0.270 # C  - CA   | C4 in indole
+    set type @/atom:OPLSAA/591_bCA_aCA_dCA_iCA  charge     -0.127 # C  - CA   | C5 in indole
+    set type @/atom:OPLSAA/592_bCA_aCA_dCA_iCA  charge     -0.108 # C  - CA   | C6 in indole
+    set type @/atom:OPLSAA/593_bCA_aCA_dCA_iCA  charge     -0.258 # C  - CA   | C7 in indole
+    set type @/atom:OPLSAA/594_bCW_aCW_dCW_iCW  charge      0.220 # C  - CW   | C8 in indole
+    set type @/atom:OPLSAA/595_bCS_aCS_dCS_iCS  charge      0.225 # C  - CS   | C9 in indole
+    set type @/atom:OPLSAA/596_bH~_aH~_dH~_iH~  charge      0.376 # H  - H~   | H1 in indole
+    set type @/atom:OPLSAA/597_bHA_aHA_dHA_iHA  charge      0.147 # H  - HA   | H2 in indole
+    set type @/atom:OPLSAA/598_bHA_aHA_dHA_iHA  charge      0.172 # H  - HA   | H3 in indole
+    set type @/atom:OPLSAA/599_bHA_aHA_dHA_iHA  charge      0.155 # H  - HA   | H4 in indole
+    set type @/atom:OPLSAA/600_bHA_aHA_dHA_iHA  charge      0.107 # H  - HA   | H5 in indole
+    set type @/atom:OPLSAA/601_bHA_aHA_dHA_iHA  charge      0.110 # H  - HA   | H6 in indole
+    set type @/atom:OPLSAA/602_bHA_aHA_dHA_iHA  charge      0.140 # H  - HA   | H7 in indole
+    set type @/atom:OPLSAA/603_bNC_aNC_dNC_iNC  charge     -0.694 # N  - NC   | N1 in quinoline
+    set type @/atom:OPLSAA/604_bCA_aCA_dCA_iCA  charge      0.425 # C  - CA   | C2 in quinoline
+    set type @/atom:OPLSAA/605_bCA_aCA_dCA_iCA  charge     -0.359 # C  - CA   | C3 in quinoline
+    set type @/atom:OPLSAA/606_bCA_aCA_dCA_iCA  charge     -0.008 # C  - CA   | C4 in quinoline
+    set type @/atom:OPLSAA/607_bCA_aCA_dCA_iCA  charge     -0.197 # C  - CA   | C5 in quinoline
+    set type @/atom:OPLSAA/608_bCA_aCA_dCA_iCA  charge     -0.112 # C  - CA   | C6 in quinoline
+    set type @/atom:OPLSAA/609_bCA_aCA_dCA_iCA  charge     -0.070 # C  - CA   | C7 in quinoline
+    set type @/atom:OPLSAA/610_bCA_aCA_dCA_iCA  charge     -0.307 # C  - CA   | C8 in quinoline
+    set type @/atom:OPLSAA/611_bCA_aCA_dCA_iCA  charge      0.563 # C  - CA   | C9 in quinoline
+    set type @/atom:OPLSAA/612_bCA_aCA_dCA_iCA  charge     -0.051 # C  - CA   | C10 in quinoline
+    set type @/atom:OPLSAA/613_bHA_aHA_dHA_iHA  charge      0.028 # H  - HA   | H2 in quinoline
+    set type @/atom:OPLSAA/614_bHA_aHA_dHA_iHA  charge      0.146 # H  - HA   | H3 in quinoline
+    set type @/atom:OPLSAA/615_bHA_aHA_dHA_iHA  charge      0.119 # H  - HA   | H4 in quinoline
+    set type @/atom:OPLSAA/616_bHA_aHA_dHA_iHA  charge      0.133 # H  - HA   | H5 in quinoline
+    set type @/atom:OPLSAA/617_bHA_aHA_dHA_iHA  charge      0.113 # H  - HA   | H6 in quinoline
+    set type @/atom:OPLSAA/618_bHA_aHA_dHA_iHA  charge      0.114 # H  - HA   | H7 in quinoline
+    set type @/atom:OPLSAA/619_bHA_aHA_dHA_iHA  charge      0.157 # H  - HA   | H8 in quinoline
+    set type @/atom:OPLSAA/620_bNC_aNC_dNC_iNC  charge     -0.760 # N  - NC   | N1 in purine (9H)
+    set type @/atom:OPLSAA/621_bCQ_aCQ_dCQ_iCQ  charge      0.679 # C  - CQ   | C2 in purine
+    set type @/atom:OPLSAA/622_bNC_aNC_dNC_iNC  charge     -0.788 # N  - NC   | N3 in purine
+    set type @/atom:OPLSAA/623_bCB_aCB_dCB_iCB  charge      0.736 # C  - CB   | C4 in purine
+    set type @/atom:OPLSAA/624_bCB_aCB_dCB_iCB  charge      0.038 # C  - CB   | C5 in purine
+    set type @/atom:OPLSAA/625_bCA_aCA_dCA_iCA  charge      0.343 # C  - CA   | C6 in purine
+    set type @/atom:OPLSAA/626_bNB_aNB_dNB_iNB  charge     -0.642 # N  - NB   | N7 in purine
+    set type @/atom:OPLSAA/627_bCR_aCR_dCR_iCR  charge      0.452 # C  - CR   | C8 in purine
+    set type @/atom:OPLSAA/628_bNA_aNA_dNA_iNA  charge     -0.682 # N  - NA   | N9 in purine
+    set type @/atom:OPLSAA/629_bHA_aHA_dHA_iHA  charge      0.024 # H  - HA   | H2 in purine
+    set type @/atom:OPLSAA/630_bHA_aHA_dHA_iHA  charge      0.101 # H  - HA   | H6 in purine
+    set type @/atom:OPLSAA/631_bHA_aHA_dHA_iHA  charge      0.086 # H  - HA   | H8 in purine
+    set type @/atom:OPLSAA/632_bH~_aH~_dH~_iH~  charge      0.413 # H  - H~   | H9 in purine
+    set type @/atom:OPLSAA/633_bSA_aSA_dSA_iSA  charge     -0.030 # S  - SA   | S in thiazole OPLS-AA/L
+    set type @/atom:OPLSAA/634_bCR_aCR_dCR_iCR  charge      0.242 # C  - CR   | C2 in thiazole
+    set type @/atom:OPLSAA/635_bNB_aNB_dNB_iNB  charge     -0.515 # N  - NB   | N in thiazole
+    set type @/atom:OPLSAA/636_bCV_aCV_dCV_iCV  charge      0.228 # C  - CV   | C4 in thiazole
+    set type @/atom:OPLSAA/637_bCW_aCW_dCW_iCW  charge     -0.299 # C  - CW   | C5 in thiazole
+    set type @/atom:OPLSAA/638_bHA_aHA_dHA_iHA  charge      0.101 # H  - HA   | H2 in thiazole
+    set type @/atom:OPLSAA/639_bHA_aHA_dHA_iHA  charge      0.068 # H  - HA   | H4 in thiazole
+    set type @/atom:OPLSAA/640_bHA_aHA_dHA_iHA  charge      0.205 # H  - HA   | H5 in thiazole
+    set type @/atom:OPLSAA/641_bNC_aNC_dNC_iNC  charge     -0.951 # N  - NC   | N in 1,3,5-triazine
+    set type @/atom:OPLSAA/642_bCQ_aCQ_dCQ_iCQ  charge      0.965 # C  - CQ   | C in 1,3,5-triazine
+    set type @/atom:OPLSAA/643_bHA_aHA_dHA_iHA  charge     -0.014 # H  - HA   | H in 1,3,5-triazine
+    set type @/atom:OPLSAA/644_bCA_aCA_dCA_iCA  charge      0.130 # C  - CA   | C5 in serotonin
+    set type @/atom:OPLSAA/645_bCT_aCT_dCT_iCT  charge      0.052 # C  - CT   | C on C3 in serotonin
+    set type @/atom:OPLSAA/646_bNC_aNC_dNC_iNC  charge     -0.599 # N  - NC   | N in 1,10-phenanthroline
+    set type @/atom:OPLSAA/647_bCA_aCA_dCA_iCA  charge      0.392 # C  - CA   | C2 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/648_bCA_aCA_dCA_iCA  charge     -0.348 # C  - CA   | C3 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/649_bCA_aCA_dCA_iCA  charge      0.020 # C  - CA   | C4 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/650_bCA_aCA_dCA_iCA  charge     -0.042 # C  - CA   | C12 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/651_bCA_aCA_dCA_iCA  charge      0.347 # C  - CA   | C11 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/652_bCA_aCA_dCA_iCA  charge     -0.196 # C  - CA   | C5 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/653_bHA_aHA_dHA_iHA  charge      0.032 # H  - HA   | H2 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/654_bHA_aHA_dHA_iHA  charge      0.146 # H  - HA   | H3 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/655_bHA_aHA_dHA_iHA  charge      0.108 # H  - HA   | H4 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/656_bHA_aHA_dHA_iHA  charge      0.140 # H  - HA   | H5 in 1,10-phenanthroline
+    set type @/atom:OPLSAA/657_bNA_aNA_dNA_iNA  charge      0.122 # N  - NA   | N1 in 1-methylimidazole
+    set type @/atom:OPLSAA/658_bCR_aCR_dCR_iCR  charge      0.166 # C  - CR   | C2 in 1-methylimidazole
+    set type @/atom:OPLSAA/659_bNB_aNB_dNB_iNB  charge     -0.580 # N  - NB   | N3 in 1-methylimidazole
+    set type @/atom:OPLSAA/660_bCV_aCV_dCV_iCV  charge      0.173 # C  - CV   | C4 in 1-methylimidazole
+    set type @/atom:OPLSAA/661_bCW_aCW_dCW_iCW  charge     -0.395 # C  - CW   | C5 in 1-methylimidazole
+    set type @/atom:OPLSAA/662_bCT_aCT_dCT_iCT  charge     -0.199 # C  - CT   | C1 in 1-methylimidazole
+    set type @/atom:OPLSAA/663_bHA_aHA_dHA_iHA  charge      0.118 # H  - HA   | H2 in 1-methylimidazole
+    set type @/atom:OPLSAA/664_bHA_aHA_dHA_iHA  charge      0.093 # H  - HA   | H4 in 1-methylimidazole
+    set type @/atom:OPLSAA/665_bHA_aHA_dHA_iHA  charge      0.208 # H  - HA   | H5 in 1-methylimidazole
+    set type @/atom:OPLSAA/666_bHC_aHC_dHC_iHC  charge      0.098 # H  - HC   | HC1 in 1-methylimidazole
+    set type @/atom:OPLSAA/667_bCT_aCT_dCT_iCT  charge     -0.139 # C  - CT   | C1 in 1-ethylimidazole
+    set type @/atom:OPLSAA/668_bCT_aCT_dCT_iCT  charge     -0.079 # C  - CT   | C1 in 1-isopropylimidazole
+    set type @/atom:OPLSAA/669_bCT_aCT_dCT_iCT  charge      0.099 # C  - CT   | C1 in 1-MeO-Me-imidazole
+    set type @/atom:OPLSAA/670_bCT_aCT_dCT_iCT  charge     -0.168 # C  - CT   | CH3, 2-methyl pyridine
+    set type @/atom:OPLSAA/671_bCT_aCT_dCT_iCT  charge     -0.108 # C  - CT   | CH2, 2-ethyl pyridine
+    set type @/atom:OPLSAA/672_bCT_aCT_dCT_iCT  charge     -0.189 # C  - CT   | CH3, 3-methyl pyridazine
+    set type @/atom:OPLSAA/673_bCT_aCT_dCT_iCT  charge     -0.129 # C  - CT   | CH2, 3-ethyl pyridazine
+    set type @/atom:OPLSAA/674_bCT_aCT_dCT_iCT  charge     -0.169 # C  - CT   | CH3, 4-methyl pyrimidine
+    set type @/atom:OPLSAA/675_bCT_aCT_dCT_iCT  charge     -0.109 # C  - CT   | CH2, 4-ethyl pyrimidine
+    set type @/atom:OPLSAA/676_bCT_aCT_dCT_iCT  charge     -0.138 # C  - CT   | CH3, 2-methyl pyrazine
+    set type @/atom:OPLSAA/677_bCT_aCT_dCT_iCT  charge     -0.078 # C  - CT   | CH2, 2-ethyl pyrazine
+    set type @/atom:OPLSAA/678_bCT_aCT_dCT_iCT  charge     -0.025 # C  - CT   | CH3, 2-methyl pyrrole
+    set type @/atom:OPLSAA/679_bCT_aCT_dCT_iCT  charge      0.035 # C  - CT   | CH2, 2-ethyl pyrrole
+    set type @/atom:OPLSAA/680_bCT_aCT_dCT_iCT  charge     -0.038 # C  - CT   | CH3, 2-methyl furan
+    set type @/atom:OPLSAA/681_bCT_aCT_dCT_iCT  charge      0.022 # C  - CT   | CH2, 2-ethyl furan
+    set type @/atom:OPLSAA/682_bSH_aSH_dSH_iSH  charge     -0.334 # S  - SH   | S in 6-mercaptopurine OPLS-AA/L
+    set type @/atom:OPLSAA/683_bHS_aHS_dHS_iHS  charge      0.255 # H  - HS   | H(S) in 6-mercaptopurine
+    set type @/atom:OPLSAA/684_bCA_aCA_dCA_iCA  charge      0.523 # C  - CA   | C6 in 6-mercaptopurine
+    set type @/atom:OPLSAA/685_bC^_aC^_dC^_iC^  charge      0.500 # C  - C^   | C: C=O beta-lactam
+    set type @/atom:OPLSAA/686_bN^_aN^_dN^_iN^  charge     -0.140 # N  - N^   | N: beta-lactam; O is 236
+    set type @/atom:OPLSAA/687_bCY_aCY_dCY_iCY  charge     0.2275 # C  - CY   | CH(N): penicillin
+    set type @/atom:OPLSAA/688_bCY_aCY_dCY_iCY  charge      0.140 # C  - CY   | CH(CO): penicillin
+    set type @/atom:OPLSAA/689_bCT_aCT_dCT_iCT  charge     -0.008 # C  - CT   | CH3, 3-methyl indole
+    set type @/atom:OPLSAA/690_bC!_aC!_dC!_iC!  charge      0.588 # C  - C!   | 2-phenyl pyridine C2
+    set type @/atom:OPLSAA/691_bC!_aC!_dC!_iC!  charge     -0.103 # C  - C!   | 2-phenyl pyridine C2'
+    set type @/atom:OPLSAA/692_bC!_aC!_dC!_iC!  charge     -0.332 # C  - C!   | 3-phenyl pyridine C3
+    set type @/atom:OPLSAA/693_bC!_aC!_dC!_iC!  charge      0.040 # C  - C!   | 3-phenyl pyridine C3'
+    set type @/atom:OPLSAA/694_bC!_aC!_dC!_iC!  charge      0.342 # C  - C!   | 4-phenyl pyridine C4
+    set type @/atom:OPLSAA/695_bC!_aC!_dC!_iC!  charge     -0.050 # C  - C!   | 4-phenyl pyridine C4'
+    set type @/atom:OPLSAA/696_bS~_aS~_dS~_iS~  charge     -0.205 # S  - S~   | S in diphenylthioether OPLS-AA/L
+    set type @/atom:OPLSAA/697_bAc_aAc_dAc_iAc  charge      3.000 # Ac - Ac   | Ac+3 Actinide params -
+    set type @/atom:OPLSAA/698_bTh_aTh_dTh_iTh  charge      4.000 # Th - Th   | Th+4
+    set type @/atom:OPLSAA/699_bAm_aAm_dAm_iAm  charge      3.000 # Am - Am   | Am+3 F. van Veggel
+    set type @/atom:OPLSAA/700_bC+_aC+_dC+_iC+  charge      0.619 # C  - C+   | C+ in t-butyl+ B3LYP/6-31G*
+    set type @/atom:OPLSAA/701_bCT_aCT_dCT_iCT  charge     -0.395 # C  - CT   | C in t-butyl+ charges
+    set type @/atom:OPLSAA/702_bHC_aHC_dHC_iHC  charge      0.174 # H  - HC   | H in t-butyl+
+    set type @/atom:OPLSAA/703_bLa_aLa_dLa_iLa  charge      3.000 # La - La   | La+3
+    set type @/atom:OPLSAA/704_bNd_aNd_dNd_iNd  charge      3.000 # Nd - Nd   | Nd+3 Lanthanide params -
+    set type @/atom:OPLSAA/705_bEu_aEu_dEu_iEu  charge      3.000 # Eu - Eu   | Eu+3 F. van Veggel, Chem Eur J
+    set type @/atom:OPLSAA/706_bGd_aGd_dGd_iGd  charge      3.000 # Gd - Gd   | Gd+3 5, 90 (1999).
+    set type @/atom:OPLSAA/707_bYb_aYb_dYb_iYb  charge      3.000 # Yb - Yb   | Yb+3 see also JPC-A 104, 7659 (2000)
+    set type @/atom:OPLSAA/708_bCM_aCM_dCM_iCM  charge     -0.344 # C  - CM   | C in Cl..CH3..Cl- TS
+    set type @/atom:OPLSAA/709_bCl_aCl_dCl_iCl  charge     -0.628 # Cl - Cl   | Cl charges: JACS 117,2024 (95)
+    set type @/atom:OPLSAA/710_bHC_aHC_dHC_iHC  charge      0.200 # H  - HC   | H in Cl..CH3..Cl- TS
+    set type @/atom:OPLSAA/711_bCY_aCY_dCY_iCY  charge      -0.12 # C  - CY   | CH2 C: cyclopropane OPLS-2020
+    set type @/atom:OPLSAA/712_bCY_aCY_dCY_iCY  charge      -0.06 # C  - CY   | CHR C: cyclopropane OPLS-2020
+    set type @/atom:OPLSAA/713_bCY_aCY_dCY_iCY  charge       0.00 # C  - CY   | CR2 C: cyclopropane OPLS-2020
+    set type @/atom:OPLSAA/714_bCY_aCY_dCY_iCY  charge      -0.12 # C  - CY   | CH2 C: cyclobutane OPLS-2020
+    set type @/atom:OPLSAA/715_bCY_aCY_dCY_iCY  charge      -0.06 # C  - CY   | CHR C: cyclobutane OPLS-2020
+    set type @/atom:OPLSAA/716_bCY_aCY_dCY_iCY  charge       0.00 # C  - CY   | CR2 C: cyclobutane OPLS-2020
+    set type @/atom:OPLSAA/718_bCA_aCA_dCA_iCA  charge      0.280 # C  - CA   | C(F) fluorobenzene
+    set type @/atom:OPLSAA/719_bF~_aF~_dF~_iF~  charge     -0.280 # F  - F~   | F fluorobenzene
+    set type @/atom:OPLSAA/720_bCA_aCA_dCA_iCA  charge      0.130 # C  - CA   | C(F) hexafluorobenzene
+    set type @/atom:OPLSAA/721_bF~_aF~_dF~_iF~  charge     -0.130 # F  - F~   | F hexafluorobenzene
+    set type @/atom:OPLSAA/722_bBr_aBr_dBr_iBr  charge     -0.220 # Br - Br   | Br alkyl bromide (UA)
+    set type @/atom:OPLSAA/723_bC2_aC2_dC2_iC2  charge      0.220 # C  - C2   | CH2 alkyl bromide (UA)
+    set type @/atom:OPLSAA/724_bCA_aCA_dCA_iCA  charge      0.150 # C  - CA   | C(CF3) trifluoromethylbenzene
+    set type @/atom:OPLSAA/725_bCT_aCT_dCT_iCT  charge      0.450 # C  - CT   | CF3 "
+    set type @/atom:OPLSAA/726_bF~_aF~_dF~_iF~  charge     -0.200 # F  - F~   | F "
+    set type @/atom:OPLSAA/727_bCA_aCA_dCA_iCA  charge      0.200 # C  - CA   | C(F) difluorobenzenes
+    set type @/atom:OPLSAA/728_bF~_aF~_dF~_iF~  charge     -0.200 # F  - F~   | F difluorobenzenes
+    set type @/atom:OPLSAA/729_bCA_aCA_dCA_iCA  charge      0.150 # C  - CA   | C(Br) bromobenzene JCTC 2012, 8, 3895
+    set type @/atom:OPLSAA/730_bBr_aBr_dBr_iBr  charge     -0.150 # Br - Br   | Br bromobenzene
+    set type @/atom:OPLSAA/731_bCA_aCA_dCA_iCA  charge      0.100 # C  - CA   | C(I) iodobenzene sigma CA changed to 0.068
+    set type @/atom:OPLSAA/732_bI~_aI~_dI~_iI~  charge     -0.100 # I  - I~   | I iodobenzene in OPLS/2020
+    set type @/atom:OPLSAA/733_bCY_aCY_dCY_iCY  charge      0.055 # C  - CY   | all-atom C: CH, cyclopropyl/butyl benzene
+    set type @/atom:OPLSAA/734_bSH_aSH_dSH_iSH  charge     -0.220 # S  - SH   | all-atom S: thiophenol (HS is #204) OPLS-AA/L
+    set type @/atom:OPLSAA/735_bCA_aCA_dCA_iCA  charge      0.065 # C  - CA   | C(S) thiophenol
+    set type @/atom:OPLSAA/736_bCA_aCA_dCA_iCA  charge      0.013 # C  - CA   | CG of Benzamidine
+    set type @/atom:OPLSAA/737_bCA_aCA_dCA_iCA  charge     -0.106 # C  - CA   | CD of Benzamidine
+    set type @/atom:OPLSAA/738_bCA_aCA_dCA_iCA  charge     -0.090 # C  - CA   | CE of Benzamidine
+    set type @/atom:OPLSAA/739_bCA_aCA_dCA_iCA  charge     -0.119 # C  - CA   | CZ of Benzamidine
+    set type @/atom:OPLSAA/740_bHA_aHA_dHA_iHA  charge      0.141 # H  - HA   | HD of Benzamidine
+    set type @/atom:OPLSAA/741_bHA_aHA_dHA_iHA  charge      0.129 # H  - HA   | HE of Benzamidine
+    set type @/atom:OPLSAA/742_bCA_aCA_dCA_iCA  charge      0.827 # C  - CA   | C+ of Benzamidine
+    set type @/atom:OPLSAA/743_bN2_aN2_dN2_iN2  charge     -0.885 # N  - N2   | N-H2 of Benzamidine
+    set type @/atom:OPLSAA/744_bH~_aH~_dH~_iH~  charge      0.426 # H  - H~   | H1-N of Benzamidine
+    set type @/atom:OPLSAA/745_bH~_aH~_dH~_iH~  charge      0.465 # H  - H~   | H2-N of Benzamidine
+    set type @/atom:OPLSAA/746_bHA_aHA_dHA_iHA  charge      0.119 # H  - HA   | H-CG of Benzamidine
+    set type @/atom:OPLSAA/747_bCT_aCT_dCT_iCT  charge      -0.02 # C  - CT   | CH3 in neutral MeGDN
+    set type @/atom:OPLSAA/748_bCT_aCT_dCT_iCT  charge       0.04 # C  - CT   | CD of neutral ARG
+    set type @/atom:OPLSAA/749_bNY_aNY_dNY_iNY  charge     -0.620 # N  - NY   | NE "
+    set type @/atom:OPLSAA/750_bNC_aNC_dNC_iNC  charge     -0.785 # N  - NC   | N1 " " " (HN=CZ)
+    set type @/atom:OPLSAA/751_bNY_aNY_dNY_iNY  charge     -0.785 # N  - NY   | N2 " " " (H2N-CZ)
+    set type @/atom:OPLSAA/752_bCA_aCA_dCA_iCA  charge      0.550 # C  - CA   | CZ " " "
+    set type @/atom:OPLSAA/753_bNZ_aNZ_dNZ_iNZ  charge     -0.560 # N  - NZ   | N IN RCN all-atom nitriles
+    set type @/atom:OPLSAA/754_bCZ_aCZ_dCZ_iCZ  charge      0.460 # C  - CZ   | C IN RCN "
+    set type @/atom:OPLSAA/755_bCT_aCT_dCT_iCT  charge     -0.080 # C  - CT   | C of CH3 in CH3CN
+    set type @/atom:OPLSAA/756_bCT_aCT_dCT_iCT  charge     -0.020 # C  - CT   | C of CH2 in RCH2CN
+    set type @/atom:OPLSAA/757_bCT_aCT_dCT_iCT  charge      0.040 # C  - CT   | C of CH in R2CHCN
+    set type @/atom:OPLSAA/758_bCT_aCT_dCT_iCT  charge      0.100 # C  - CT   | C of C in R3CCN
+    set type @/atom:OPLSAA/759_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | HC-CT-CN alpha-H in nitriles
+    set type @/atom:OPLSAA/760_bNO_aNO_dNO_iNO  charge       0.54 # N  - NO   | N in nitro R-NO2
+    set type @/atom:OPLSAA/761_bON_aON_dON_iON  charge      -0.37 # O  - ON   | O in nitro R-NO2
+    set type @/atom:OPLSAA/762_bCT_aCT_dCT_iCT  charge       0.02 # C  - CT   | CT-NO2 nitromethane
+    set type @/atom:OPLSAA/763_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | HC-CT-NO2 alpha-H in nitroalkanes
+    set type @/atom:OPLSAA/764_bCT_aCT_dCT_iCT  charge       0.08 # C  - CT   | CT-NO2 nitroethane
+    set type @/atom:OPLSAA/765_bCT_aCT_dCT_iCT  charge       0.14 # C  - CT   | CT-NO2 2-nitropropane
+    set type @/atom:OPLSAA/766_bCT_aCT_dCT_iCT  charge       0.20 # C  - CT   | CT-NO2 2-methyl-2-nitropropane
+    set type @/atom:OPLSAA/767_bNO_aNO_dNO_iNO  charge       0.65 # N  - NO   | N in nitro Ar-NO2
+    set type @/atom:OPLSAA/768_bCA_aCA_dCA_iCA  charge       0.09 # C  - CA   | C(NO2) nitrobenzene
+    set type @/atom:OPLSAA/769_bCT_aCT_dCT_iCT  charge      0.035 # C  - CT   | C of CH2 in PhCH2CN
+    set type @/atom:OPLSAA/770_bNC_aNC_dNC_iNC  charge     -0.900 # N  - NC   | N in neutral benzamidine
+    set type @/atom:OPLSAA/771_bO~_aO~_dO~_iO~  charge     -0.500 # O  - O~   | propylene carbonate O
+    set type @/atom:OPLSAA/772_bC~_aC~_dC~_iC~  charge      0.860 # C  - C~   | " C=O Lucienne's
+    set type @/atom:OPLSAA/773_bOS_aOS_dOS_iOS  charge     -0.450 # O  - OS   | " OS parameters
+    set type @/atom:OPLSAA/774_bCT_aCT_dCT_iCT  charge      0.210 # C  - CT   | " C in CH2
+    set type @/atom:OPLSAA/775_bCT_aCT_dCT_iCT  charge      0.160 # C  - CT   | " C in CH
+    set type @/atom:OPLSAA/776_bCT_aCT_dCT_iCT  charge     -0.100 # C  - CT   | " C in CH3 see also 789
+    set type @/atom:OPLSAA/777_bHC_aHC_dHC_iHC  charge      0.030 # H  - HC   | " H in CH2
+    set type @/atom:OPLSAA/778_bHC_aHC_dHC_iHC  charge      0.030 # H  - HC   | " H in CH
+    set type @/atom:OPLSAA/779_bHC_aHC_dHC_iHC  charge      0.060 # H  - HC   | " H in CH3
+    set type @/atom:OPLSAA/780_bOS_aOS_dOS_iOS  charge     -0.780 # O  - OS   | O-(POn)2 in GTP (JT-R 10/18/05)
+    set type @/atom:OPLSAA/781_bP+_aP+_dP+_iP+  charge     0.9684 # P  - P+   | phosphonium R4P+
+    set type @/atom:OPLSAA/782_bCT_aCT_dCT_iCT  charge    -0.5081 # C  - CT   | CH3PR3+ 6-31G* CHELPG
+    set type @/atom:OPLSAA/783_bCT_aCT_dCT_iCT  charge    -0.0080 # C  - CT   | RCH2PR3+
+    set type @/atom:OPLSAA/784_bHC_aHC_dHC_iHC  charge     0.1720 # H  - HC   | H in CH3PR3+
+    set type @/atom:OPLSAA/785_bP~_aP~_dP~_iP~  charge     1.3400 # P  - P~   | P in PF6-
+    set type @/atom:OPLSAA/786_bF~_aF~_dF~_iF~  charge    -0.3900 # F  - F~   | F in PF6-
+    set type @/atom:OPLSAA/787_bN~_aN~_dN~_iN~  charge      0.794 # N  - N~   | N in NO3- F. van Veggel
+    set type @/atom:OPLSAA/788_bO~_aO~_dO~_iO~  charge     -0.598 # O  - O~   | O in NO3- r(NO) =
+    set type @/atom:OPLSAA/789_bCT_aCT_dCT_iCT  charge      0.180 # C  - CT   | methoxy C in carbonate
+    set type @/atom:OPLSAA/790_bCA_aCA_dCA_iCA  charge      0.150 # C  - CA   | C(CF3) trifluoromethylbenzene test
+    set type @/atom:OPLSAA/791_bCF_aCF_dCF_iCF  charge      0.450 # C  - CF   | CF3 " test
+    set type @/atom:OPLSAA/792_bF~_aF~_dF~_iF~  charge     -0.200 # F  - F~   | F " test
+    set type @/atom:OPLSAA/793_bCA_aCA_dCA_iCA  charge      0.380 # C  - CA   | C-ipso phenylguanidinium ion
+    set type @/atom:OPLSAA/794_bHC_aHC_dHC_iHC  charge      0.030 # H  - HC   | H(COR): alpha H ether 2020 for CH3-O-R
+    set type @/atom:OPLSAA/798_bCT_aCT_dCT_iCT  charge       0.00 # C  - CT   | CH4 all-atom C: q = 0
+    set type @/atom:OPLSAA/799_bHC_aHC_dHC_iHC  charge       0.00 # H  - HC   | H all-atom H: q = 0
+    set type @/atom:OPLSAA/900_bNT_aNT_dNT_iNT  charge     -0.900 # N  - NT   | N primary amines
+    set type @/atom:OPLSAA/901_bNT_aNT_dNT_iNT  charge     -0.780 # N  - NT   | N secondary amines
+    set type @/atom:OPLSAA/902_bNT_aNT_dNT_iNT  charge     -0.630 # N  - NT   | N tertiary amines
+    set type @/atom:OPLSAA/903_bCT_aCT_dCT_iCT  charge      0.000 # C  - CT   | CH3(N) primary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/904_bCT_aCT_dCT_iCT  charge      0.020 # C  - CT   | CH3(N) secondary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/905_bCT_aCT_dCT_iCT  charge      0.030 # C  - CT   | CH3(N) tertiary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/906_bCT_aCT_dCT_iCT  charge      0.060 # C  - CT   | CH2(N) primary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/907_bCT_aCT_dCT_iCT  charge      0.080 # C  - CT   | CH2(N) secondary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/908_bCT_aCT_dCT_iCT  charge      0.090 # C  - CT   | CH2(N) tertiary aliphatic amines, H(C) type 911
+    set type @/atom:OPLSAA/909_bH~_aH~_dH~_iH~  charge      0.360 # H  - H~   | H(N) primary amines
+    set type @/atom:OPLSAA/910_bH~_aH~_dH~_iH~  charge      0.380 # H  - H~   | H(N) secondary amines
+    set type @/atom:OPLSAA/911_bHC_aHC_dHC_iHC  charge       0.06 # H  - HC   | H(C) for Carbons directly bonded to N in amines, diamine
+    set type @/atom:OPLSAA/912_bCT_aCT_dCT_iCT  charge      0.120 # C  - CT   | CH primary isopropyl amine
+    set type @/atom:OPLSAA/913_bCT_aCT_dCT_iCT  charge      0.180 # C  - CT   | C primary t-butyl amine
+    set type @/atom:OPLSAA/914_bCT_aCT_dCT_iCT  charge      0.140 # C  - CT   | CH secondary isopropyl amine
+    set type @/atom:OPLSAA/915_bCT_aCT_dCT_iCT  charge      0.150 # C  - CT   | CH tertiary isopropyl amine
+    set type @/atom:OPLSAA/916_bCA_aCA_dCA_iCA  charge      0.180 # C  - CA   | C(NH2) aniline
+    set type @/atom:OPLSAA/917_bCA_aCA_dCA_iCA  charge      0.200 # C  - CA   | C(NHR) N-methylaniline
+    set type @/atom:OPLSAA/918_bCA_aCA_dCA_iCA  charge      0.210 # C  - CA   | C(NR2) N,N-dimethylaniline
+    set type @/atom:OPLSAA/919_bCT_aCT_dCT_iCT  charge      0.115 # C  - CT   | C in CH2NH2 - benzyl amines; C(CH2NH2) is #221
+    set type @/atom:OPLSAA/920_bCT_aCT_dCT_iCT  charge      0.175 # C  - CT   | C in CHRNH2 - benzyl amines
+    set type @/atom:OPLSAA/921_bCT_aCT_dCT_iCT  charge      0.235 # C  - CT   | C in CR2NH2 - benzyl amines
+    set type @/atom:OPLSAA/922_bCT_aCT_dCT_iCT  charge      0.195 # C  - CT   | C in CH2OR - benzyl ethers; C(CH2OR) is #221
+    set type @/atom:OPLSAA/923_bCT_aCT_dCT_iCT  charge     0.1525 # C  - CT   | C in CH2SR - benzyl sulfides; C(CH2SR) is #221
+    set type @/atom:OPLSAA/924_bCT_aCT_dCT_iCT  charge      0.135 # C  - CT   | C in CH2NHR - benzyl amines; C(CH2NH2) is #221
+    set type @/atom:OPLSAA/925_bCZ_aCZ_dCZ_iCZ  charge     -0.200 # C  - CZ   | alkyne C%C - acetylene
+    set type @/atom:OPLSAA/926_bHC_aHC_dHC_iHC  charge      0.200 # H  - HC   | alkyne RC%CH terminal H
+    set type @/atom:OPLSAA/927_bCT_aCT_dCT_iCT  charge      0.020 # C  - CT   | H3C-C%C
+    set type @/atom:OPLSAA/928_bCT_aCT_dCT_iCT  charge      0.080 # C  - CT   | RCH2-C%C
+    set type @/atom:OPLSAA/929_bCT_aCT_dCT_iCT  charge      0.140 # C  - CT   | R2CH-C%C
+    set type @/atom:OPLSAA/930_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | R3C-C%C
+    set type @/atom:OPLSAA/931_bCO_aCO_dCO_iCO  charge      0.450 # C  - CO   | C1' of (ade, gua) by Deping
+    set type @/atom:OPLSAA/932_bCO_aCO_dCO_iCO  charge      0.480 # C  - CO   | C1' of cyt by Deping
+    set type @/atom:OPLSAA/933_bCO_aCO_dCO_iCO  charge      0.510 # C  - CO   | C1' of (ura, thy) by Deping
+    set type @/atom:OPLSAA/934_bOH_aOH_dOH_iOH  charge     -0.655 # O  - OH   | O5' by Deping
+    set type @/atom:OPLSAA/935_bHO_aHO_dHO_iHO  charge      0.390 # H  - HO   | H(3') OH by Deping
+    set type @/atom:OPLSAA/936_bN§_aN§_dN§_iN§  charge      -0.50 # N  - N§   | Adenine N9 Guanine nucleosides
+    set type @/atom:OPLSAA/937_bN§_aN§_dN§_iN§  charge      -0.56 # N  - N§   | Cytosine N1 nucleoside
+    set type @/atom:OPLSAA/938_bN§_aN§_dN§_iN§  charge      -0.60 # N  - N§   | Uracil N1 Thymine nucleosides
+    set type @/atom:OPLSAA/939_bCZ_aCZ_dCZ_iCZ  charge      0.000 # C  - CZ   | alkyne RC%CR - only did MC for MeCCMe
+    set type @/atom:OPLSAA/940_bN3_aN3_dN3_iN3  charge      -0.10 # N  - N3   | N (R3NH+)
+    set type @/atom:OPLSAA/941_bH3_aH3_dH3_iH3  charge       0.29 # H  - H3   | H (R3NH+)
+    set type @/atom:OPLSAA/942_bCT_aCT_dCT_iCT  charge      0.090 # C  - CT   | C in CH3NHR2+
+    set type @/atom:OPLSAA/943_bCT_aCT_dCT_iCT  charge      0.150 # C  - CT   | C in RCH2NHR2+
+    set type @/atom:OPLSAA/944_bCT_aCT_dCT_iCT  charge      0.210 # C  - CT   | C in R2CHNHR2+
+    set type @/atom:OPLSAA/945_bCT_aCT_dCT_iCT  charge      0.270 # C  - CT   | C in R3CNHR2+
+    set type @/atom:OPLSAA/946_bCW_aCW_dCW_iCW  charge      0.096 # C  - CW   | C2 in 2-phenylfuran
+    set type @/atom:OPLSAA/947_bCS_aCS_dCS_iCS  charge     -0.039 # C  - CS   | C3 in 3-phenylfuran
+    set type @/atom:OPLSAA/948_bC!_aC!_dC!_iC!  charge      0.027 # C  - C!   | C2' in 2-phenylfuran
+    set type @/atom:OPLSAA/949_bC!_aC!_dC!_iC!  charge      0.011 # C  - C!   | C3' in 2-phenylfuran
+    set type @/atom:OPLSAA/950_bHC_aHC_dHC_iHC  charge      0.074 # H  - HC   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/951_bCT_aCT_dCT_iCT  charge     -0.029 # C  - CT   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/952_bC~_aC~_dC~_iC~  charge      0.700 # C  - C~   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/953_bN3_aN3_dN3_iN3  charge     -0.352 # N  - N3   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/954_bO2_aO2_dO2_iO2  charge     -0.709 # O  - O2   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/955_bH3_aH3_dH3_iH3  charge      0.317 # H  - H3   | glycine zwit. 6-31G* CHELPG charges
+    set type @/atom:OPLSAA/956_bF~_aF~_dF~_iF~  charge     -0.220 # F  - F~   | F in monoalkyl fluorides tentative
+    set type @/atom:OPLSAA/957_bCT_aCT_dCT_iCT  charge      0.020 # C  - CT   | RCH2F " " tentative
+    set type @/atom:OPLSAA/958_bHC_aHC_dHC_iHC  charge      0.100 # H  - HC   | H in RCHF tentative
+    set type @/atom:OPLSAA/959_bCT_aCT_dCT_iCT  charge      0.120 # C  - CT   | R2CHF " " tentative
+    set type @/atom:OPLSAA/960_bCT_aCT_dCT_iCT  charge      0.220 # C  - CT   | R3CF " " tentative
+    set type @/atom:OPLSAA/961_bCF_aCF_dCF_iCF  charge       0.36 # C  - CF   | CF3 perfluoroalkanes JPC A, 105, 4118
+    set type @/atom:OPLSAA/962_bCF_aCF_dCF_iCF  charge       0.24 # C  - CF   | CF2 perfluoroalkanes "
+    set type @/atom:OPLSAA/963_bCF_aCF_dCF_iCF  charge       0.12 # C  - CF   | CF perfluoroalkanes "
+    set type @/atom:OPLSAA/964_bCF_aCF_dCF_iCF  charge       0.48 # C  - CF   | CF4 "
+    set type @/atom:OPLSAA/965_bF~_aF~_dF~_iF~  charge     -0.120 # F  - F~   | F F in perfluoroalkanes "
+    set type @/atom:OPLSAA/966_bCT_aCT_dCT_iCT  charge      0.250 # C  - CT   | CF2H difluoromethylbenzene
+    set type @/atom:OPLSAA/967_bHC_aHC_dHC_iHC  charge      0.150 # H  - HC   | H in CF2H "
+    set type @/atom:OPLSAA/968_bCT_aCT_dCT_iCT  charge     -0.080 # C  - CT   | FCH2COO- fluoroacetate tentative
+    set type @/atom:OPLSAA/969_bCT_aCT_dCT_iCT  charge     -0.106 # C  - CT   | ClCH2COO- chloroacetate "
+    set type @/atom:OPLSAA/970_bCl_aCl_dCl_iCl  charge     -0.200 # Cl - Cl   | Cl in alkyl chlorides repeat of 151
+    set type @/atom:OPLSAA/971_bCT_aCT_dCT_iCT  charge     -0.006 # C  - CT   | RCH2Cl " " 152
+    set type @/atom:OPLSAA/972_bHC_aHC_dHC_iHC  charge      0.103 # H  - HC   | H in RCHCl 153
+    set type @/atom:OPLSAA/973_bCT_aCT_dCT_iCT  charge      0.097 # C  - CT   | R2CHCl " " tentative
+    set type @/atom:OPLSAA/974_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | R3CCl " " tentative
+    set type @/atom:OPLSAA/975_bBr_aBr_dBr_iBr  charge     -0.200 # Br - Br   | Br in alkyl bromides JPCB 16264 (2004)
+    set type @/atom:OPLSAA/976_bCT_aCT_dCT_iCT  charge     -0.006 # C  - CT   | RCH2Br " " "
+    set type @/atom:OPLSAA/977_bHC_aHC_dHC_iHC  charge      0.103 # H  - HC   | H in RCHBr "
+    set type @/atom:OPLSAA/978_bCT_aCT_dCT_iCT  charge      0.097 # C  - CT   | R2CHBr " " tentative
+    set type @/atom:OPLSAA/979_bCT_aCT_dCT_iCT  charge      0.200 # C  - CT   | R3CBr " " tentative
+    set type @/atom:OPLSAA/980_bF~_aF~_dF~_iF~  charge     -0.080 # F  - F~   | F in acyl fluoride tentative
+    set type @/atom:OPLSAA/981_bCl_aCl_dCl_iCl  charge     -0.080 # Cl - Cl   | Cl in acyl chloride tentative
+    set type @/atom:OPLSAA/982_bBr_aBr_dBr_iBr  charge     -0.080 # Br - Br   | Br in acyl bromide tentative
+    set type @/atom:OPLSAA/983_bCA_aCA_dCA_iCA  charge      0.100 # C  - CA   | C(OCF3): trifluoroanisole
+    set type @/atom:OPLSAA/984_bOS_aOS_dOS_iOS  charge     -0.250 # O  - OS   | O: trifluoroanisole
+    set type @/atom:OPLSAA/985_bCT_aCT_dCT_iCT  charge      0.600 # C  - CT   | C in CF3: trifluoroanisole
+    set type @/atom:OPLSAA/986_bF~_aF~_dF~_iF~  charge     -0.150 # F  - F~   | F: trifluoroanisole
+    set type @/atom:OPLSAA/987_bN~_aN~_dN~_iN~  charge     -0.025 # N  - N~   | N: N-methyl,N-phenylacetamide
+    set type @/atom:OPLSAA/988_bCA_aCA_dCA_iCA  charge     -0.045 # C  - CA   | ipso C in N-methyl,N-phenylacetamide
+    set type @/atom:OPLSAA/989_bCT_aCT_dCT_iCT  charge      0.145 # C  - CT   | C in CH2NR2 - benzyl amines; C(CH2NH2) is #221
+    set type @/atom:OPLSAA/990_bC~_aC~_dC~_iC~  charge      0.888 # C  - C~   | C in hydroxamic acid jtr 11/98
+    set type @/atom:OPLSAA/991_bC~_aC~_dC~_iC~  charge      1.003 # C  - C~   | C in aromatic hydroxamic aciT
+    set type @/atom:OPLSAA/992_bO~_aO~_dO~_iO~  charge     -0.658 # O  - O~   | O in hydroxamic acid
+    set type @/atom:OPLSAA/993_bN~_aN~_dN~_iN~  charge     -0.634 # N  - N~   | N in hydroxamic acid
+    set type @/atom:OPLSAA/994_bH~_aH~_dH~_iH~  charge      0.411 # H  - H~   | HN in hydroxamic acid
+    set type @/atom:OPLSAA/995_bOH_aOH_dOH_iOH  charge     -0.442 # O  - OH   | OH in hydroxamic acid
+    set type @/atom:OPLSAA/996_bHO_aHO_dHO_iHO  charge      0.435 # H  - HO   | HO in hydroxamic acid
+    set type @/atom:OPLSAA/997_bCT_aCT_dCT_iCT  charge      0.225 # C  - CT   | C in CHROR - benzyl ethers; C(CHROR) is #221
+    set type @/atom:OPLSAA/998_bCT_aCT_dCT_iCT  charge      0.255 # C  - CT   | C in CRROR - benzyl ethers; C(CRROR) is #221
+    set type @/atom:OPLSAA/1000_bC!_aC!_dC!_iC! charge     -0.034 # C  - C!   | 3-phenyl pyrrole C3
+    set type @/atom:OPLSAA/1001_bC!_aC!_dC!_iC! charge      0.003 # C  - C!   | 3-phenyl pyrrole C3'
+    set type @/atom:OPLSAA/1002_bC!_aC!_dC!_iC! charge      0.300 # C  - C!   | 4-phenyl imidazole C4
+    set type @/atom:OPLSAA/1003_bC!_aC!_dC!_iC! charge     -0.040 # C  - C!   | 4-phenyl imidazole C4'
+    set type @/atom:OPLSAA/1004_bCA_aCA_dCA_iCA charge    -0.0575 # C  - CA   | diphenylmethane Cipso
+    set type @/atom:OPLSAA/1005_bZn_aZn_dZn_iZn charge        2.0 # Zn - Zn   | JACS 113, 8262 (1991) Zinc
+    #                                                                                                   
+    #    Halogen Bonding - Jorgensen, W. L.; Schyman, P. JCTC 2012, 8, 3895-3901.
+    set type @/atom:OPLSAA/1006_bXC_aXC_dXC_iXC charge      0.075 # XX - XC   | chlorine plus site Jan 23, 2012
+    set type @/atom:OPLSAA/1007_bXB_aXB_dXB_iXB charge      0.100 # XX - XB   | bromine plus site Jan 23, 2012
+    set type @/atom:OPLSAA/1008_bXI_aXI_dXI_iXI charge      0.110 # XX - XI   | iodine plus site Jan 23, 2012
+    set type @/atom:OPLSAA/1009_bCA_aCA_dCA_iCA charge      0.175 # C  - CA   | C(Cl) chlorobenzene with X site
+    set type @/atom:OPLSAA/1010_bCl_aCl_dCl_iCl charge     -0.250 # Cl - Cl   | Cl chlorobenzene with X site
+    #                                                                                                   
+    set type @/atom:OPLSAA/1011_bCT_aCT_dCT_iCT charge     -0.070 # C  - CT   | C(I) iodoalkane - tentative - primary
+    set type @/atom:OPLSAA/1012_bCT_aCT_dCT_iCT charge      0.030 # C  - CT   | C(I) iodoalkane - tentative - secondary
+    set type @/atom:OPLSAA/1013_bCT_aCT_dCT_iCT charge      0.130 # C  - CT   | C(I) iodoalkane - tentative - tertiary
+    set type @/atom:OPLSAA/1014_bI~_aI~_dI~_iI~ charge     -0.130 # I  - I~   | I iodoalkane - tentative
+    set type @/atom:OPLSAA/1015_bHC_aHC_dHC_iHC charge      0.100 # H  - HC   | H in RCHI
+    #                                                                                                   
+    set type @/atom:OPLSAA/1016_bCA_aCA_dCA_iCA charge      0.170 # C  - CA   | C(Br) bromobenzene with X site
+    set type @/atom:OPLSAA/1017_bBr_aBr_dBr_iBr charge     -0.270 # Br - Br   | Br bromobenzene with X site
+    set type @/atom:OPLSAA/1018_bCA_aCA_dCA_iCA charge      0.150 # C  - CA   | C(I) iodobenzene with X site
+    set type @/atom:OPLSAA/1019_bI~_aI~_dI~_iI~ charge     -0.260 # I  - I~   | I iodobenzene with X site
+    #                                                                                                   
+    set type @/atom:OPLSAA/1021_bN~_aN~_dN~_iN~ charge     -0.685 # N  - N~   | N of secondary N-phenyl sulfonamide
+    set type @/atom:OPLSAA/1022_bCA_aCA_dCA_iCA charge      0.155 # C  - CA   | benzene C on N of N-phenyl sulfonamide
+    set type @/atom:OPLSAA/1025_bO^_aO^_dO^_iO^ charge     -0.400 # O  - O^   | O epoxide oxirane
+    set type @/atom:OPLSAA/1026_bCY_aCY_dCY_iCY charge      0.140 # C  - CY   | CH2 epoxide
+    set type @/atom:OPLSAA/1027_bCY_aCY_dCY_iCY charge      0.170 # C  - CY   | CH epoxide
+    set type @/atom:OPLSAA/1028_bCY_aCY_dCY_iCY charge      0.200 # C  - CY   | C epoxide
+    set type @/atom:OPLSAA/1029_bHC_aHC_dHC_iHC charge      0.030 # H  - HC   | H epoxide on C-O
+    set type @/atom:OPLSAA/1032_bCA_aCA_dCA_iCA charge     -0.100 # C  - CA   | ipso C in benzoate ion
+    set type @/atom:OPLSAA/1033_bN~_aN~_dN~_iN~ charge     -0.427 # N  - N~   | N: N-phenylurea
+    set type @/atom:OPLSAA/1034_bCA_aCA_dCA_iCA charge      0.218 # C  - CA   | ipso C in N-phenylurea
+    set type @/atom:OPLSAA/1035_bC~_aC~_dC~_iC~ charge      0.600 # C  - C~   | C: C=O in tert amide. Acyl R in amides
+    set type @/atom:OPLSAA/1036_bO~_aO~_dO~_iO~ charge     -0.600 # O  - O~   | O: C=O in tert amide. is neutral - use
+    set type @/atom:OPLSAA/1037_bNM_aNM_dNM_iNM charge     -0.360 # N  - NM   | N: tertiary amide JCC 25, 1322 (2004)
+    set type @/atom:OPLSAA/1038_bCT_aCT_dCT_iCT charge      0.000 # C  - CT   | C on N: tertiary amide CH3
+    set type @/atom:OPLSAA/1039_bCT_aCT_dCT_iCT charge      0.060 # C  - CT   | C on N: tertiary amide CH2R
+    set type @/atom:OPLSAA/1040_bCT_aCT_dCT_iCT charge      0.120 # C  - CT   | C on N: tertiary amide CHR2
+    set type @/atom:OPLSAA/1041_bCT_aCT_dCT_iCT charge      0.180 # C  - CT   | C on N: tertiary amide CR3
+    set type @/atom:OPLSAA/1042_bHC_aHC_dHC_iHC charge      0.060 # H  - HC   | H on CT:tertiary amide
+    set type @/atom:OPLSAA/1043_bC~_aC~_dC~_iC~ charge      0.570 # C  - C~   | C: C=O in tert formamide.
+    set type @/atom:OPLSAA/1044_bO~_aO~_dO~_iO~ charge     -0.570 # O  - O~   | O: C=O in tert formamide.
+    set type @/atom:OPLSAA/1045_bHC_aHC_dHC_iHC charge      0.000 # H  - HC   | H on CO: tert formamide
+    #--------- backbone atoms for Beta-3-Peptides (xc 1049) JT-R Nov'05, some from DW                   
+    set type @/atom:OPLSAA/1049_bCT_aCT_dCT_iCT charge      0.020 # C  - CT   | CH; Calpha in beta-2-peptides
+    set type @/atom:OPLSAA/1050_bCT_aCT_dCT_iCT charge     -0.040 # C  - CT   | CH2; Calpha in all (M, N-ter)
+    set type @/atom:OPLSAA/1051_bCT_aCT_dCT_iCT charge      0.000 # C  - CT   | CH2; Cbeta in b-Gly (M, C-ter)
+    set type @/atom:OPLSAA/1052_bCT_aCT_dCT_iCT charge      0.060 # C  - CT   | CH; Cbeta in most (M, C-ter)
+    set type @/atom:OPLSAA/1053_bCT_aCT_dCT_iCT charge     -0.070 # C  - CT   | CH; Cbeta in b-Pro (M, C-ter)
+    set type @/atom:OPLSAA/1054_bCT_aCT_dCT_iCT charge     -0.140 # C  - CT   | CH2; Calpha for all (C-ter)
+    set type @/atom:OPLSAA/1055_bCT_aCT_dCT_iCT charge      0.170 # C  - CT   | CH; Cbeta for most (N-ter)
+    set type @/atom:OPLSAA/1056_bCT_aCT_dCT_iCT charge      0.110 # C  - CT   | CH; Cbeta for b-Gly (N-ter)
+    set type @/atom:OPLSAA/1057_bCT_aCT_dCT_iCT charge      0.150 # C  - CT   | CH; Cbeta for b-Pro (N-ter)
+    set type @/atom:OPLSAA/1058_bCT_aCT_dCT_iCT charge      0.170 # C  - CT   | CH2; Cepsilon for b-Pro (N-ter)
+    #---------       silicon - wlj unpublished                                                         
+    set type @/atom:OPLSAA/1060_bSi_aSi_dSi_iSi charge      0.320 # Si - Si   | Si in tetraalkylsilane R4Si
+    set type @/atom:OPLSAA/1061_bSi_aSi_dSi_iSi charge      0.250 # Si - Si   | Si in R3SiH
+    set type @/atom:OPLSAA/1062_bSi_aSi_dSi_iSi charge      0.180 # Si - Si   | Si in R2SiH2
+    set type @/atom:OPLSAA/1063_bSi_aSi_dSi_iSi charge      0.110 # Si - Si   | Si in RSiH3
+    set type @/atom:OPLSAA/1064_bH~_aH~_dH~_iH~ charge     -0.010 # H  - H~   | H on Si in silane, silanol, silyl ether
+    set type @/atom:OPLSAA/1065_bCT_aCT_dCT_iCT charge      -0.26 # C  - CT   | CH3 on Si in silane, "
+    set type @/atom:OPLSAA/1066_bCT_aCT_dCT_iCT charge      -0.20 # C  - CT   | CH2 on Si in silane, "
+    set type @/atom:OPLSAA/1067_bCT_aCT_dCT_iCT charge      -0.14 # C  - CT   | CH on Si in silane, "
+    set type @/atom:OPLSAA/1068_bCT_aCT_dCT_iCT charge      -0.08 # C  - CT   | C on Si in silane, "
+    set type @/atom:OPLSAA/1069_bCA_aCA_dCA_iCA charge      -0.08 # C  - CA   | C ipso in phenyl silane
+    set type @/atom:OPLSAA/1070_bSi_aSi_dSi_iSi charge       0.39 # Si - Si   | Si in R3SiOH
+    set type @/atom:OPLSAA/1071_bSi_aSi_dSi_iSi charge       0.32 # Si - Si   | Si in R2SiHOH
+    set type @/atom:OPLSAA/1072_bSi_aSi_dSi_iSi charge       0.25 # Si - Si   | Si in RSiH2OH
+    set type @/atom:OPLSAA/1073_bOH_aOH_dOH_iOH charge      -0.50 # O  - OH   | O in SiOH silanol
+    set type @/atom:OPLSAA/1074_bHO_aHO_dHO_iHO charge       0.35 # H  - HO   | H in SiOH silanol
+    set type @/atom:OPLSAA/1075_bSi_aSi_dSi_iSi charge       0.39 # Si - Si   | Si in R3SiOR silyl ether
+    set type @/atom:OPLSAA/1076_bSi_aSi_dSi_iSi charge       0.32 # Si - Si   | Si in R2SiHOR "
+    set type @/atom:OPLSAA/1077_bSi_aSi_dSi_iSi charge       0.25 # Si - Si   | Si in RSiH2OR "
+    set type @/atom:OPLSAA/1078_bOS_aOS_dOS_iOS charge      -0.35 # O  - OS   | O: alkyl silyl ether - R on O is 181-185
+    set type @/atom:OPLSAA/1079_bSi_aSi_dSi_iSi charge       0.24 # Si - Si   | Si in R3SiSi disilane
+    set type @/atom:OPLSAA/1080_bSi_aSi_dSi_iSi charge       0.17 # Si - Si   | Si in R2SiHSi disilane
+    set type @/atom:OPLSAA/1081_bSi_aSi_dSi_iSi charge       0.10 # Si - Si   | Si in RSiH2Si disilane
+    set type @/atom:OPLSAA/1082_bSi_aSi_dSi_iSi charge       0.03 # Si - Si   | Si in H3Si-Si disilane
+    set type @/atom:OPLSAA/1083_bSi_aSi_dSi_iSi charge      0.040 # Si - Si   | Si in SiH4
+    set type @/atom:OPLSAA/1084_bSi_aSi_dSi_iSi charge       0.18 # Si - Si   | Si in SiH3OH
+    set type @/atom:OPLSAA/1096_bCA_aCA_dCA_iCA charge     -0.230 # C  - CA   | C in C5H5- cyclopentadienyl anion
+    set type @/atom:OPLSAA/1097_bHA_aHA_dHA_iHA charge      0.030 # H  - HA   | H in C5H5- cyclopentadienyl anion
+    set type @/atom:OPLSAA/1098_bCA_aCA_dCA_iCA charge     -0.099 # C  - CA   | C in C5H5 cyclopentadienyl radical
+    set type @/atom:OPLSAA/1099_bHA_aHA_dHA_iHA charge      0.099 # H  - HA   | H in C5H5 cyclopentadienyl radical
+    set type @/atom:OPLSAA/1100_bF~_aF~_dF~_iF~ charge       -1.0 # F  - F~   | F- 1100-1114 provide
+    set type @/atom:OPLSAA/1101_bCl_aCl_dCl_iCl charge       -1.0 # Cl - Cl   | Cl- sigmas that yield the
+    set type @/atom:OPLSAA/1102_bBr_aBr_dBr_iBr charge       -1.0 # Br - Br   | Br- correct free energies
+    set type @/atom:OPLSAA/1103_bI~_aI~_dI~_iI~ charge       -1.0 # I  - I~   | I- of hydration for
+    set type @/atom:OPLSAA/1106_bLi_aLi_dLi_iLi charge       1.00 # Li - Li   | Li+ The epsilons are
+    set type @/atom:OPLSAA/1107_bNa_aNa_dNa_iNa charge       1.00 # Na - Na   | Na+ unchanged from
+    set type @/atom:OPLSAA/1108_bK~_aK~_dK~_iK~ charge       1.00 # K  - K~   | K+ 400-414.
+    set type @/atom:OPLSAA/1109_bRb_aRb_dRb_iRb charge       1.00 # Rb - Rb   | Rb+
+    set type @/atom:OPLSAA/1110_bCs_aCs_dCs_iCs charge       1.00 # Cs - Cs   | Cs+
+    set type @/atom:OPLSAA/1111_bMg_aMg_dMg_iMg charge       2.00 # Mg - Mg   | Mg++
+    set type @/atom:OPLSAA/1112_bCa_aCa_dCa_iCa charge       2.00 # Ca - Ca   | Ca++
+    set type @/atom:OPLSAA/1113_bSr_aSr_dSr_iSr charge       2.00 # Sr - Sr   | Sr++
+    set type @/atom:OPLSAA/1114_bBa_aBa_dBa_iBa charge       2.00 # Ba - Ba   | Ba++
+    set type @/atom:OPLSAA/1120_bCT_aCT_dCT_iCT charge     -0.050 # C  - CT   | C in CH3NR3+ July 2005
+    set type @/atom:OPLSAA/1121_bCT_aCT_dCT_iCT charge      0.050 # C  - CT   | C in RCH2NR3+ WLJ
+    set type @/atom:OPLSAA/1122_bCT_aCT_dCT_iCT charge      0.150 # C  - CT   | C in R2CHNR3+ ammonium
+    set type @/atom:OPLSAA/1123_bCT_aCT_dCT_iCT charge      0.250 # C  - CT   | C in R3CNR3+
+    set type @/atom:OPLSAA/1124_bHC_aHC_dHC_iHC charge      0.100 # H  - HC   | H in CH3NR3+
+    set type @/atom:OPLSAA/1125_bN3_aN3_dN3_iN3 charge      0.115 # N  - N3   | N (ArNR3+) Anilinium Ion
+    set type @/atom:OPLSAA/1126_bCA_aCA_dCA_iCA charge      0.135 # C  - CA   | Cipso (ArNR3+)
+    set type @/atom:OPLSAA/1127_bN3_aN3_dN3_iN3 charge      0.015 # N  - N3   | N (ArNR2H+)
+    set type @/atom:OPLSAA/1128_bCA_aCA_dCA_iCA charge      0.155 # C  - CA   | Cipso (ArNR2H+)
+    set type @/atom:OPLSAA/1151_bC|_aC|_dC|_iC| charge      0.000 # C  - C|   | triene C (R2-C=) central C=C
+    set type @/atom:OPLSAA/1152_bC|_aC|_dC|_iC| charge     -0.115 # C  - C|   | triene C (RH-C=) central C=C
+    set type @/atom:OPLSAA/1153_bHC_aHC_dHC_iHC charge      0.150 # H  - HC   | allene H
+    set type @/atom:OPLSAA/1154_bCM_aCM_dCM_iCM charge     -0.250 # C  - CM   | allene C1 CH2
+    set type @/atom:OPLSAA/1155_bCM_aCM_dCM_iCM charge     -0.100 # C  - CM   | allene C1 CHR
+    set type @/atom:OPLSAA/1156_bCM_aCM_dCM_iCM charge      0.050 # C  - CM   | allene C1 CR2
+    set type @/atom:OPLSAA/1157_bC°_aC°_dC°_iC° charge     -0.100 # C  - C°   | allene C2
+    set type @/atom:OPLSAA/1158_bC°_aC°_dC°_iC° charge      0.200 # C  - C°   | ketene C2
+    set type @/atom:OPLSAA/1159_bO~_aO~_dO~_iO~ charge     -0.250 # O  - O~   | ketene O
+    set type @/atom:OPLSAA/1160_bC°_aC°_dC°_iC° charge      0.700 # C  - C°   | CO2 Madura 2009 carbon dioxide
+    set type @/atom:OPLSAA/1161_bO~_aO~_dO~_iO~ charge     -0.350 # O  - O~   | CO2 Madura 2009
+    set type @/atom:OPLSAA/1200_bCT_aCT_dCT_iCT charge      0.088 # C  - CT   | CB in N-Me HIS
+    set type @/atom:OPLSAA/1233_bSA_aSA_dSA_iSA charge      0.000 # S  - SA   | S thiazole jlj0003 OPLS-AA/L
+    set type @/atom:OPLSAA/1234_bCR_aCR_dCR_iCR charge      0.350 # C  - CR   | C2 thiazole jlj0003
+    set type @/atom:OPLSAA/1235_bNB_aNB_dNB_iNB charge     -0.400 # N  - NB   | N thiazole jlj0003
+    set type @/atom:OPLSAA/1236_bCV_aCV_dCV_iCV charge      0.000 # C  - CV   | C4 thiazole jlj0003
+    set type @/atom:OPLSAA/1237_bCW_aCW_dCW_iCW charge     -0.150 # C  - CW   | C5 thiazole jlj0003
+    set type @/atom:OPLSAA/1239_bHA_aHA_dHA_iHA charge      0.200 # H  - HA   | H4 thiazole jlj0003
+    set type @/atom:OPLSAA/1240_bHA_aHA_dHA_iHA charge      0.200 # H  - HA   | H5 thiazole jlj0003
+    set type @/atom:OPLSAA/1260_bCT_aCT_dCT_iCT charge     0.1263 # C  - CT   | CH2 Trifluoroethanol TFE
+    set type @/atom:OPLSAA/1261_bCT_aCT_dCT_iCT charge     0.5323 # C  - CT   | CF3 E Duffy Thesis 1994
+    set type @/atom:OPLSAA/1262_bOH_aOH_dOH_iOH charge    -0.6351 # O  - OH   | OH "
+    set type @/atom:OPLSAA/1263_bHO_aHO_dHO_iHO charge     0.4286 # H  - HO   | HO "
+    set type @/atom:OPLSAA/1264_bF~_aF~_dF~_iF~ charge    -0.2057 # F  - F~   | F "
+    set type @/atom:OPLSAA/1265_bHC_aHC_dHC_iHC charge     0.0825 # H  - HC   | H "
+    set type @/atom:OPLSAA/1268_bCY_aCY_dCY_iCY charge     -0.005 # C  - CY   | CHCH=CH2 vinylcyclopropane OPLS-2020
+    set type @/atom:OPLSAA/1269_bCM_aCM_dCM_iCM charge     -0.170 # C  - CM   | vinylcyclopropane
+    set type @/atom:OPLSAA/1270_bCY_aCY_dCY_iCY charge      0.080 # C  - CY   | CHC%CH ethynylcyclopropane OPLS-2020
+    set type @/atom:OPLSAA/1271_bCZ_aCZ_dCZ_iCZ charge     -0.140 # C  - CZ   | ethynylcyclopropane
+    #                                                                                                   
+    set type @/atom:OPLSAA/9999_btipO_atipO_dtipO_itipO charge     -0.834 # O  - tipO | TIP3P water O, long-range Coulombic solver
+    set type @/atom:OPLSAA/9998_btipH_atipH_dtipH_itipH charge     +0.417 # H  - tipH | TIP3P water H, long-range Coulombic solver
+    set type @/atom:OPLSAA/9997_btipO_atipO_dtipO_itipO charge       0.00 # O  - tipO | TIP4P water O, long-range Coulombic solver
+    set type @/atom:OPLSAA/9996_btipH_atipH_dtipH_itipH charge    +0.5242 # H  - tipH | TIP4P water H, long-range Coulombic solver
+    set type @/atom:OPLSAA/9995_btipM_atipM_dtipM_itipM charge    -1.0484 # XX - tipM | TIP4P water M, long-range Coulombic solver
+    set type @/atom:OPLSAA/9994_btipO_atipO_dtipO_itipO charge       0.00 # O  - tipO | TIP5P water O, long-range Coulombic solver
+    set type @/atom:OPLSAA/9993_btipH_atipH_dtipH_itipH charge     +0.241 # H  - tipH | TIP5P water H, long-range Coulombic solver
+    set type @/atom:OPLSAA/9992_btipL_atipL_dtipL_itipL charge     -0.241 # XX - tipL | TIP5P water L, long-range Coulombic solver
+    set type @/atom:OPLSAA/9991_bspcO_aspcO_dspcO_ispcO charge     -0.820 # O  - spcO | SPC water O
+    set type @/atom:OPLSAA/9989_bspcO_aspcO_dspcO_ispcO charge    -0.8476 # O  - spcO | SPC/E water O
+    set type @/atom:OPLSAA/9990_bspcH_aspcH_dspcH_ispcH charge     +0.410 # H  - spcH | SPC water H
+    set type @/atom:OPLSAA/9988_bspcH_aspcH_dspcH_ispcH charge    +0.4238 # H  - spcH | SPC/E water H
+    set type @/atom:OPLSAA/9987_bopcO_aopcO_dopcO_iopcO charge       0.00 # O  - opcO | OPC water O
+    set type @/atom:OPLSAA/9986_bopcH_aopcH_dopcH_iopcH charge  +0.679142 # H  - opcH | OPC water H
+    set type @/atom:OPLSAA/9985_bopcE_aopcE_dopcE_iopcE charge  -1.358284 # XX - opcE | OPC water E

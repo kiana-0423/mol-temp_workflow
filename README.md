@@ -10,3 +10,6 @@ obabel $MOL2 -O $PDB
 4.写system.lt文件
 
 SiO paper：A Force Field and a Surface Model Database for Silica to Simulate Interfacial Properties in Atomic Resolution
+
+
+moltemplate.sh -pdb box_ob.pdb -atomstyle full system.lt

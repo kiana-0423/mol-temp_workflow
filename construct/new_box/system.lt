@@ -1,0 +1,13 @@
+import "oplsaa2024.lt"
+import "poly.lt"
+import "tip3p_2004_oplsaa2024.lt"
+
+poly = new Poly[20]
+wat  = new TIP3P[86700]
+
+
+write_once("Data Boundary") {
+   0 201.514 xlo xhi
+   0 200.958 ylo yhi
+   0 300 zlo zhi
+ }

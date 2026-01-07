@@ -1,18 +1,22 @@
-# Press Using LAMMPS
-# ----------------- Init Section -----------------
-include "system.in.init"
-# ----------------- Atom Definition Section -----------------
-read_data "stacked.data"
-# ----------------- Settings Section -----------------
-include "system.in.settings"
-# ----------------- Charges Section -----------------
-include "system.in.charges"
+#Initial Setups
+atom_style      full
+units           real
+boundary        p p p
 
+#Reading data
+read_data  stacked.data
+
+#Force field parameters
+include    system.in.settings
+
+kspace_style pppm 1.0e-4
+
+#Time_step setup
 timestep       1.0  
-thermo         1000
-thermo_style   custom step temp press pzz density etotal
 
-#Setting Gelatin and Basement
+thermo 200
+thermo_style custom step temp pe ke etotal press vol density fmax
+
 
 group gel molecule 1:20
 region rBase block INF INF INF INF 0.0 10.0 units box
@@ -20,45 +24,63 @@ region rBase block INF INF INF INF 0.0 10.0 units box
 group  base region rBase
 group mobile subtract all base
 
+
+#Energy Minimization
+min_style fire
+min_modify line quadratic dmax 0.05
+
+pair_style soft 2.0
+pair_coeff * * 50.0 
+
+min_style fire
+min_modify dmax 0.02
+minimize 1e-4 1e-6 5000 50000
+
+min_style cg
+min_modify dmax 0.05
+minimize 1e-6 1e-8 10000 100000
+
+include    system.in.settings
+
 #Fixing Basement
 velocity base set 0.0 0.0 0.0
 fix freeze base setforce 0.0 0.0 0.0
 
+velocity mobile create 300 12345 mom yes rot yes dist gaussian
 
-#Energy Minimization
+reset_timestep 0
+# ---------- NVE ----------
+fix pre all nve/limit 0.05
 
-minimize 1.0e-6 1.0e-8 2000 20000
+dump dpre all custom 200 pre_nve.lammpstrj id type mol x y z vx vy vz fx fy fz
+dump_modify dpre sort id
 
-# ---------- NVT 弛豫 ----------
-variable T     equal 300.0
-variable Tdamp equal 100.0 
-velocity mobile create ${T} 12345 mom yes rot yes dist gaussian
-fix nvt1 mobile nvt temp ${T} ${T} ${Tdamp}
+run 2000
+undump dpre
+unfix pre
+
+# ---------- NVT ----------
+fix nvt1 mobile nvt temp 300 300 100
+
+dump d1 all custom 200 relax.lammpstrj id type mol q x y z
+dump_modify d1 sort id
 
 run 200000
 
 unfix nvt1
-
-# ----------z 方向 NPT 调密度（只变 Lz，不动 Lx/Ly） ----------
+undump d1
+# ----------NPT Adjusting Density----------
 
 variable Pz    equal 1.0
 variable Pdamp equal 1000.0 
 fix nptz mobile npt temp ${T} ${T} ${Tdamp} z ${Pz} ${Pz} ${Pdamp} couple none dilate mobile
 
+dump d2 all custom 500 press.lammpstrj id type mol q x y z
+dump_modify d2 sort id
+
 run 300000      # 300 ps（看密度/体积收敛情况）
 
 unfix nptz
+undump d2
 
-
-# ---------- 按压排水----------
-variable Fpress equal 2000.0
-fix press gel aveforce 0.0 0.0 -${Fpress}
-fix nvt2 mobile nvt temp ${T} ${T} ${Tdamp}
-
-run 5000000
-
-unfix press
-unfix nvt2
-
-# ---------- 输出 ----------
 write_data final_pressed.data

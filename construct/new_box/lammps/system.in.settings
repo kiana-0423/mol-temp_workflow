@@ -28,7 +28,6 @@ pair_coeff 27 27 0.066 3.500
 pair_coeff 28 28 0.102 3.188
 pair_coeff 29 29 0.026 2.480
 
-
 bond_coeff 1 549. 1.340
 bond_coeff 2 317. 1.51
 bond_coeff 3 340. 1.08

@@ -13,3 +13,6 @@ SiO paper：A Force Field and a Surface Model Database for Silica to Simulate In
 
 
 moltemplate.sh -pdb box_ob.pdb -atomstyle full system.lt
+
+
+check.py and check_data.py
